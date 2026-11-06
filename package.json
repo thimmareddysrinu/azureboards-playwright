@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+      "build": "echo 'No compilation step needed for Playwright'",
+  "test": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
