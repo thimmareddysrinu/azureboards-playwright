@@ -1,0 +1,20 @@
+- generic [ref=f2e118]:
+  - img "logo" [ref=f2e120]
+  - generic [ref=f2e121]:
+    - generic [ref=f2e122]: Scripted QA
+    - generic [ref=f2e123]: Your QA Automation Playground
+  - generic [ref=f2e124]:
+    - generic [ref=f2e125]:
+      - paragraph [ref=f2e126]: Credentials
+      - generic [ref=f2e127]:
+        - generic [ref=f2e128]:
+          - text: "User:"
+          - strong [ref=f2e129]: admin
+        - generic [ref=f2e130]:
+          - text: "Pass:"
+          - strong [ref=f2e131]: Pass@9211
+    - heading "Sign In" [level=1] [ref=f2e132]
+    - textbox "Username" [ref=f2e133]
+    - textbox "Password" [ref=f2e134]
+    - paragraph [ref=f2e135]
+    - button "Sign In" [ref=f2e136] [cursor=pointer]

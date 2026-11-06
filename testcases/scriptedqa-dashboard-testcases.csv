@@ -1,0 +1,96 @@
+Test-Case,Priority,Severity,Module,Test Case Name,Locator(s),Test Steps,Values,Actual Result,Expected Result
+#P001,P-1,S-1,Authentication and dashboard access,User can sign in with valid credentials and view the dashboard,"`input[placeholder='Username']`, `input[placeholder='Password']`, `button:has-text('Sign In')`, `text='Welcome back, Automation Engineer!'`","1. Navigate to the login page using locator `page.goto('https://www.scriptedqa.com/home')` or `page.locator('input[placeholder='Username']')` after page load.
+2. Fill username using locator `input[placeholder='Username']` with text `admin`.
+3. Fill password using locator `input[placeholder='Password']` with text `Pass@9211`.
+4. Click the Sign In button using locator `button:has-text('Sign In')`.
+5. Verify the dashboard header using locator `text='Welcome back, Automation Engineer!'`.","Username = admin; Password = Pass@9211; Expected welcome text = 'Welcome back, Automation Engineer!'",,The user logs in successfully and lands on the authenticated dashboard with the welcome message visible.
+#P002,P-1,S-2,Authentication and dashboard access,User can sign out and return to the login screen,"`button:has-text('Sign Out')`, `input[placeholder='Username']`, `input[placeholder='Password']`","1. Click the Sign Out button using locator `button:has-text('Sign Out')`.
+2. Wait for redirect back to the login form.
+3. Verify the Username field using locator `input[placeholder='Username']` is visible and empty.
+4. Verify the Password field using locator `input[placeholder='Password']` is visible and empty.","Action = Sign Out; After logout, Username and Password fields are empty",,The session is ended and the user is redirected to the login screen.
+#P003,P-2,S-2,Dashboard navigation,Each category link is visible and navigates to the correct page,"`text='Categories'`, `a[href='/webTable']`, `a[href='/dropDown']`, `a[href='/frame']`, `a[href='/form']`, `a[href='/calender']`, `a[href='/mouseActions']`, `a[href='/shopping']`","1. On the dashboard, use locator `text='Categories'` to confirm the left navigation is visible.
+2. Click the Table link using locator `a[href='/webTable']`.
+3. Click the Dropdown link using locator `a[href='/dropDown']`.
+4. Click the Frame link using locator `a[href='/frame']`.
+5. Click the Form link using locator `a[href='/form']`.
+6. Click the Calender link using locator `a[href='/calender']`.
+7. Click the Mouse Actions link using locator `a[href='/mouseActions']`.
+8. Click the Shopping link using locator `a[href='/shopping']`.","Menu items = Table, Dropdown, Alerts & Windows, Frame, Form, Calender, Mouse Actions, Shopping",,Each category opens the correct page without errors or broken navigation.
+#P004,P-2,S-3,Table feature,Static table displays expected team records,"`a[href='/webTable']`, `page.getByText('Static Table')`, `page.locator('table').first()`","1. Click on the Table menu using locator `a[href='/webTable']`.
+2. Use locator `page.getByText('Static Table')` to verify the static table heading is visible.
+3. Use locator `page.locator('table').first()` to get the first static table.
+4. Validate the first row contains values like `Suyash Sharma`, `suyash@example.com`, and `QA Lead`.
+5. Verify the static entries count shown in the page is `Showing 5 static entries`.",Static table values = Suyash Sharma; suyash@example.com; QA Lead; Showing 5 static entries,,The static table is visible with the expected team data and count displayed correctly.
+#P005,P-2,S-3,Table feature,Dynamic table supports pagination and order actions,"`a[href='/webTable']`, `page.locator('table').nth(1)`, `text='Next'`, `text='Cancel Order'`","1. Click on the Table menu using locator `a[href='/webTable']`.
+2. Use locator `page.locator('table').nth(1)` to get the dynamic table.
+3. Verify the table contains column headers like `ORDER ID`, `CUSTOMER`, `PRODUCT`, `AMOUNT ($)`, `DATE`, `STATUS`, and `ACTION`.
+4. Click the Next pagination control using locator `text='Next'`.
+5. Click the Cancel Order action using locator `text='Cancel Order'` on the first row.",Dynamic table values = ORD-9021; Acme Corp; Cloud Hosting Plan; $499.00; 2026-09-01; Completed; Cancel Order,,The dynamic table updates with pagination and the order action is triggered without breaking the page state.
+#P006,P-2,S-2,Dropdown feature,Single select and multi-select dropdowns update selection state,"`a[href='/dropDown']`, `text='Select an option...'`, `text='Selected Value:'`, `text='Select countries...'`, `text='Confirmed Countries:'`","1. Click the Dropdown menu using locator `a[href='/dropDown']`.
+2. Open the single select dropdown with locator `text='Select an option...'` and choose an option value.
+3. Verify the selected text using locator `text='Selected Value:'`.
+4. Open the multi select dropdown using locator `text='Select countries...'` and select multiple country values.
+5. Verify the confirmed countries list updates using locator `text='Confirmed Countries:'`.","Single select example = Option 2; Multi-select example = India, Canada, Germany",,Single and multi-select dropdown values update and display the selected options correctly.
+#P007,P-2,S-2,Dropdown feature,Cascading and searchable dropdowns behave correctly,"`a[href='/dropDown']`, `text='-- Choose Category --'`, `text='SELECTION SUMMARY'`, `text='Selected Fruit:'`","1. Click the Dropdown menu using locator `a[href='/dropDown']`.
+2. Select category using locator `text='-- Choose Category --'` and choose `Fruits` or `Vegetables`.
+3. In the item dropdown, choose the related item using locator `text='Select a category first'` / item list.
+4. Verify summary values using locator `text='SELECTION SUMMARY'` and text `Category:` / `Item:`.
+5. Type a fruit name in the searchable dropdown field and select the expected option.",Category = Fruits; Item = Apple; Searchable dropdown value = Apple,,Cascading and searchable dropdowns work in sequence and preserve the correct summary data.
+#P008,P-2,S-2,Alerts and windows,Alert and confirmation dialogs respond to user actions,"`a[href='/alertsAndWindows']`, `text='Simple Alert'`, `text='Prompt Alert'`, `text='Confirmation Alert'`","1. Click the Alerts & Windows menu using locator `a[href='/alertsAndWindows']`.
+2. Click the Simple Alert button using locator `text='Simple Alert'`.
+3. Accept the alert dialog using browser handle `page.on('dialog', ...)` or `page.acceptDialog()`.
+4. Click the Prompt Alert button using locator `text='Prompt Alert'` and enter test text.
+5. Click the Confirmation Alert button and accept or dismiss the alert.",Alert input text = QA Automation; Confirmation = OK or Cancel,,Alerts and confirmation dialogs behave as expected for accept and dismiss actions.
+#P009,P-3,S-2,Alerts and windows,Toast notifications and tab opening work as intended,"`text='Success Toast'`, `text='Error Toast'`, `text='Open New Tab'`","1. Click the Success Toast action using locator `text='Success Toast'`.
+2. Click the Error Toast action using locator `text='Error Toast'`.
+3. Verify the toast message is visible.
+4. Click the Open New Tab button using locator `text='Open New Tab'`.
+5. Verify the new tab opens and the original page remains available.","Toast types = Success, Error; New tab target = Scripted QA new page",,Toast messages are displayed correctly and the new tab opens successfully.
+#P010,P-2,S-2,Frame handling,User can access content inside embedded iframes,"`a[href='/frame']`, `page.frameLocator('iframe').first()`, `page.frameLocator('iframe').nth(1)`","1. Click the Frame menu using locator `a[href='/frame']`.
+2. Use locator `page.frameLocator('iframe').first()` to access the first iframe.
+3. Validate text content inside the iframe such as `This content is rendered inside the first embedded iframe document.`.
+4. Use locator `page.frameLocator('iframe').nth(1)` to access the second iframe.
+5. Validate the second iframe text appears correctly.",Iframe texts = 'This content is rendered inside the first embedded iframe document.' and second iframe content,,Content inside each iframe is readable and accessible without parent-page confusion.
+#P011,P-2,S-2,Form validation and input handling,Form accepts valid data and validates required fields,"`a[href='/form']`, `input[name='fullName']`, `input[name='email']`, `input[name='password']`, `input[name='phone']`, `select[name='role']`, `text='Submit Form'`","1. Click the Form menu using locator `a[href='/form']`.
+2. Fill `Full Name` using locator `input[name='fullName']` or visible label name.
+3. Fill `Email Address` using locator `input[name='email']`.
+4. Fill `Password` using locator `input[name='password']` and `Phone Number` using locator `input[name='phone']`.
+5. Select a role using locator `select[name='role']`.
+6. Select gender and interests with checkbox/radio inputs.
+7. Click Submit Form and verify success state.","Full Name = Automation Engineer; Email = admin@test.com; Password = Test@123; Phone = 9876543210; Role = QA Engineer; Gender = Male; Interests = Coding, Design",,A valid form submission is accepted and validation does not block legitimate values.
+#P012,P-2,S-2,Form validation and input handling,Form reset and invalid data handling are correct,"`a[href='/form']`, `text='Submit Form'`, `text='Reset Form'`","1. Navigate to the Form page using locator `a[href='/form']`.
+2. Enter invalid phone digits or blank required fields.
+3. Click Submit Form using locator `text='Submit Form'`.
+4. Verify validation feedback or blocking behavior.
+5. Click Reset Form using locator `text='Reset Form'`.
+6. Verify all fields clear to default state.",Invalid data = blank required fields or invalid phone digits; Reset action clears all fields,,Invalid form submission is blocked and the reset action restores the default form state.
+#P013,P-2,S-2,Calendar and scheduling flows,Date picker and hotel booking calendar selection work correctly,"`a[href='/calender']`, `text='Today'`, `text='SELECTED DATE'`, `text='Apply Dates'`","1. Click the Calender menu using locator `a[href='/calender']`.
+2. Use the date picker to select a specific date using locator `text='Today'` and date controls.
+3. Verify the selected date appears in the summary using locator `text='SELECTED DATE'`.
+4. Use the hotel booking calendar controls to select check-in and check-out dates.
+5. Verify the booking duration summary updates to the selected range.",Date selected = 2026-11-05; Duration = 3 Days / 1 Week / 2 Weeks,,The date picker and booking calendar update correctly with the selected date range.
+#P014,P-2,S-2,Calendar and scheduling flows,Delivery window and time-slot selection flow works for booking flows,"`a[href='/calender']`, `text='Tomorrow'`, `text='Select a Time Slot'`, `text='Confirm Booking'`","1. Navigate to the calendar/booking section using locator `a[href='/calender']`.
+2. Select a delivery date using visible date cards like `Tomorrow`, `Saturday`, or `Sunday`.
+3. Choose the availability slot from the list displayed under the selected date.
+4. Verify the selected date and time are highlighted in the summary.
+5. Clear or change the selection if the Reset option is available.",Delivery date = Tomorrow; Time slot = 08:00 AM - 12:00 PM; Reset option available,,The delivery window and time slot selection are highlighted and updated accurately.
+#P015,P-3,S-2,Mouse actions and drag-and-drop,Mouse interactions are recognized and produce the expected result,"`a[href='/mouseActions']`, `text='Mouse Left Click'`, `text='Double Click'`, `text='Right Click'`","1. Click the Mouse Actions menu using locator `a[href='/mouseActions']`.
+2. Click the left click target using locator `text='Mouse Left Click'`.
+3. Double click the target using locator `text='Double Click'`.
+4. Right click the target using locator `text='Right Click'`.
+5. Verify the interaction state changes as expected.","Mouse actions = Left click, Double click, Right click",,"Mouse click, double-click, and right-click behaviors are recognized correctly."
+#P016,P-3,S-2,Mouse actions and drag-and-drop,Hover and drag-and-drop behavior works across available items and drop zone,"`a[href='/mouseActions']`, `text='Hover Me to Choose'`, `text='Wireless Headphones'`, `text='Drop Zone / Selected'`","1. Click the Mouse Actions menu using locator `a[href='/mouseActions']`.
+2. Hover over `Hover Me to Choose` using locator `text='Hover Me to Choose'`.
+3. Drag an item from the available list to the drop zone using locator `text='Wireless Headphones'` and the drop target.
+4. Verify the item count displayed in the drop zone updates.
+5. Drag a second item and validate the selected items list is maintained.",Item dragged = Wireless Headphones; Drop zone count = 1 then 2,,Hover and drag-and-drop actions function correctly and update the drop zone state.
+#P017,P-2,S-2,Shopping and cart behavior,Product filters and add-to-cart actions work correctly,"`a[href='/shopping']`, `text='Electronics'`, `text='Add to Cart'`, `text='Checkout Items:'`","1. Click the Shopping menu using locator `a[href='/shopping']`.
+2. Select a category filter such as `Electronics` using visible category buttons.
+3. Select a price filter such as `Under $25` or `$50 to $100`.
+4. Click Add to Cart on a visible product card using locator `text='Add to Cart'`.
+5. Verify the checkout count updates using locator `text='Checkout Items:'`.",Category = Electronics; Price range = Under $25; Product added = Mango; Checkout count increases from 0,,The shopping page filters products correctly and the cart count updates after add-to-cart actions.
+#P018,P-2,S-2,Shopping and cart behavior,Cart summary reflects the correct merchandise and totals,"`a[href='/shopping']`, `text='Add to Cart'`, `text='Checkout Items:'`, `text='All Categories'`","1. Navigate to the Shopping page using locator `a[href='/shopping']`.
+2. Add multiple products using `text='Add to Cart'` on several cards.
+3. Verify the cart summary count updates from `0` to the selected count.
+4. Change product filters while the cart has items and verify the selected products remain in the summary.
+5. Confirm the page remains stable and the checkout information stays visible.","Products added = Laptop, Mango, Football; Cart count = 3; Filter changes = Electronics -> Fruits -> Sports & Fitness",,The cart summary reflects the selected items and remains stable across filtering changes.

@@ -1,0 +1,4 @@
+[    1625ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://www.scriptedqa.com/:0
+[  693395ms] [ERROR] Blocked autofocusing on a <input> element in a cross-origin subframe. @ https://www.wikipedia.org/:116
+[  693404ms] [ERROR] Blocked autofocusing on a <button> element in a cross-origin subframe. @ https://www.wikipedia.org/:786
+[  695644ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://www.scriptedqa.com/form:0

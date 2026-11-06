@@ -1,0 +1,53 @@
+2026-11-04 12:15:18 - info: [BrowserstackCLI] Starting as child process with session ID: 26690c15-4f1e-44f1-a7f2-05a3377e863a
+2026-11-04 12:15:18 - info: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-11-04 12:15:18 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=18536:0, state=AutomationFrameworkState.CREATE
+2026-11-04 12:15:18 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=b9b793071c22bad0f096665154b5347abf0b538264c212189cdcd6b4af359df1 target=18536:0
+2026-11-04 12:15:26 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:15:26 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:15:26 - info: [GrpcClient] Sending DriverInit
+2026-11-04 12:15:27 - info: [GrpcClient] DriverInit request successful
+2026-11-04 12:15:28 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:15:28 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:15:28 - info: [GrpcClient] Sending TestSessionEvent
+2026-11-04 12:15:28 - info: [GrpcClient] TestSessionEvent request successful
+2026-11-04 12:15:28 - info: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-11-04 12:15:57 - warn: Accessibility Automation will run only on Chrome browser version 94 or higher .
+2026-11-04 12:15:57 - info: [Accessibility] afterTestHook state: accessibilityPlatform=undefined, bstackA11yShouldScan=true
+2026-11-04 12:15:57 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:15:57 - info: [PlaywrightDriverModule] testId: 7d618082827405a5a7ba-c50654d331335b211306
+2026-11-04 12:15:57 - info: [PlaywrightDriverModule] testData from onAfterTest: {
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.64.1',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'ac4e8f5f-f245-55bc-a9f5-e61524f68c3a',
+  test_result: 'pending',
+  automate_session_name: 'Login Page Core Functionality - negative-testing:wrong Password',
+  test_file_path: 'C:\\Users\\thimm\\OneDrive\\Desktop\\fighttickets-playwright\\tests\\login-page.spec.ts',
+  test_id: '7d618082827405a5a7ba-c50654d331335b211306',
+  test_name: 'negative-testing:wrong Password',
+  test_location: 'C:\\Users\\thimm\\OneDrive\\Desktop\\fighttickets-playwright\\tests\\login-page.spec.ts',
+  test_code: 'async ({\n' +
+    '      page\n' +
+    '    }) => {\n' +
+    '      const Login = new _LoginPage.LoginPage(page);\n' +
+    '      await Login.goto();\n' +
+    '      await Login.login(c.username, c.username);\n' +
+    '      if (c.success) {\n' +
+    '        await (0, _test.expect)(page).not.toHaveURL(/Login/);\n' +
+    '      } else {\n' +
+    '        const errorText = page.locator(".text-red-500 p-2").allTextContents();\n' +
+    '        console.log(errorText);\n' +
+    '        await (0, _test.expect)(page.getByText(c.expectedMessage)).toBeVisible();\n' +
+    '      }\n' +
+    '    }',
+  test_tags: [],
+  test_started_at: '2026-11-04T06:45:18.264Z',
+  test_scope: 'Login Page Core Functionality - negative-testing:wrong Password',
+  test_scopes: [ 'Login Page Core Functionality' ],
+  test_rerun_name: ' chrome-Samsung Galaxy S22 Ultra:12.0-browserstack-mobile login-page.spec.ts Login Page Core Functionality negative-testing:wrong Password'
+}
+2026-11-04 12:15:57 - info: [GrpcClient] Sending TestSessionEvent
+2026-11-04 12:15:57 - info: [GrpcClient] TestSessionEvent request successful
+2026-11-04 12:15:58 - info: [PlaywrightDriverModule] markSessionStatusViaRestApi: PUT https://api.browserstack.com/automate/sessions/0a59960dd1755636adda6398c70e048dd80864c5.json status=failed name=login-page.spec.ts - Login Page Core Functionality - negative-testing:wrong Password

@@ -1,0 +1,56 @@
+2026-11-04 12:13:57 - info: [BrowserstackCLI] Starting as child process with session ID: 26690c15-4f1e-44f1-a7f2-05a3377e863a
+2026-11-04 12:13:57 - info: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-11-04 12:13:57 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=18972:0, state=AutomationFrameworkState.CREATE
+2026-11-04 12:13:57 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=71fb89cfda9dfd85f9f1c343c8eb67ca722db63e892f64994fee4fee5c468f4d target=18972:0
+2026-11-04 12:14:22 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:14:22 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:14:22 - info: [GrpcClient] Sending DriverInit
+2026-11-04 12:14:22 - info: [GrpcClient] DriverInit request successful
+2026-11-04 12:14:23 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:14:24 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:14:24 - info: [GrpcClient] Sending TestSessionEvent
+2026-11-04 12:14:24 - info: [GrpcClient] TestSessionEvent request successful
+2026-11-04 12:14:24 - info: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-11-04 12:14:29 - warn: Accessibility Automation will run only on Safari browser version 18.4 or higher .
+2026-11-04 12:14:29 - info: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-11-04 12:14:29 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:14:29 - info: [GrpcClient] Sending TestSessionEvent
+2026-11-04 12:14:29 - info: [GrpcClient] TestSessionEvent request successful
+2026-11-04 12:14:30 - info: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+2026-11-04 12:14:30 - info: [PlaywrightDriverModule] testId: 7d618082827405a5a7ba-5f751cc527027d28b868
+2026-11-04 12:14:30 - info: [PlaywrightDriverModule] testData from onAfterTest: {
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.64.1',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'fc00260d-d8dd-5021-9a40-1ee4b99cc632',
+  test_result: 'pending',
+  automate_session_name: 'Login Page Core Functionality - Login page loads with required controls',
+  test_file_path: 'C:\\Users\\thimm\\OneDrive\\Desktop\\fighttickets-playwright\\tests\\login-page.spec.ts',
+  test_id: '7d618082827405a5a7ba-5f751cc527027d28b868',
+  test_name: 'Login page loads with required controls',
+  test_location: 'C:\\Users\\thimm\\OneDrive\\Desktop\\fighttickets-playwright\\tests\\login-page.spec.ts',
+  test_code: 'async ({\n' +
+    '    page\n' +
+    '  }) => {\n' +
+    '    const loginPage = new _LoginPage.LoginPage(page);\n' +
+    '    await loginPage.goto();\n' +
+    '    await page.screenshot({\n' +
+    "      path: 'LoginPage.png',\n" +
+    '      fullPage: true\n' +
+    '    });\n' +
+    "    await (0, _test.expect)(page).toHaveScreenshot('LoginPage.png', {\n" +
+    '      fullPage: true,\n' +
+    "      animations: 'disabled',\n" +
+    '      maxDiffPixelRatio: 0.00\n' +
+    '    });\n' +
+    '  }',
+  test_tags: [ 'visual-testing' ],
+  test_started_at: '2026-11-04T06:43:57.414Z',
+  test_scope: 'Login Page Core Functionality - Login page loads with required controls',
+  test_scopes: [ 'Login Page Core Functionality' ],
+  test_rerun_name: ' safari-iPhone 14 Pro Max:16-browserstack-mobile login-page.spec.ts Login Page Core Functionality Login page loads with required controls @visual-testing'
+}
+2026-11-04 12:14:30 - info: [GrpcClient] Sending TestSessionEvent
+2026-11-04 12:14:30 - info: [GrpcClient] TestSessionEvent request successful

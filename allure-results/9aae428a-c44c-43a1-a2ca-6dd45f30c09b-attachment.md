@@ -1,0 +1,90 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: login-page.spec.ts >> Login Page Core Functionality >> negative-testing:Wrong User
+- Location: tests\login-page.spec.ts:21:9
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.waitFor: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('#userEmail') to be visible
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - img "logo" [ref=e6]
+  - generic [ref=e7]:
+    - generic [ref=e8]: Scripted QA
+    - generic [ref=e9]: Your QA Automation Playground
+  - generic [ref=e10]:
+    - generic [ref=e11]:
+      - paragraph [ref=e12]: Credentials
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - text: "User:"
+          - strong [ref=e15]: admin
+        - generic [ref=e16]:
+          - text: "Pass:"
+          - strong [ref=e17]: Pass@9211
+    - heading "Sign In" [level=1] [ref=e18]
+    - textbox "Username" [ref=e19]
+    - textbox "Password" [ref=e20]
+    - paragraph [ref=e21]
+    - button "Sign In" [ref=e22] [cursor=pointer]
+```
+
+# Test source
+
+```ts
+  1  | import { Page, Locator } from "@playwright/test"
+  2  | 
+  3  | export class LoginPage {
+  4  |     readonly page: Page
+  5  |     readonly username: Locator
+  6  |     readonly password: Locator
+  7  |     readonly submit: Locator
+  8  |     readonly logoutButton: Locator
+  9  | 
+  10 |     constructor(page: Page) {
+  11 |        this.page = page;
+  12 |        this.username = this.page.locator("#userEmail"); 
+  13 |        this.password = this.page.locator("#userPassword"); 
+  14 |        this.submit = this.page.locator("#login"); 
+  15 |        this.logoutButton = this.page.locator("button", { hasText: "Sign Out" })
+  16 |     }
+  17 | 
+  18 |     async goto() {
+  19 |         await this.page.goto("https://www.scriptedqa.com/");
+  20 |     }
+  21 | 
+  22 |     async login(user: string, password: string) {
+> 23 |         await this.username.waitFor({ state: 'visible' });
+     |                             ^ Error: locator.waitFor: Test timeout of 30000ms exceeded.
+  24 |         await this.username.fill(user);
+  25 |         
+  26 |         await this.password.fill(password);
+  27 |         
+  28 |         // Ensure the submit button is enabled and clickable
+  29 |         await this.submit.click();
+  30 |     }
+  31 | 
+  32 |     async logout() {
+  33 |         await this.logoutButton.waitFor({ state: 'visible' });
+  34 |         await this.logoutButton.click();
+  35 |     }
+  36 | }
+```

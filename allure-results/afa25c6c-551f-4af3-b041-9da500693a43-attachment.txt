@@ -1,0 +1,54 @@
+2026-11-04 12:13:48 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:13:49 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:13:49 - info: [GrpcClient] Sending TestSessionEvent
+2026-11-04 12:13:49 - info: [GrpcClient] TestSessionEvent request successful
+2026-11-04 12:13:49 - info: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 21700,
+  [Symbol(trigger_async_id_symbol)]: 21291,
+  [Symbol(kResourceStore)]: undefined
+}
+2026-11-04 12:13:50 - info: Automate test case execution has ended. Processing for accessibility testing is underway. 
+2026-11-04 12:13:50 - warn: Not a valid Accessibility Automation session for playwright-page, cannot perform scan with retry.
+2026-11-04 12:13:50 - warn: Not a valid Accessibility Automation session for playwright-page, cannot save accessibility results with retry.
+2026-11-04 12:13:50 - info: Accessibility testing for this test case has ended.
+2026-11-04 12:13:50 - info: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-11-04 12:13:50 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:13:50 - info: [PlaywrightDriverModule] testId: 7d618082827405a5a7ba-42bcf95a53a4572034bb
+2026-11-04 12:13:50 - info: [PlaywrightDriverModule] testData from onAfterTest: {
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.64.1',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: '7b9d039a-31f7-5e72-ba41-4b72c98a9ca5',
+  test_result: 'pending',
+  automate_session_name: 'Login Page Core Functionality - negative-testing:empty credentials',
+  test_file_path: 'C:\\Users\\thimm\\OneDrive\\Desktop\\fighttickets-playwright\\tests\\login-page.spec.ts',
+  test_id: '7d618082827405a5a7ba-42bcf95a53a4572034bb',
+  test_name: 'negative-testing:empty credentials',
+  test_location: 'C:\\Users\\thimm\\OneDrive\\Desktop\\fighttickets-playwright\\tests\\login-page.spec.ts',
+  test_code: 'async ({\n' +
+    '      page\n' +
+    '    }) => {\n' +
+    '      const Login = new _LoginPage.LoginPage(page);\n' +
+    '      await Login.goto();\n' +
+    '      await Login.login(c.username, c.username);\n' +
+    '      if (c.success) {\n' +
+    '        await (0, _test.expect)(page).not.toHaveURL(/Login/);\n' +
+    '      } else {\n' +
+    '        const errorText = page.locator(".text-red-500 p-2").allTextContents();\n' +
+    '        console.log(errorText);\n' +
+    '        await (0, _test.expect)(page.getByText(c.expectedMessage)).toBeVisible();\n' +
+    '      }\n' +
+    '    }',
+  test_tags: [],
+  test_started_at: '2026-11-04T06:43:48.511Z',
+  test_scope: 'Login Page Core Functionality - negative-testing:empty credentials',
+  test_scopes: [ 'Login Page Core Functionality' ],
+  test_rerun_name: ' chrome-115.0:OSX Ventura-browserstack login-page.spec.ts Login Page Core Functionality negative-testing:empty credentials'
+}
+2026-11-04 12:13:50 - info: [GrpcClient] Sending TestSessionEvent
+2026-11-04 12:13:50 - info: [GrpcClient] TestSessionEvent request successful
+2026-11-04 12:13:51 - info: [PlaywrightDriverModule] markSessionStatusViaRestApi: PUT https://api.browserstack.com/automate/sessions/34fbb41618097864b4921eb3933b6a39ece229bf.json status=passed name=login-page.spec.ts - Login Page Core Functionality - negative-testing:empty credentials

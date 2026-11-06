@@ -1,0 +1,62 @@
+2026-11-04 12:13:49 - info: [BrowserstackCLI] Starting as child process with session ID: 26690c15-4f1e-44f1-a7f2-05a3377e863a
+2026-11-04 12:13:49 - info: [BrowserstackCLI] startChild: client and channel already exist, stopping here
+2026-11-04 12:13:49 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: created instance for target=4268:0, state=AutomationFrameworkState.CREATE
+2026-11-04 12:13:49 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: saved instance contextId=da353e8c95d2ab36e7915153697359f4ddbdbe2ce34d0bb4e391e353993bc10f target=4268:0
+2026-11-04 12:13:58 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:13:58 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:13:58 - info: [GrpcClient] Sending DriverInit
+2026-11-04 12:13:58 - info: [GrpcClient] DriverInit request successful
+2026-11-04 12:13:59 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:13:59 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:13:59 - info: [GrpcClient] Sending TestSessionEvent
+2026-11-04 12:13:59 - info: [GrpcClient] TestSessionEvent request successful
+2026-11-04 12:13:59 - info: [ObservabilityModule] onBeforeTest: TEST REPORTING AND ANALYTICS sync done
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 3916,
+  [Symbol(trigger_async_id_symbol)]: 3518,
+  [Symbol(kResourceStore)]: undefined
+}
+2026-11-04 12:14:01 - info: Automate test case execution has ended. Processing for accessibility testing is underway. 
+2026-11-04 12:14:01 - warn: Not a valid Accessibility Automation session for playwright-page, cannot perform scan with retry.
+2026-11-04 12:14:01 - warn: Not a valid Accessibility Automation session for playwright-page, cannot save accessibility results with retry.
+2026-11-04 12:14:01 - info: Accessibility testing for this test case has ended.
+2026-11-04 12:14:01 - info: [Accessibility] afterTestHook state: accessibilityPlatform=false, bstackA11yShouldScan=true
+2026-11-04 12:14:01 - info: [PlaywrightAutomationFramework] trackPlaywrightInstance: instance already exists
+2026-11-04 12:14:01 - info: [PlaywrightDriverModule] testId: 7d618082827405a5a7ba-7c7cb64434fda47923b7
+2026-11-04 12:14:01 - info: [PlaywrightDriverModule] testData from onAfterTest: {
+  test_framework_name: 'Playwright',
+  test_framework_version: '1.64.1',
+  test_logs: [],
+  test_hooks_finished: {},
+  test_hooks_started: {},
+  test_uuid: 'e89668a2-f68c-578d-a05b-9d00f3c75422',
+  test_result: 'pending',
+  automate_session_name: 'Login Page Core Functionality - negative-testing:empty username',
+  test_file_path: 'C:\\Users\\thimm\\OneDrive\\Desktop\\fighttickets-playwright\\tests\\login-page.spec.ts',
+  test_id: '7d618082827405a5a7ba-7c7cb64434fda47923b7',
+  test_name: 'negative-testing:empty username',
+  test_location: 'C:\\Users\\thimm\\OneDrive\\Desktop\\fighttickets-playwright\\tests\\login-page.spec.ts',
+  test_code: 'async ({\n' +
+    '      page\n' +
+    '    }) => {\n' +
+    '      const Login = new _LoginPage.LoginPage(page);\n' +
+    '      await Login.goto();\n' +
+    '      await Login.login(c.username, c.username);\n' +
+    '      if (c.success) {\n' +
+    '        await (0, _test.expect)(page).not.toHaveURL(/Login/);\n' +
+    '      } else {\n' +
+    '        const errorText = page.locator(".text-red-500 p-2").allTextContents();\n' +
+    '        console.log(errorText);\n' +
+    '        await (0, _test.expect)(page.getByText(c.expectedMessage)).toBeVisible();\n' +
+    '      }\n' +
+    '    }',
+  test_tags: [],
+  test_started_at: '2026-11-04T06:43:49.825Z',
+  test_scope: 'Login Page Core Functionality - negative-testing:empty username',
+  test_scopes: [ 'Login Page Core Functionality' ],
+  test_rerun_name: ' chrome-115.0:OSX Ventura-browserstack login-page.spec.ts Login Page Core Functionality negative-testing:empty username'
+}
+2026-11-04 12:14:01 - info: [GrpcClient] Sending TestSessionEvent
+2026-11-04 12:14:01 - info: [GrpcClient] TestSessionEvent request successful
+2026-11-04 12:14:01 - info: [PlaywrightDriverModule] markSessionStatusViaRestApi: PUT https://api.browserstack.com/automate/sessions/63bd0a5cfaa1bdcf318df6d7a715303b30604739.json status=passed name=login-page.spec.ts - Login Page Core Functionality - negative-testing:empty username

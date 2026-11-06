@@ -1,0 +1,27 @@
+userName: ${BROWSERSTACK_USERNAME}
+accessKey: ${BROWSERSTACK_ACCESS_KEY}
+framework: playwright
+
+platforms:
+  - browserName: chrome
+    os: OS X
+    osVersion: Ventura
+    browserVersion: "115.0"
+  - browserName: safari
+    osVersion: "16"
+    deviceName: iPhone 14 Pro Max
+  - browserName: chrome
+    osVersion: "12.0"
+    deviceName: Samsung Galaxy S22 Ultra
+
+buildIdentifier: "#${BUILD_NUMBER}"
+projectName: flighttickets
+buildName: Browserstack-flighttickets
+buildTag: regression-browserstack
+
+browserstackLocal: false   # true only if testing localhost/internal URLs
+debug: true
+consoleLogs: info
+video: true             # session video (default is true)
+networkLogs: true       # network requests (default is false) 
+testObservability: true
