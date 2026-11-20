@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-import {TablePage} from '../../pages/Statictable'
-import {DynamicTablePage} from '../../pages/DynamicTable'
-import { LoginPage } from '../../pages/LoginPage';
+import {TablePage} from '../../../pages/Statictable'
+import {DynamicTablePage} from '../../../pages/DynamicTable'
+import { LoginPage } from '../../../pages/LoginPage';
 
 test.describe('Login Page Core Functionality', () => {
   test('StaticTables Testing',{"tag":["@Regression",'@UI'] }, async ({ page }) => {

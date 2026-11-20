@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../pages/LoginPage';
-import { AlertWindowPage } from '../../pages/Aler-Window';
+import { LoginPage } from '../../../pages/LoginPage';
+import { AlertWindowPage } from '../../../pages/Aler-Window';
 test.describe('Login Page Core Functionality', () => {
     test('StaticTables Testing', { "tag": ["@Regression", '@UI'] }, async ({ page }) => {
         const login = new LoginPage(page);
