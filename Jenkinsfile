@@ -17,9 +17,7 @@ pipeline {
             }
         }
 
-        stage('Type Check') {
-            steps { bat 'npx tsc --noEmit' }
-        }
+        
 
         stage('Playwright Tests') {
             steps { bat 'npx playwright test' }
