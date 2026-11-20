@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "build": "echo 'No compilation step needed for Playwright'",
-  "test": "playwright test"
+    "build": "echo 'No compilation step needed for Playwright'",
+    "test": "playwright test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.64.1",
+    "@playwright/test": "^1.65.0",
     "@types/node": "^26.6.5",
     "allure-commandline": "^2.46.1",
     "allure-playwright": "^3.14.0",

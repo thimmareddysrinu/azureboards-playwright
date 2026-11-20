@@ -1,8 +1,6 @@
 import { test, expect } from '@playwright/test';
-
-
 import { LoginPage } from '../../pages/LoginPage';
-import { DropdownPage } from '../../pages/DropDown'
+import { DropdownPage } from '../../pages/DropDown';
 test.describe('Login Page Core Functionality', () => {
     test('StaticTables Testing', { "tag": ["@Regression", '@UI'] }, async ({ page }) => {
 
@@ -15,21 +13,8 @@ test.describe('Login Page Core Functionality', () => {
         await dropdown.tableGoto();
         await dropdown.singleDropdownsTesting();
         await dropdown.multiselectDropdownsTesting();
-
+        await dropdown.cascadingDropdownsTesting()
+        
 
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 })

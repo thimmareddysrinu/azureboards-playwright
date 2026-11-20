@@ -1,6 +1,8 @@
 import { Page, Locator, expect } from "@playwright/test";
 
-
+const data:string[]=[
+    "Apple","Banana","Blueberry","Cherry","Mango","Orange","Peach","Pineapple","Strawberry","Watermelon"
+]
 export class DropdownPage {
     readonly page: Page;
     readonly DropDownTab: Locator;
@@ -57,20 +59,36 @@ export class DropdownPage {
     }
     async cascadingDropdownsTesting() {
 
-        await this.singleDropdown.locator("button", { hasText: "Select an option..." }).click()
+        const categoryOption=await this.CascadingDropdown.locator("select").first()
+        const categoryselecteddropdown=await categoryOption.selectOption({label:"Fruits"})
+        const itemoption= await this.CascadingDropdown.locator("select").nth(1)
+        const itemdropdown=await itemoption.selectOption({label:"Apple"})
 
-        const selectedoption = this.singleDropdown.locator("ul li").filter({ hasText: "React.js" })
-
-        expect(await this.singleDropdown.locator("p span").textContent()).toBe(await selectedoption.textContent())
+        const summaryTable= this.CascadingDropdown.locator("div .bg-indigo-50")
+        await expect(summaryTable.locator("p span").nth(0)).toHaveText("Fruits")
+        await expect(summaryTable.locator("p span").nth(1)).toHaveText("Apple")
     }
-    async autocompleteDropdownsTesting() {
+    async autocompleteDropdownsTesting(searchquery: string = "", selectItem: string = "Apple") {
+    const input = this.AutocompleteDropdown.getByPlaceholder("Type to search...");
+    const dropdownContainer = this.AutocompleteDropdown.locator(".absolute");
+    const listitems = dropdownContainer.locator("li");
 
-        await this.singleDropdown.locator("button", { hasText: "Select an option..." }).click()
+    const expectedfilterresults = data.filter((item) =>
+        item.toLowerCase().includes(searchquery.toLowerCase())
+    );
 
-        const selectedoption = this.singleDropdown.locator("ul li").filter({ hasText: "React.js" })
+    await input.click();
+    await input.pressSequentially(searchquery);
 
-        expect(await this.singleDropdown.locator("p span").textContent()).toBe(await selectedoption.textContent())
-    }
+    // Verify all filtered <li> items match expected results
+    await expect(listitems).toHaveText(expectedfilterresults);
+    console.log(expectedfilterresults);
+    console.log(await listitems.allTextContents());
+
+    // Fix: Use exact: true so "Apple" does not match "Pineapple"
+    await dropdownContainer.getByText(selectItem).nth(0).click();
+}
+
 
 
 
