@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import {LoginPage} from '../../pages/LoginPage'
-import {Logindata} from '../../utils/login-testData'
+import {LoginPage} from '../../../pages/LoginPage'
+import {Logindata} from '../../../utils/login-testData'
 test.describe('Login Page Core Functionality', () => {
   test('Login page loads with required controls',{ tag: '@visual-testing' }, async ({ page }) => {
     const loginPage = new LoginPage(page);
