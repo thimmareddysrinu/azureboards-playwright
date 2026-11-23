@@ -1,0 +1,372 @@
+- generic [ref=e3]:
+  - region "Site updates" [ref=e4]:
+    - generic [ref=e390]:
+      - generic [ref=e391]:
+        - generic [aria-hidden] [ref=e392]: ⭐
+        - text: Coming soon
+      - generic [ref=e393]:
+        - strong [ref=e394]: Pro is launching soon
+        - text: — the full Banking app, guided practice for every module and a certificate.
+      - link "Join the waiting list →" [ref=e395] [cursor=pointer]:
+        - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=update_banner&back=%2F
+    - group "Choose announcement" [ref=e12]:
+      - button "Show announcement 1 of 2" [ref=e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=e15] [cursor=pointer]: ✕
+  - banner [ref=e16]:
+    - generic [ref=e17]:
+      - link "Test Automation Playground" [ref=e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=e19]: 🧪
+        - generic [ref=e20]:
+          - generic [ref=e21]: Test Automation
+          - generic [ref=e22]: Playground
+      - navigation "Primary navigation" [ref=e23]:
+        - button "Practice apps" [ref=e25] [cursor=pointer]
+        - link "Widgets" [ref=e34] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=e38] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=e42] [cursor=pointer]
+        - link "Join Pro" [ref=e49] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2F
+          - generic [aria-hidden] [ref=e50]: ⭐
+          - text: Join Pro
+  - main [ref=e51]:
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]: Free · No signup · Reset any time
+          - heading "Practise test automation on apps built to be tested." [level=1] [ref=e56]
+          - paragraph [ref=e57]: A real-looking shop and clinic for Playwright, CSS and XPath practice. Every common (and tricky) UI pattern is on a page you can click through.
+          - generic [ref=e58]:
+            - link "Open the Shop app" [ref=e59] [cursor=pointer]:
+              - /url: /qashop/products
+              - generic [aria-hidden] [ref=e60]: 🛒
+              - text: Open the Shop app
+            - link "Open the Clinic app" [ref=e61] [cursor=pointer]:
+              - /url: /clinic
+              - generic [aria-hidden] [ref=e62]: 🩺
+              - text: Open the Clinic app
+            - link "Banking app Preview" [ref=e63] [cursor=pointer]:
+              - /url: /bank
+              - generic [aria-hidden] [ref=e64]: 🏦
+              - text: Banking app
+              - generic [ref=e65]: Preview
+          - generic [ref=e66]:
+            - link "Widgets playground →" [ref=e67] [cursor=pointer]:
+              - /url: /widgets
+            - link "Learn Playwright →" [ref=e68] [cursor=pointer]:
+              - /url: /learn/playwright
+          - generic [ref=e69]:
+            - generic [ref=e70]:
+              - term [ref=e71]: "2"
+              - definition [ref=e72]: practice apps
+            - generic [ref=e73]:
+              - term [ref=e74]: 30+
+              - definition [ref=e75]: widgets
+            - generic [ref=e76]:
+              - term [ref=e77]: "0"
+              - definition [ref=e78]: real data
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]: playground.qatools.dev
+            - img "A welcoming storefront" [ref=e86]
+          - generic [ref=e87]: getByTestId('cta-shop')
+          - generic [ref=e88]: ✓ 12 passed
+      - region "🌍 Practised in 34 countries" [ref=e89]:
+        - generic [ref=e90]:
+          - heading "🌍 Practised in 34 countries" [level=2] [ref=e91]
+          - paragraph [ref=e92]:
+            - text: Most-viewed countries in the last 28 days ·
+            - strong [ref=e93]: 10K
+            - text: page views in total
+        - list [ref=e94]:
+          - listitem "1. India, 4,892 page views" [ref=e95]:
+            - generic [aria-hidden] [ref=e96]: 🥇
+            - generic [aria-hidden] [ref=e97]: 🇮🇳
+            - generic [aria-hidden] [ref=e98]: India
+            - generic [aria-hidden] [ref=e99]: 4.9K views
+          - listitem "2. Vietnam, 1,763 page views" [ref=e101]:
+            - generic [aria-hidden] [ref=e102]: 🥈
+            - generic [aria-hidden] [ref=e103]: 🇻🇳
+            - generic [aria-hidden] [ref=e104]: Vietnam
+            - generic [aria-hidden] [ref=e105]: 1.8K views
+          - listitem "3. Poland, 1,184 page views" [ref=e107]:
+            - generic [aria-hidden] [ref=e108]: 🥉
+            - generic [aria-hidden] [ref=e109]: 🇵🇱
+            - generic [aria-hidden] [ref=e110]: Poland
+            - generic [aria-hidden] [ref=e111]: 1.2K views
+          - listitem "4. United Kingdom, 823 page views" [ref=e113]:
+            - generic [aria-hidden] [ref=e114]: "4"
+            - generic [aria-hidden] [ref=e115]: 🇬🇧
+            - generic [aria-hidden] [ref=e116]: United Kingdom
+            - generic [aria-hidden] [ref=e117]: 823 views
+          - listitem "5. Philippines, 380 page views" [ref=e119]:
+            - generic [aria-hidden] [ref=e120]: "5"
+            - generic [aria-hidden] [ref=e121]: 🇵🇭
+            - generic [aria-hidden] [ref=e122]: Philippines
+            - generic [aria-hidden] [ref=e123]: 380 views
+          - listitem "6. United States, 308 page views" [ref=e125]:
+            - generic [aria-hidden] [ref=e126]: "6"
+            - generic [aria-hidden] [ref=e127]: 🇺🇸
+            - generic [aria-hidden] [ref=e128]: United States
+            - generic [aria-hidden] [ref=e129]: 308 views
+          - listitem "7. Egypt, 165 page views" [ref=e131]:
+            - generic [aria-hidden] [ref=e132]: "7"
+            - generic [aria-hidden] [ref=e133]: 🇪🇬
+            - generic [aria-hidden] [ref=e134]: Egypt
+            - generic [aria-hidden] [ref=e135]: 165 views
+          - listitem "8. Brazil, 114 page views" [ref=e137]:
+            - generic [aria-hidden] [ref=e138]: "8"
+            - generic [aria-hidden] [ref=e139]: 🇧🇷
+            - generic [aria-hidden] [ref=e140]: Brazil
+            - generic [aria-hidden] [ref=e141]: 114 views
+        - paragraph [ref=e143]:
+          - generic [ref=e144]: "+26"
+          - text: more countries are on the way — each one joins the board at 100 views.
+      - generic [ref=e145]:
+        - generic [ref=e146]:
+          - heading "Pick a practice app" [level=2] [ref=e147]
+          - paragraph [ref=e148]: Each app has its own menu, data and flows. Only the Shop needs a demo account.
+        - generic [ref=e149]:
+          - link "Shop An online store with a full buying journey. ✓ Search, filters and sorting ✓ Cart, coupons and wishlist ✓ Login and checkout forms ✓ Pagination and loading states Open the Shop →" [ref=e150] [cursor=pointer]:
+            - /url: /qashop/products
+            - generic [aria-hidden] [ref=e151]: 🛒
+            - generic [ref=e152]: Shop
+            - generic [ref=e153]: An online store with a full buying journey.
+            - list [ref=e154]:
+              - listitem [ref=e155]: ✓ Search, filters and sorting
+              - listitem [ref=e156]: ✓ Cart, coupons and wishlist
+              - listitem [ref=e157]: ✓ Login and checkout forms
+              - listitem [ref=e158]: ✓ Pagination and loading states
+            - generic [ref=e159]: Open the Shop →
+          - link "Clinic A doctor booking app with slots and forms. ✓ Doctor search and filters ✓ Date and time slot pickers ✓ Booking form validation ✓ My appointments list and cancel Open the Clinic →" [ref=e160] [cursor=pointer]:
+            - /url: /clinic
+            - generic [aria-hidden] [ref=e161]: 🩺
+            - generic [ref=e162]: Clinic
+            - generic [ref=e163]: A doctor booking app with slots and forms.
+            - list [ref=e164]:
+              - listitem [ref=e165]: ✓ Doctor search and filters
+              - listitem [ref=e166]: ✓ Date and time slot pickers
+              - listitem [ref=e167]: ✓ Booking form validation
+              - listitem [ref=e168]: ✓ My appointments list and cancel
+            - generic [ref=e169]: Open the Clinic →
+          - link "Preview Bank A banking app with balances and transfers. ✓ Balances with show / hide ✓ Search and filter transactions ✓ Transfer form with errors ✓ Review, confirm and reference no. Try the preview →" [ref=e170] [cursor=pointer]:
+            - /url: /bank
+            - generic [aria-hidden] [ref=e171]: 🏦
+            - generic [ref=e172]: Preview
+            - generic [ref=e173]: Bank
+            - generic [ref=e174]: A banking app with balances and transfers.
+            - list [ref=e175]:
+              - listitem [ref=e176]: ✓ Balances with show / hide
+              - listitem [ref=e177]: ✓ Search and filter transactions
+              - listitem [ref=e178]: ✓ Transfer form with errors
+              - listitem [ref=e179]: ✓ Review, confirm and reference no.
+            - generic [ref=e180]: Try the preview →
+        - generic [ref=e181]:
+          - generic [ref=e182]:
+            - heading "Coming soon" [level=3] [ref=e183]
+            - generic [ref=e184]: More practice apps are on the way.
+          - list [ref=e185]:
+            - listitem [ref=e186]:
+              - generic [ref=e187]:
+                - generic [aria-hidden] [ref=e188]: 🗂️
+                - generic [ref=e189]: Coming soon
+              - generic [ref=e190]: Admin dashboard
+              - generic [ref=e191]: An HR portal with roles and big data tables.
+              - generic "What you will practise" [ref=e192]:
+                - generic [ref=e193]: Data grids
+                - generic [ref=e194]: Admin vs viewer
+                - generic [ref=e195]: CSV upload
+            - listitem [ref=e196]:
+              - generic [ref=e197]:
+                - generic [aria-hidden] [ref=e198]: ✈️
+                - generic [ref=e199]: Coming soon
+              - generic [ref=e200]: Travel booking
+              - generic [ref=e201]: Search flights, pick seats, add passengers.
+              - generic "What you will practise" [ref=e202]:
+                - generic [ref=e203]: Date ranges
+                - generic [ref=e204]: Time zones
+                - generic [ref=e205]: Seat map
+            - listitem [ref=e206]:
+              - generic [ref=e207]:
+                - generic [aria-hidden] [ref=e208]: 💬
+                - generic [ref=e209]: Coming soon
+              - generic [ref=e210]: Team chat
+              - generic [ref=e211]: Two people chatting in real time.
+              - generic "What you will practise" [ref=e212]:
+                - generic [ref=e213]: Two users at once
+                - generic [ref=e214]: Live messages
+                - generic [ref=e215]: Unread badges
+            - listitem [ref=e216]:
+              - generic [ref=e217]:
+                - generic [aria-hidden] [ref=e218]: 📌
+                - generic [ref=e219]: Coming soon
+              - generic [ref=e220]: Kanban board
+              - generic [ref=e221]: Move tasks across a Jira-style board.
+              - generic "What you will practise" [ref=e222]:
+                - generic [ref=e223]: Drag and drop
+                - generic [ref=e224]: Shortcuts
+                - generic [ref=e225]: Undo
+            - listitem [ref=e226]:
+              - generic [ref=e227]:
+                - generic [aria-hidden] [ref=e228]: 📝
+                - generic [ref=e229]: Coming soon
+              - generic [ref=e230]: Loan application
+              - generic [ref=e231]: A long form that changes as you answer.
+              - generic "What you will practise" [ref=e232]:
+                - generic [ref=e233]: Multi-step wizard
+                - generic [ref=e234]: File upload
+                - generic [ref=e235]: Save and resume
+            - listitem [ref=e236]:
+              - generic [ref=e237]:
+                - generic [aria-hidden] [ref=e238]: 🎟️
+                - generic [ref=e239]: Coming soon
+              - generic [ref=e240]: Event tickets
+              - generic [ref=e241]: Hold a seat before the timer runs out.
+              - generic "What you will practise" [ref=e242]:
+                - generic [ref=e243]: Seat picker
+                - generic [ref=e244]: Countdown
+                - generic [ref=e245]: Seat taken
+            - listitem [ref=e246]:
+              - generic [ref=e247]:
+                - generic [aria-hidden] [ref=e248]: 🍔
+                - generic [ref=e249]: Coming soon
+              - generic [ref=e250]: Food delivery
+              - generic [ref=e251]: Order food and track it to your door.
+              - generic "What you will practise" [ref=e252]:
+                - generic [ref=e253]: Live tracking
+                - generic [ref=e254]: Location
+                - generic [ref=e255]: Add-ons
+            - listitem [ref=e256]:
+              - generic [ref=e257]:
+                - generic [aria-hidden] [ref=e258]: 📧
+                - generic [ref=e259]: Coming soon
+              - generic [ref=e260]: Email inbox
+              - generic [ref=e261]: Read, write and search emails.
+              - generic "What you will practise" [ref=e262]:
+                - generic [ref=e263]: Rich text
+                - generic [ref=e264]: Attachments
+                - generic [ref=e265]: Frames
+            - listitem [ref=e266]:
+              - generic [ref=e267]:
+                - generic [aria-hidden] [ref=e268]: 🐞
+                - generic [ref=e269]: Coming soon
+              - generic [ref=e270]: Bug Hunt mode
+              - generic [ref=e271]: Switch on hidden bugs in the apps — find them.
+              - generic "What you will practise" [ref=e272]:
+                - generic [ref=e273]: Exploratory
+                - generic [ref=e274]: Visual bugs
+                - generic [ref=e275]: Accessibility
+          - paragraph [ref=e276]:
+            - text: Want to hear when they open?
+            - link "Join the waiting list →" [ref=e277] [cursor=pointer]:
+              - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=coming_soon_apps&back=%2F
+      - generic [ref=e278]:
+        - heading "More ways to practise" [level=2] [ref=e280]
+        - generic [ref=e281]:
+          - link "Widgets 30+ tricky UI elements" [ref=e282] [cursor=pointer]:
+            - /url: /widgets
+            - generic [aria-hidden] [ref=e283]: 🧩
+            - generic [ref=e284]:
+              - generic [ref=e285]: Widgets
+              - generic [ref=e286]: 30+ tricky UI elements
+          - link "API playground Real calls and mocking" [ref=e287] [cursor=pointer]:
+            - /url: /api-playground
+            - generic [aria-hidden] [ref=e288]: 🌐
+            - generic [ref=e289]:
+              - generic [ref=e290]: API playground
+              - generic [ref=e291]: Real calls and mocking
+          - link "Locator Game Find the right locator fast" [ref=e292] [cursor=pointer]:
+            - /url: /game
+            - generic [aria-hidden] [ref=e293]: 🎮
+            - generic [ref=e294]:
+              - generic [ref=e295]: Locator Game
+              - generic [ref=e296]: Find the right locator fast
+          - link "Learn Playwright Self-paced track on this site" [ref=e297] [cursor=pointer]:
+            - /url: /learn/playwright
+            - generic [aria-hidden] [ref=e298]: 🎓
+            - generic [ref=e299]:
+              - generic [ref=e300]: Learn Playwright
+              - generic [ref=e301]: Self-paced track on this site
+          - link "Patterns Copy-ready test recipes" [ref=e302] [cursor=pointer]:
+            - /url: /patterns
+            - generic [aria-hidden] [ref=e303]: 📚
+            - generic [ref=e304]:
+              - generic [ref=e305]: Patterns
+              - generic [ref=e306]: Copy-ready test recipes
+          - link "Challenges Tasks you can verify" [ref=e307] [cursor=pointer]:
+            - /url: /challenges
+            - generic [aria-hidden] [ref=e308]: 🏆
+            - generic [ref=e309]:
+              - generic [ref=e310]: Challenges
+              - generic [ref=e311]: Tasks you can verify
+          - link "Test cases Write cases, then automate" [ref=e312] [cursor=pointer]:
+            - /url: /test-cases
+            - generic [aria-hidden] [ref=e313]: 📝
+            - generic [ref=e314]:
+              - generic [ref=e315]: Test cases
+              - generic [ref=e316]: Write cases, then automate
+          - link "Quiz Check what you know" [ref=e317] [cursor=pointer]:
+            - /url: /quiz
+            - generic [aria-hidden] [ref=e318]: ❓
+            - generic [ref=e319]:
+              - generic [ref=e320]: Quiz
+              - generic [ref=e321]: Check what you know
+  - contentinfo [ref=e322]:
+    - generic [ref=e323]:
+      - generic [ref=e324]:
+        - strong [ref=e325]:
+          - generic [aria-hidden] [ref=e326]: 🧪
+          - generic [ref=e327]:
+            - generic [ref=e328]: Test Automation
+            - generic [ref=e329]: Playground
+        - link "Powered by QATools" [ref=e330] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=e331]: Powered by
+          - strong [ref=e332]: QATools
+          - generic [aria-hidden] [ref=e333]: ↗
+        - paragraph [ref=e334]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=e335]:
+          - link "Playwright ↗" [ref=e336] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=e337]:
+        - generic [ref=e338]:
+          - heading "Practice" [level=4] [ref=e339]
+          - link "QA Shop" [ref=e340] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=e341] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=e342] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=e343] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=e344] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=e345] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=e346]:
+          - heading "Learn" [level=4] [ref=e347]
+          - link "Learn Playwright" [ref=e348] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=e349] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=e350] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=e351] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=e352] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=e353]:
+          - heading "Site" [level=4] [ref=e354]
+          - link "About" [ref=e355] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=e356] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=e357]:
+      - generic [ref=e358]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=e359]:
+        - button "Restart tour" [ref=e360] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=e361] [cursor=pointer]
+  - button "Open feedback panel" [ref=e362] [cursor=pointer]

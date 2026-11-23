@@ -1,0 +1,198 @@
+- generic [ref=f7e3]:
+  - region "Site updates" [ref=f7e4]:
+    - generic [ref=f7e6]:
+      - generic [ref=f7e7]:
+        - generic [aria-hidden] [ref=f7e8]: 🧭
+        - text: New
+      - generic [ref=f7e9]:
+        - strong [ref=f7e10]: Guided practice
+        - text: — build your first Playwright test live on the shop, one step at a time.
+      - button "Start →" [ref=f7e11] [cursor=pointer]
+    - group "Choose announcement" [ref=f7e12]:
+      - button "Show announcement 1 of 2" [ref=f7e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=f7e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=f7e15] [cursor=pointer]: ✕
+  - banner [ref=f7e16]:
+    - generic [ref=f7e17]:
+      - link "Test Automation Playground" [ref=f7e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f7e19]: 🧪
+        - generic [ref=f7e20]:
+          - generic [ref=f7e21]: Test Automation
+          - generic [ref=f7e22]: Playground
+      - navigation "Primary navigation" [ref=f7e23]:
+        - button "Clinic" [ref=f7e25] [cursor=pointer]
+        - link "Widgets" [ref=f7e30] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=f7e34] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=f7e38] [cursor=pointer]
+        - link "Join Pro" [ref=f7e45] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2Fclinic%2Fbook%2Fd-vikram-shah
+          - generic [aria-hidden] [ref=f7e46]: ⭐
+          - text: Join Pro
+  - main [ref=f7e47]:
+    - generic [ref=f7e48]:
+      - generic [ref=f7e49]:
+        - link "MediBookclinic" [ref=f7e50] [cursor=pointer]:
+          - /url: /clinic
+          - generic [aria-hidden] [ref=f7e51]: 🩺
+        - navigation "Clinic navigation" [ref=f7e53]:
+          - link "Home" [ref=f7e54] [cursor=pointer]:
+            - /url: /clinic
+          - link "Find a doctor" [ref=f7e55] [cursor=pointer]:
+            - /url: /clinic/doctors
+          - link "My appointments" [ref=f7e56] [cursor=pointer]:
+            - /url: /clinic/appointments
+      - generic [ref=f7e57]:
+        - navigation "Breadcrumb" [ref=f7e58]:
+          - link "Home" [ref=f7e59] [cursor=pointer]:
+            - /url: /clinic
+          - generic [aria-hidden] [ref=f7e60]: ›
+          - link "Doctors" [ref=f7e61] [cursor=pointer]:
+            - /url: /clinic/doctors
+          - generic [aria-hidden] [ref=f7e62]: ›
+          - link "Dr. Vikram Shah" [ref=f7e63] [cursor=pointer]:
+            - /url: /clinic/doctors/d-vikram-shah
+          - generic [aria-hidden] [ref=f7e64]: ›
+          - generic [ref=f7e65]: Book
+        - generic [ref=f7e66]:
+          - heading "Book an appointment" [level=1] [ref=f7e67]
+          - paragraph [ref=f7e68]:
+            - text: with
+            - strong [ref=f7e69]: Dr. Vikram Shah
+            - text: · Cardiology · ₹1200
+        - generic [ref=f7e70]:
+          - generic [ref=f7e71]:
+            - heading "1. Choose a date" [level=2] [ref=f7e72]
+            - radiogroup "Appointment date" [ref=f7e73]:
+              - radio "Sun 22 Nov" [checked] [ref=f7e74] [cursor=pointer]:
+                - generic [ref=f7e75]: Sun
+                - generic [ref=f7e76]: "22"
+                - generic [ref=f7e77]: Nov
+              - radio "Mon 23 Nov" [ref=f7e78] [cursor=pointer]:
+                - generic [ref=f7e79]: Mon
+                - generic [ref=f7e80]: "23"
+                - generic [ref=f7e81]: Nov
+              - radio "Tue 24 Nov" [ref=f7e82] [cursor=pointer]:
+                - generic [ref=f7e83]: Tue
+                - generic [ref=f7e84]: "24"
+                - generic [ref=f7e85]: Nov
+              - radio "Wed 25 Nov" [ref=f7e86] [cursor=pointer]:
+                - generic [ref=f7e87]: Wed
+                - generic [ref=f7e88]: "25"
+                - generic [ref=f7e89]: Nov
+              - radio "Thu 26 Nov" [ref=f7e90] [cursor=pointer]:
+                - generic [ref=f7e91]: Thu
+                - generic [ref=f7e92]: "26"
+                - generic [ref=f7e93]: Nov
+              - radio "Fri 27 Nov" [ref=f7e94] [cursor=pointer]:
+                - generic [ref=f7e95]: Fri
+                - generic [ref=f7e96]: "27"
+                - generic [ref=f7e97]: Nov
+          - generic [ref=f7e98]:
+            - heading "2. Pick a time slot" [level=2] [ref=f7e99]
+            - radiogroup "Appointment time" [ref=f7e100]:
+              - radio "09:00" [ref=f7e101] [cursor=pointer]
+              - radio "09:30" [ref=f7e102] [cursor=pointer]
+              - radio "10:00" [ref=f7e103] [cursor=pointer]
+              - radio "11:30" [ref=f7e104] [cursor=pointer]
+              - radio "15:00" [ref=f7e105] [cursor=pointer]
+              - radio "15:30" [ref=f7e106] [cursor=pointer]
+              - radio "16:00" [ref=f7e107] [cursor=pointer]
+              - radio "17:00" [ref=f7e108] [cursor=pointer]
+              - radio "17:30" [ref=f7e109] [cursor=pointer]
+              - radio "18:30" [ref=f7e110] [cursor=pointer]
+          - generic [ref=f7e111]:
+            - heading "3. Patient details" [level=2] [ref=f7e112]
+            - generic [ref=f7e113]:
+              - generic [ref=f7e114]:
+                - generic [ref=f7e115]: Patient name
+                - textbox "Patient name" [ref=f7e116]
+              - generic [ref=f7e117]:
+                - generic [ref=f7e118]: Phone number
+                - textbox "Phone number" [ref=f7e119]:
+                  - /placeholder: 10-digit mobile number
+              - generic [ref=f7e120]:
+                - generic [ref=f7e121]: Reason for visit
+                - combobox "Reason for visit" [ref=f7e122]:
+                  - option "General consultation" [selected]
+                  - option "Follow-up visit"
+                  - option "Lab report review"
+                  - option "Second opinion"
+                  - option "New symptom / concern"
+              - generic [ref=f7e123]:
+                - generic [ref=f7e124]: Notes for the doctor (optional)
+                - textbox "Notes for the doctor (optional)" [ref=f7e125]:
+                  - /placeholder: Symptoms, duration, current medications…
+          - generic [ref=f7e126]:
+            - generic [ref=f7e127]: Select a date and time to continue
+            - button "Confirm booking →" [ref=f7e128] [cursor=pointer]
+  - contentinfo [ref=f7e129]:
+    - generic [ref=f7e130]:
+      - generic [ref=f7e131]:
+        - strong [ref=f7e132]:
+          - generic [aria-hidden] [ref=f7e133]: 🧪
+          - generic [ref=f7e134]:
+            - generic [ref=f7e135]: Test Automation
+            - generic [ref=f7e136]: Playground
+        - link "Powered by QATools" [ref=f7e137] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=f7e138]: Powered by
+          - strong [ref=f7e139]: QATools
+          - generic [aria-hidden] [ref=f7e140]: ↗
+        - paragraph [ref=f7e141]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=f7e142]:
+          - link "Playwright ↗" [ref=f7e143] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=f7e144]:
+        - generic [ref=f7e145]:
+          - heading "Practice" [level=4] [ref=f7e146]
+          - link "QA Shop" [ref=f7e147] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=f7e148] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=f7e149] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=f7e150] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=f7e151] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=f7e152] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=f7e153]:
+          - heading "Learn" [level=4] [ref=f7e154]
+          - link "Learn Playwright" [ref=f7e155] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=f7e156] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=f7e157] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=f7e158] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=f7e159] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=f7e160]:
+          - heading "Site" [level=4] [ref=f7e161]
+          - link "About" [ref=f7e162] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=f7e163] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=f7e164]:
+      - generic [ref=f7e165]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=f7e166]:
+        - button "Restart tour" [ref=f7e167] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=f7e168] [cursor=pointer]
+  - button "Open feedback panel" [ref=f7e169] [cursor=pointer]
+  - dialog "👋 Welcome to the Test Automation Playground" [ref=f7e172]:
+    - generic [ref=f7e173]:
+      - heading "👋 Welcome to the Test Automation Playground" [level=3] [ref=f7e180]
+      - generic [ref=f7e181]:
+        - paragraph [ref=f7e182]:
+          - text: A safe, dummy storefront built so QA testers can practice writing robust UI locators and API mocks.
+          - strong [ref=f7e183]: Nothing here is real
+          - text: — no payments, no signups, no data leaves your browser.
+        - paragraph [ref=f7e184]: 5 short steps to show you around.
+      - generic [ref=f7e185]:
+        - button "Skip tour" [ref=f7e186] [cursor=pointer]
+        - button "Next ›" [ref=f7e188] [cursor=pointer]

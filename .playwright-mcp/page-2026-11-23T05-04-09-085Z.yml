@@ -1,0 +1,214 @@
+- generic [ref=f1e3]:
+  - region "Site updates" [ref=f1e4]:
+    - generic [ref=f1e6]:
+      - generic [ref=f1e7]:
+        - generic [aria-hidden] [ref=f1e8]: 🧭
+        - text: New
+      - generic [ref=f1e9]:
+        - strong [ref=f1e10]: Guided practice
+        - text: — build your first Playwright test live on the shop, one step at a time.
+      - button "Start →" [ref=f1e11] [cursor=pointer]
+    - group "Choose announcement" [ref=f1e12]:
+      - button "Show announcement 1 of 2" [ref=f1e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=f1e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=f1e15] [cursor=pointer]: ✕
+  - banner [ref=f1e16]:
+    - generic [ref=f1e17]:
+      - link "Test Automation Playground" [ref=f1e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f1e19]: 🧪
+        - generic [ref=f1e20]:
+          - generic [ref=f1e21]: Test Automation
+          - generic [ref=f1e22]: Playground
+      - navigation "Primary navigation" [ref=f1e23]:
+        - button "QABank" [ref=f1e25] [cursor=pointer]
+        - link "Widgets" [ref=f1e30] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=f1e34] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=f1e38] [cursor=pointer]
+        - link "Join Pro" [ref=f1e45] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2Fbank
+          - generic [aria-hidden] [ref=f1e46]: ⭐
+          - text: Join Pro
+  - main [ref=f1e47]:
+    - generic [ref=f1e48]:
+      - note [ref=f1e49]:
+        - generic [ref=f1e50]: Preview
+        - generic [ref=f1e52]:
+          - text: You're trying a glimpse of the Banking app. The
+          - strong [ref=f1e53]: full app
+          - text: — payees, cards, statements and more — is coming soon in the
+          - strong [ref=f1e54]: paid tier
+          - text: .
+        - link "About Pro →" [ref=f1e55] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=bank_preview&back=%2Fbank
+      - generic [ref=f1e56]:
+        - link "QABank" [ref=f1e57] [cursor=pointer]:
+          - /url: /bank
+          - generic [aria-hidden] [ref=f1e58]: 🏦
+        - navigation "Bank navigation" [ref=f1e60]:
+          - link "Overview" [ref=f1e61] [cursor=pointer]:
+            - /url: /bank
+          - link "Transactions" [ref=f1e62] [cursor=pointer]:
+            - /url: /bank/transactions
+          - link "Transfer" [ref=f1e63] [cursor=pointer]:
+            - /url: /bank/transfer
+          - link "Payees" [ref=f1e64] [cursor=pointer]:
+            - /url: /bank/payees
+            - text: Payees 🔒
+          - link "Cards" [ref=f1e65] [cursor=pointer]:
+            - /url: /bank/cards
+            - text: Cards 🔒
+        - generic [ref=f1e66]:
+          - generic [aria-hidden] [ref=f1e67]: AV
+          - generic [ref=f1e68]: Asha Verma
+          - button "Reset data" [ref=f1e69] [cursor=pointer]
+      - generic [ref=f1e70]:
+        - generic [ref=f1e71]:
+          - generic [ref=f1e72]:
+            - heading "Good morning, Asha" [level=1] [ref=f1e73]
+            - paragraph [ref=f1e74]: Customer ID QAB-20481
+          - button "🙈 Hide balances" [ref=f1e75] [cursor=pointer]
+        - region "Total balance" [ref=f1e76]:
+          - generic [ref=f1e78]: ₹1,73,640.50
+        - region "Accounts" [ref=f1e79]:
+          - article [ref=f1e80]:
+            - generic [ref=f1e81]:
+              - generic [ref=f1e82]: Savings Account
+              - generic [ref=f1e83]: Savings
+            - generic [ref=f1e84]: ₹1,25,430.50
+            - generic [ref=f1e85]: XXXX XXXX 4821
+          - article [ref=f1e86]:
+            - generic [ref=f1e87]:
+              - generic [ref=f1e88]: Current Account
+              - generic [ref=f1e89]: Current
+            - generic [ref=f1e90]: ₹48,210.00
+            - generic [ref=f1e91]: XXXX XXXX 9037
+        - region "Quick actions" [ref=f1e92]:
+          - link "Transfer money" [ref=f1e93] [cursor=pointer]:
+            - /url: /bank/transfer
+            - generic [aria-hidden] [ref=f1e94]: ↔
+            - text: Transfer money
+          - link "All transactions" [ref=f1e95] [cursor=pointer]:
+            - /url: /bank/transactions
+            - generic [aria-hidden] [ref=f1e96]: 📋
+            - text: All transactions
+          - link [ref=f1e97] [cursor=pointer]:
+            - /url: /bank/payees
+            - generic [aria-hidden] [ref=f1e98]: 👥
+            - text: Payees
+            - generic [ref=f1e99]:
+              - generic [aria-hidden] [ref=f1e100]: 🔒
+              - text: Pro · soon
+          - link [ref=f1e101] [cursor=pointer]:
+            - /url: /bank/statements
+            - generic [aria-hidden] [ref=f1e102]: 📄
+            - text: Statements
+            - generic [ref=f1e103]:
+              - generic [aria-hidden] [ref=f1e104]: 🔒
+              - text: Pro · soon
+        - region "Recent transactions" [ref=f1e105]:
+          - generic [ref=f1e106]:
+            - heading "Recent transactions" [level=2] [ref=f1e107]
+            - link "See all →" [ref=f1e108] [cursor=pointer]:
+              - /url: /bank/transactions
+          - list [ref=f1e109]:
+            - listitem [ref=f1e110]:
+              - generic [aria-hidden] [ref=f1e111]: ↑
+              - generic [ref=f1e112]:
+                - generic [ref=f1e113]: Swiggy order
+                - generic [ref=f1e114]: 23 Nov · Food · Savings
+              - generic [ref=f1e115]: −₹412.00
+            - listitem [ref=f1e116]:
+              - generic [aria-hidden] [ref=f1e117]: ↓
+              - generic [ref=f1e118]:
+                - generic [ref=f1e119]: Salary — Acme Software
+                - generic [ref=f1e120]: 22 Nov · Salary · Savings
+              - generic [ref=f1e121]: +₹85,000.00
+            - listitem [ref=f1e122]:
+              - generic [aria-hidden] [ref=f1e123]: ↑
+              - generic [ref=f1e124]:
+                - generic [ref=f1e125]: AWS invoice
+                - generic [ref=f1e126]: 22 Nov · Bills · Current
+              - generic [ref=f1e127]: −₹3,240.75
+            - listitem [ref=f1e128]:
+              - generic [aria-hidden] [ref=f1e129]: ↑
+              - generic [ref=f1e130]:
+                - generic [ref=f1e131]: Electricity bill
+                - generic [ref=f1e132]: 21 Nov · Bills · Savings
+              - generic [ref=f1e133]: −₹1,860.00
+            - listitem [ref=f1e134]:
+              - generic [aria-hidden] [ref=f1e135]: ↑
+              - generic [ref=f1e136]:
+                - generic [ref=f1e137]: Amazon purchase
+                - generic [ref=f1e138]: 20 Nov · Shopping · Savings
+              - generic [ref=f1e139]: −₹2,499.00
+  - contentinfo [ref=f1e140]:
+    - generic [ref=f1e141]:
+      - generic [ref=f1e142]:
+        - strong [ref=f1e143]:
+          - generic [aria-hidden] [ref=f1e144]: 🧪
+          - generic [ref=f1e145]:
+            - generic [ref=f1e146]: Test Automation
+            - generic [ref=f1e147]: Playground
+        - link "Powered by QATools" [ref=f1e148] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=f1e149]: Powered by
+          - strong [ref=f1e150]: QATools
+          - generic [aria-hidden] [ref=f1e151]: ↗
+        - paragraph [ref=f1e152]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=f1e153]:
+          - link "Playwright ↗" [ref=f1e154] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=f1e155]:
+        - generic [ref=f1e156]:
+          - heading "Practice" [level=4] [ref=f1e157]
+          - link "QA Shop" [ref=f1e158] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=f1e159] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=f1e160] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=f1e161] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=f1e162] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=f1e163] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=f1e164]:
+          - heading "Learn" [level=4] [ref=f1e165]
+          - link "Learn Playwright" [ref=f1e166] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=f1e167] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=f1e168] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=f1e169] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=f1e170] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=f1e171]:
+          - heading "Site" [level=4] [ref=f1e172]
+          - link "About" [ref=f1e173] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=f1e174] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=f1e175]:
+      - generic [ref=f1e176]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=f1e177]:
+        - button "Restart tour" [ref=f1e178] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=f1e179] [cursor=pointer]
+  - button "Open feedback panel" [ref=f1e180] [cursor=pointer]
+  - dialog "👋 Welcome to the Test Automation Playground" [ref=f1e183]:
+    - generic [ref=f1e184]:
+      - heading "👋 Welcome to the Test Automation Playground" [level=3] [ref=f1e191]
+      - generic [ref=f1e192]:
+        - paragraph [ref=f1e193]:
+          - text: A safe, dummy storefront built so QA testers can practice writing robust UI locators and API mocks.
+          - strong [ref=f1e194]: Nothing here is real
+          - text: — no payments, no signups, no data leaves your browser.
+        - paragraph [ref=f1e195]: 5 short steps to show you around.
+      - generic [ref=f1e196]:
+        - button "Skip tour" [ref=f1e197] [cursor=pointer]
+        - button "Next ›" [ref=f1e199] [cursor=pointer]

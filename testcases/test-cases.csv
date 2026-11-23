@@ -1,0 +1,153 @@
+Test Case ID,Module,Title,Spec File,Steps,Expected Result,Actual Result,Status,Bug ID
+TC-HOME-001,Home and Global Navigation,Initial load,tests/home.spec.ts,"1. Navigate to https://playground.qatools.dev/.
+2. Dismiss the welcome tour and update banner.
+3. Monitor console and network.","Step 1: The Test Automation Playground title, update banner, header, hero, practice-app cards, footer, and welcome tour are displayed.
+Step 2: Both overlays disappear without overlapping core page content.
+Step 3: No unexpected JavaScript or resource failure occurs.",,Not Executed,N/A
+TC-HOME-002,Home and Global Navigation,Hero Shop navigation,tests/home.spec.ts,1. Click Open the Shop app.,Step 1: The page opens /qashop/products.,,Not Executed,N/A
+TC-HOME-003,Home and Global Navigation,Hero Clinic navigation,tests/home.spec.ts,1. Click Open the Clinic app.,Step 1: The page opens /clinic.,,Not Executed,N/A
+TC-HOME-004,Home and Global Navigation,Hero Bank navigation,tests/home.spec.ts,1. Click Banking app Preview.,Step 1: The page opens /bank.,,Not Executed,N/A
+TC-HOME-005,Home and Global Navigation,Widgets navigation,tests/home.spec.ts,1. Open Widgets from the hero or primary navigation.,Step 1: The page opens /widgets.,,Not Executed,N/A
+TC-HOME-006,Home and Global Navigation,Practice-card navigation,tests/home.spec.ts,"1. Open Shop, Clinic, Bank, Widgets, API, Locator Game, Learn, Patterns, Challenges, Test cases, and Quiz cards.","Step 1: Every card opens the matching destination.
+Step 1: External Pro links open only when explicitly selected.",,Not Executed,N/A
+TC-HOME-007,Home and Global Navigation,Banner and feedback,tests/home.spec.ts,"1. Switch announcements, dismiss the banner, open feedback, submit/close, and reopen.","Step 1: Announcement selection and dismissal work.
+Step 1: Feedback validation and close/reopen behavior remain stable.",,Not Executed,N/A
+TC-HOME-008,Home and Global Navigation,Mobile keyboard and history,tests/home.spec.ts,"1. Test 390x844, 768x1024, and 1280x800; use Tab, Enter, Space, Back, and Forward.","Step 1: There is no horizontal overflow.
+Step 1: Focus is visible and navigation history restores routes.",,Not Executed,N/A
+TC-SHOP-001,QA Shop Catalog,Catalog load,tests/shop.spec.ts,1. Navigate to /qashop/products.,"Step 1: Search, category, maximum price, sort, stock checkbox, product cards, and pagination are visible.
+Step 1: Running Shoes is marked out of stock.",,Not Executed,N/A
+TC-SHOP-002,QA Shop Catalog,Search valid/blank/no-match,tests/shop.spec.ts,"1. Search for Wireless, blank/whitespace, and xyz-no-product.","Step 1: Matching cards appear for valid text.
+Step 1: Blank/whitespace is neutral.
+Step 1: No-match has a clear empty state or no cards.",,Not Executed,N/A
+TC-SHOP-003,QA Shop Catalog,Search edge input,tests/shop.spec.ts,"1. Enter !@#$, 500 characters, and HTML-like text.","Step 1: No script executes.
+Step 1: No markup is interpreted.
+Step 1: The UI remains usable.",,Not Executed,N/A
+TC-SHOP-004,QA Shop Catalog,Category links and filter,tests/shop.spec.ts,"1. Open All, Electronics, Clothing, Books, Home, Toys, and Sports.","Step 1: Every route filters to only the selected category.
+Step 1: All restores the complete catalog.",,Not Executed,N/A
+TC-SHOP-005,QA Shop Catalog,Price and sort,tests/shop.spec.ts,"1. Set price to 0, a middle value, and 200; choose every sort.","Step 1: Price boundaries and sorting are deterministic.
+Step 1: Combined filters remain consistent.",,Not Executed,N/A
+TC-SHOP-006,QA Shop Catalog,In-stock filter,tests/shop.spec.ts,1. Enable and disable In stock only.,"Step 1: Out-of-stock products are excluded while enabled.
+Step 1: They return when disabled.",,Not Executed,N/A
+TC-SHOP-007,QA Shop Catalog,Pagination,tests/shop.spec.ts,"1. Use Prev, Next, page numbers, refresh, and browser history.","Step 1: Prev/Next boundaries, active page, and direct URL state are correct.",,Not Executed,N/A
+TC-SHOP-008,QA Shop Catalog,Product card controls,tests/shop.spec.ts,"1. Activate image, name, Details, wishlist heart, and Add to cart separately.","Step 1: Image/name/details open the matching product.
+Step 1: Wishlist/cart state updates independently.",,Not Executed,N/A
+TC-SHOP-009,QA Shop Catalog,Out-of-stock add,tests/shop.spec.ts,1. Attempt Add to cart for Running Shoes.,Step 1: The control remains disabled and no cart item is added.,,Not Executed,N/A
+TC-SHOP-010,QA Shop Catalog,Duplicate cart add,tests/shop.spec.ts,1. Add one in-stock product twice.,"Step 1: One line with quantity 2 or quantity 2 is represented.
+Step 1: Totals and header count remain correct.",,Not Executed,N/A
+TC-SHOP-011,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Product detail load,tests/shop.spec.ts,1. Open /qashop/products/1.,"Step 1: Name, brand, category, rating, stock, description, Add to cart, Share, Wishlist, breadcrumbs, and recommendations are visible.",,Not Executed,N/A
+TC-SHOP-012,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Breadcrumb and recommendation navigation,tests/shop.spec.ts,"1. Click Home, All products, Electronics, and You may also like items.",Step 1: Each destination matches its label and selected product/category.,,Not Executed,N/A
+TC-SHOP-013,"QA Shop Product, Wishlist, Cart, Login, and Checkout","Share, wishlist, and cart on detail",tests/shop.spec.ts,"1. Use Share, Add to wishlist, and Add to cart.","Step 1: Share gives observable copy/share behavior.
+Step 1: Wishlist and cart states update correctly.",,Not Executed,N/A
+TC-SHOP-014,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Invalid product URL,tests/shop.spec.ts,"1. Open unknown IDs, alphabetic IDs, and out-of-range URLs.",Step 1: A safe not-found state is shown with no stale product or crash.,,Not Executed,N/A
+TC-SHOP-015,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Wishlist add/remove/persistence,tests/shop.spec.ts,"1. Add a wishlist item, open /qashop/wishlist, remove it, refresh, and reset demo data.","Step 1: Count/heart/list state synchronize.
+Step 1: Reset restores empty state.",,Not Executed,N/A
+TC-SHOP-016,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Empty cart,tests/shop.spec.ts,1. Reset demo data and open /qashop/cart.,"Step 1: Your cart is empty and browse guidance are shown.
+Step 1: Header count is zero.",,Not Executed,N/A
+TC-SHOP-017,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Cart quantity and totals,tests/shop.spec.ts,"1. Add at least two units and update quantity, subtotal, and totals.","Step 1: Line and overall totals match unit price × quantity.
+Step 1: Zero is removed or blocked with clear feedback.",,Not Executed,N/A
+TC-SHOP-018,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Cart quantity edge values,tests/shop.spec.ts,"1. Enter negative, zero, blank, 1, and 9999.","Step 1: Invalid values are rejected or normalized.
+Step 1: No NaN, overflow, or negative line total occurs.",,Not Executed,N/A
+TC-SHOP-019,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Cart remove/persistence,tests/shop.spec.ts,"1. Remove an item, refresh, navigate away/back.","Step 1: Item count, line items, and totals update.
+Step 1: Cart state remains synchronized and persists as designed.",,Not Executed,N/A
+TC-SHOP-020,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Login required and format,tests/shop.spec.ts,1. Submit blanks and invalid email/password combinations.,"Step 1: Required/format/credential errors appear.
+Step 1: No authenticated state is created.",,Not Executed,N/A
+TC-SHOP-021,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Demo login and Remember me,tests/shop.spec.ts,"1. Use Fill demo login, Remember me, Sign in, refresh, and reset.","Step 1: Valid demo login succeeds.
+Step 1: Session behavior matches the selected Remember me state.
+Step 1: Reset clears demo session.",,Not Executed,N/A
+TC-SHOP-022,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Checkout happy and invalid,tests/shop.spec.ts,1. Complete valid checkout and submit blank/invalid email/phone/postal fields.,"Step 1: Valid dummy checkout completes safely.
+Step 1: Invalid submissions stop progression and preserve valid values.",,Not Executed,N/A
+TC-SHOP-023,"QA Shop Product, Wishlist, Cart, Login, and Checkout",Shop responsive and keyboard,tests/shop.spec.ts,"1. Test 390x844, 768x1024, and 1280x800; use keyboard navigation.","Step 1: No horizontal overflow occurs.
+Step 1: Controls have names and visible logical focus.
+Step 1: Disabled stock controls cannot activate.",,Not Executed,N/A
+TC-CLINIC-001,Clinic,Clinic Home load,tests/clinic.spec.ts,1. Open /clinic.,"Step 1: Navigation, hero CTAs, eight specialties, and top-rated doctor cards are visible.",,Not Executed,N/A
+TC-CLINIC-002,Clinic,Specialty navigation,tests/clinic.spec.ts,"1. Click General Physician, Cardiology, Dermatology, Pediatrics, Neurology, Orthopedics, Dentistry, and Psychiatry.",Step 1: Each route opens /clinic/doctors with matching specialty filtering.,,Not Executed,N/A
+TC-CLINIC-003,Clinic,Top doctor cards,tests/clinic.spec.ts,1. Open every top-rated doctor card.,"Step 1: Each profile shows matching doctor name, specialty, rating, experience, and fee.",,Not Executed,N/A
+TC-CLINIC-004,Clinic,Doctor list load,tests/clinic.spec.ts,1. Open /clinic/doctors.,"Step 1: Ten doctors, search, sort, All, and specialty tabs are visible.",,Not Executed,N/A
+TC-CLINIC-005,Clinic,Doctor search,tests/clinic.spec.ts,"1. Search valid names/specialties, no-match text, spaces, special characters, HTML text, and 500 characters.","Step 1: Valid matches are correct.
+Step 1: No-match/invalid input remains safe.
+Step 1: No script executes.",,Not Executed,N/A
+TC-CLINIC-006,Clinic,Doctor tabs and sort,tests/clinic.spec.ts,"1. Select All and every specialty; choose Top rated, experience, and fee sorts.","Step 1: Tab results and sort order are correct.
+Step 1: All restores ten doctors.",,Not Executed,N/A
+TC-CLINIC-007,Clinic,Profile and booking links,tests/clinic.spec.ts,1. Open profiles and Book links for every doctor.,Step 1: Each profile and booking route corresponds to the selected doctor.,,Not Executed,N/A
+TC-CLINIC-008,Clinic,Date/time selection,tests/clinic.spec.ts,1. Open /clinic/book/d-vikram-shah and select each date and time.,"Step 1: Only one date and slot are selected.
+Step 1: Confirm remains gated until both are selected.",,Not Executed,N/A
+TC-CLINIC-009,Clinic,Patient name validation,tests/clinic.spec.ts,"1. Submit blank, whitespace, digits, symbols, one character, and 500-character names.","Step 1: Invalid values are blocked.
+Step 1: Valid letters/spaces/apostrophe/hyphenated names pass.",,Not Executed,N/A
+TC-CLINIC-010,Clinic,Phone validation,tests/clinic.spec.ts,"1. Try blank, alphabetic, 9-digit, 10-digit, 11-digit, and padded phone values.",Step 1: Only the valid 10-digit format passes.,,Not Executed,N/A
+TC-CLINIC-011,Clinic,Reason and notes boundaries,tests/clinic.spec.ts,"1. Select every reason and test blank, valid, HTML-like, and 1000-character notes.","Step 1: Reason carries to confirmation.
+Step 1: Notes are optional, bounded, and escaped.",,Not Executed,N/A
+TC-CLINIC-012,Clinic,Booking happy path and duplicate,tests/clinic.spec.ts,1. Create a valid appointment and double-submit Confirm booking.,"Step 1: Exactly one appointment is created.
+Step 1: My appointments shows the matching details.",,Not Executed,N/A
+TC-CLINIC-013,Clinic,Missing date/time,tests/clinic.spec.ts,"1. Submit neither, date only, or time only.",Step 1: Submission is blocked with clear guidance.,,Not Executed,N/A
+TC-CLINIC-014,Clinic,Empty/cancel/persistence,tests/clinic.spec.ts,"1. Reset, open My appointments, create/cancel, refresh, and navigate away/back.","Step 1: Empty counts are 0/0/0.
+Step 1: Cancel updates status/counts.
+Step 1: Data persists until reset.",,Not Executed,N/A
+TC-CLINIC-015,Clinic,"Invalid URLs, responsive, and keyboard",tests/clinic.spec.ts,1. Open unknown profiles/bookings and test mobile/tablet/desktop with keyboard.,"Step 1: Unknown routes show safe not-found behavior.
+Step 1: No overflow occurs.
+Step 1: Controls have accessible names and visible focus.",,Not Executed,N/A
+TC-BANK-001,Bank Preview,Dashboard load,tests/bank.spec.ts,1. Open /bank.,"Step 1: Customer, total balance, account cards, hide toggle, quick actions, and recent transactions are visible.",,Not Executed,N/A
+TC-BANK-002,Bank Preview,Hide/show balances,tests/bank.spec.ts,1. Toggle Hide balances repeatedly.,Step 1: Balances alternate consistently between visible and masked.,,Not Executed,N/A
+TC-BANK-003,Bank Preview,Transactions load/search/filter,tests/bank.spec.ts,1. Open /bank/transactions and search; select All/Money in/Money out and both accounts.,"Step 1: The initial 18 transactions and filtered results match criteria.
+Step 1: No-match is clear.",,Not Executed,N/A
+TC-BANK-004,Bank Preview,Transfer form load,tests/bank.spec.ts,1. Open /bank/transfer.,"Step 1: From, To, Amount, Note, and Continue are visible.
+Step 1: External payee is disabled.",,Not Executed,N/A
+TC-BANK-005,Bank Preview,Transfer amount boundaries,tests/bank.spec.ts,"1. Try blank, zero, negative, 100001, insufficient balance, and 100000.","Step 1: Invalid values are rejected.
+Step 1: Only valid limit/balance values pass.
+Step 1: Invalid submission does not alter balances.",,Not Executed,N/A
+TC-BANK-006,Bank Preview,Transfer note boundaries,tests/bank.spec.ts,1. Enter 40 and 41 characters.,"Step 1: 40 passes with 40/40 counter.
+Step 1: 41 is blocked or constrained.",,Not Executed,N/A
+TC-BANK-007,Bank Preview,Transfer happy path,tests/bank.spec.ts,1. Complete valid Savings-to-Current transfer and confirm.,"Step 1: Review and confirmation match the entered transfer.
+Step 1: Dummy balances/history update.",,Not Executed,N/A
+TC-BANK-008,Bank Preview,Reset and responsive,tests/bank.spec.ts,1. Reset data and test desktop/tablet/mobile layouts.,"Step 1: Demo state resets.
+Step 1: No overflow or inaccessible controls occur.",,Not Executed,N/A
+TC-WIDGET-001,Widgets Playground,Page load,tests/widgets.spec.ts,1. Open /widgets.,Step 1: Widgets Playground and all documented widget sections are reachable.,,Not Executed,N/A
+TC-WIDGET-002,Widgets Playground,Text/selection input,tests/widgets.spec.ts,"1. Test blank, whitespace, special, HTML-like, and long text; use checkboxes/radio/select/multiselect.","Step 1: Valid output updates.
+Step 1: Invalid output follows widget rules.
+Step 1: Markup is escaped.",,Not Executed,N/A
+TC-WIDGET-003,Widgets Playground,Date/time/range/color,tests/widgets.spec.ts,1. Enter valid and invalid values and test range boundaries.,Step 1: Valid values reflect; invalid/out-of-range values are blocked or reported.,,Not Executed,N/A
+TC-WIDGET-004,Widgets Playground,Alerts/dialogs/tabs/accordion,tests/widgets.spec.ts,"1. Trigger alert, confirm, toast, modal, tabs, and accordion.","Step 1: Actions, focus, dismissal, and selected state are correct.
+Step 1: Only one transient state remains active.",,Not Executed,N/A
+TC-WIDGET-005,Widgets Playground,Tooltip/context menu/hover,tests/widgets.spec.ts,1. Hover/focus tooltip targets and right-click context menu.,"Step 1: Tooltip appears and leaves on exit/blur.
+Step 1: Context menu closes outside/Escape and each action works.",,Not Executed,N/A
+TC-WIDGET-006,Widgets Playground,Table filter/sort/pagination,tests/widgets.spec.ts,"1. Filter, sort, paginate, combine criteria, and enter no-match/long/special text.","Step 1: Rows match criteria.
+Step 1: Empty and edge states remain stable.",,Not Executed,N/A
+TC-WIDGET-007,Widgets Playground,Upload/drop/drag,tests/widgets.spec.ts,"1. Upload/drop valid, invalid, empty, multiple, duplicate files and drag items.","Step 1: Valid data updates once.
+Step 1: Invalid data is rejected with clear feedback.
+Step 1: No stale or duplicate state remains.",,Not Executed,N/A
+TC-WIDGET-008,Widgets Playground,Carousel/loading/iframe,tests/widgets.spec.ts,"1. Use carousel, progress, iframe, lazy, infinite, and async controls.","Step 1: Loading/completion/boundary states are observable and clear.
+Step 1: Repeated actions do not duplicate content.",,Not Executed,N/A
+TC-WIDGET-009,Widgets Playground,Error/retry/optimistic/download/clipboard,tests/widgets.spec.ts,"1. Trigger error/retry/revert, download, and clipboard allowed/denied.","Step 1: Failure/recovery is correct.
+Step 1: Download/clipboard results or fallback feedback are clear.",,Not Executed,N/A
+TC-WIDGET-010,Widgets Playground,Keyboard/scroll/Shadow DOM,tests/widgets.spec.ts,"1. Use keyboard, scroll region, iframe, and Shadow DOM controls.","Step 1: Controls remain reachable and isolated behavior works.
+Step 1: Reset restores initial state.",,Not Executed,N/A
+TC-WIDGET-011,Widgets Playground,Responsive/accessibility,tests/widgets.spec.ts,"1. Test 390x844, 768x1024, 1280x800 and Tab through controls.","Step 1: No overflow/overlap occurs.
+Step 1: Names and visible focus are present.",,Not Executed,N/A
+TC-API-001,API Playground,GET list success,tests/api.spec.ts,1. Run GET — list (success).,"Step 1: Status is 200 and timing is displayed.
+Step 1: Response contains a products array with 5 items.",,Not Executed,N/A
+TC-API-002,API Playground,GET single/slow/404/500,tests/api.spec.ts,1. Run every Read endpoint.,"Step 1: Single, slow, 404, and 500 states match their documented behavior.",,Not Executed,N/A
+TC-API-003,API Playground,Pagination and sequential requests,tests/api.spec.ts,1. Use Next/Prev and Run both.,"Step 1: skip changes correctly.
+Step 1: The dependent request uses the first response ID.
+Step 1: No stale status remains.",,Not Executed,N/A
+TC-API-004,API Playground,POST/PUT/PATCH/DELETE,tests/api.spec.ts,1. Run each write method.,"Step 1: Method, endpoint, body, and response status match the scenario.",,Not Executed,N/A
+TC-API-005,API Playground,Headers/auth,tests/api.spec.ts,1. Run Authorization-header and custom-header requests.,Step 1: Outgoing bearer/custom headers are visible in DevTools and request details.,,Not Executed,N/A
+TC-API-006,API Playground,Mock cards/tabs/login/search,tests/api.spec.ts,1. Switch framework tabs and load mock user/product/login/debounced search scenarios.,"Step 1: Framework code changes appropriately.
+Step 1: Mock success/empty/error/loading behavior is predictable.
+Step 1: Debounce waits 300 ms.",,Not Executed,N/A
+TC-API-007,API Playground,API network/console/responsive,tests/api.spec.ts,1. Repeat requests while monitoring console/network and responsive widths.,"Step 1: Only intentional 404/500 calls fail.
+Step 1: No unexpected exceptions or failed assets occur.
+Step 1: Controls remain usable.",,Not Executed,N/A
+TC-CROSS-001,Secondary and Cross-App Pages,Locator Game,tests/cross.spec.ts,1. Open /game and complete a representative locator challenge.,"Step 1: The challenge, target, input/action, success, and reset/error behavior match the visible rules.",,Not Executed,N/A
+TC-CROSS-002,Secondary and Cross-App Pages,Learn Playwright,tests/cross.spec.ts,1. Open /learn/playwright and follow available lessons/navigation.,"Step 1: Every lesson and next/previous link opens its documented content.
+Step 1: Direct and back navigation remain stable.",,Not Executed,N/A
+TC-CROSS-003,Secondary and Cross-App Pages,Patterns,tests/cross.spec.ts,1. Open /patterns and inspect all pattern entries.,Step 1: Code examples and navigation are visible and copy actions work if present.,,Not Executed,N/A
+TC-CROSS-004,Secondary and Cross-App Pages,Challenges,tests/cross.spec.ts,1. Open /challenges and activate available tasks.,Step 1: Task instructions and success verification render and update predictably.,,Not Executed,N/A
+TC-CROSS-005,Secondary and Cross-App Pages,Test cases,tests/cross.spec.ts,1. Open /test-cases and inspect available test-case content.,Step 1: Examples load and navigation/filtering or copy actions work without error.,,Not Executed,N/A
+TC-CROSS-006,Secondary and Cross-App Pages,Quiz,tests/cross.spec.ts,"1. Open /quiz, answer valid/invalid/blank, complete, reset/retry.","Step 1: Answers record, submit validates, score/result is correct, and retry/reset works.",,Not Executed,N/A
+TC-CROSS-007,Secondary and Cross-App Pages,About and Terms,tests/cross.spec.ts,1. Open /about and /terms.,Step 1: Both pages load complete static content and footer navigation returns without broken routes.,,Not Executed,N/A
+TC-CROSS-008,Secondary and Cross-App Pages,Invalid routes/history/reset,tests/cross.spec.ts,1. Open unknown URLs and use Back/Forward/Refresh; reset demo data.,"Step 1: Invalid routes show a safe not-found state.
+Step 1: History and refresh remain consistent.
+Step 1: Reset restores relevant demo state.",,Not Executed,N/A
+TC-CROSS-009,Secondary and Cross-App Pages,Console/network sign-off,tests/cross.spec.ts,1. Traverse every major module while monitoring console and network.,"Step 1: No unexpected uncaught exception, failed asset, or 4xx/5xx occurs outside deliberate API scenarios.
+Step 1: All intentional 404/500 states are clearly identified.",,Not Executed,N/A
+TC-CROSS-010,Secondary and Cross-App Pages,Viewport matrix,tests/cross.spec.ts,"1. Test 390x844, 844x390, 768x1024, and 1280x800 across major modules.","Step 1: Navigation/actions remain reachable.
+Step 1: No horizontal overflow or modal overlap occurs.",,Not Executed,N/A

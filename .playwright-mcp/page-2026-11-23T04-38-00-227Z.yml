@@ -1,0 +1,357 @@
+- generic [ref=f6e3]:
+  - region "Site updates" [ref=f6e4]:
+    - generic [ref=f6e6]:
+      - generic [ref=f6e7]:
+        - generic [aria-hidden] [ref=f6e8]: 🧭
+        - text: New
+      - generic [ref=f6e9]:
+        - strong [ref=f6e10]: Guided practice
+        - text: — build your first Playwright test live on the shop, one step at a time.
+      - button "Start →" [ref=f6e11] [cursor=pointer]
+    - group "Choose announcement" [ref=f6e12]:
+      - button "Show announcement 1 of 2" [ref=f6e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=f6e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=f6e15] [cursor=pointer]: ✕
+  - banner [ref=f6e16]:
+    - generic [ref=f6e17]:
+      - link "Test Automation Playground" [ref=f6e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f6e19]: 🧪
+        - generic [ref=f6e20]:
+          - generic [ref=f6e21]: Test Automation
+          - generic [ref=f6e22]: Playground
+      - navigation "Primary navigation" [ref=f6e23]:
+        - button "Clinic" [ref=f6e25] [cursor=pointer]
+        - link "Widgets" [ref=f6e30] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=f6e34] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=f6e38] [cursor=pointer]
+        - link "Join Pro" [ref=f6e45] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2Fclinic%2Fdoctors
+          - generic [aria-hidden] [ref=f6e46]: ⭐
+          - text: Join Pro
+  - main [ref=f6e47]:
+    - generic [ref=f6e48]:
+      - generic [ref=f6e49]:
+        - link "MediBookclinic" [ref=f6e50] [cursor=pointer]:
+          - /url: /clinic
+          - generic [aria-hidden] [ref=f6e51]: 🩺
+        - navigation "Clinic navigation" [ref=f6e53]:
+          - link "Home" [ref=f6e54] [cursor=pointer]:
+            - /url: /clinic
+          - link "Find a doctor" [ref=f6e55] [cursor=pointer]:
+            - /url: /clinic/doctors
+          - link "My appointments" [ref=f6e56] [cursor=pointer]:
+            - /url: /clinic/appointments
+      - generic [ref=f6e57]:
+        - navigation "Breadcrumb" [ref=f6e58]:
+          - link "Home" [ref=f6e59] [cursor=pointer]:
+            - /url: /clinic
+          - generic [aria-hidden] [ref=f6e60]: ›
+          - generic [ref=f6e61]: Find a doctor
+        - generic [ref=f6e62]:
+          - heading "Find a doctor" [level=1] [ref=f6e63]
+          - paragraph [ref=f6e64]: 10 doctors
+        - generic [ref=f6e65]:
+          - searchbox "Search doctors" [ref=f6e66]
+          - combobox "Sort doctors by" [ref=f6e67]:
+            - option "Top rated" [selected]
+            - option "Most experienced"
+            - 'option "Fee: low to high"'
+            - 'option "Fee: high to low"'
+        - tablist "Specialty filter" [ref=f6e68]:
+          - tab "All" [selected] [ref=f6e69] [cursor=pointer]
+          - tab "General Physician" [ref=f6e70] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f6e71]: 🩺
+            - text: General Physician
+          - tab "Cardiology" [ref=f6e72] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f6e73]: ❤️
+            - text: Cardiology
+          - tab "Dermatology" [ref=f6e74] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f6e75]: 🧴
+            - text: Dermatology
+          - tab "Pediatrics" [ref=f6e76] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f6e77]: 🧸
+            - text: Pediatrics
+          - tab "Neurology" [ref=f6e78] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f6e79]: 🧠
+            - text: Neurology
+          - tab "Orthopedics" [ref=f6e80] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f6e81]: 🦴
+            - text: Orthopedics
+          - tab "Dentistry" [ref=f6e82] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f6e83]: 🦷
+            - text: Dentistry
+          - tab "Psychiatry" [ref=f6e84] [cursor=pointer]:
+            - generic [aria-hidden] [ref=f6e85]: 💬
+            - text: Psychiatry
+        - generic [ref=f6e86]:
+          - article [ref=f6e87]:
+            - img "Dr. Vikram Shah portrait" [ref=f6e88]
+            - generic [ref=f6e89]:
+              - heading "Dr. Vikram Shah" [level=3] [ref=f6e90]
+              - generic [ref=f6e91]: Cardiology
+              - generic [ref=f6e92]: MBBS, MD, DM (Cardiology)
+              - generic [ref=f6e93]: 📍 HeartCare Specialty Hospital, Mumbai
+              - generic [ref=f6e94]:
+                - generic [ref=f6e95]: ⭐ 4.9 (528)
+                - generic [ref=f6e96]: 18 yrs experience
+                - generic [ref=f6e97]: English, Hindi, Gujarati
+            - generic [ref=f6e98]:
+              - generic [ref=f6e99]:
+                - generic [ref=f6e100]: Consultation
+                - generic [ref=f6e101]: ₹1200
+              - link "View profile" [ref=f6e102] [cursor=pointer]:
+                - /url: /clinic/doctors/d-vikram-shah
+              - link "Book appointment with Dr. Vikram Shah" [ref=f6e103] [cursor=pointer]:
+                - /url: /clinic/book/d-vikram-shah
+                - text: Book →
+          - article [ref=f6e104]:
+            - img "Dr. Arjun Kapoor portrait" [ref=f6e105]
+            - generic [ref=f6e106]:
+              - heading "Dr. Arjun Kapoor" [level=3] [ref=f6e107]
+              - generic [ref=f6e108]: Pediatrics
+              - generic [ref=f6e109]: MBBS, MD (Pediatrics), IAP Fellow
+              - generic [ref=f6e110]: 📍 LittleSteps Children's Clinic, Delhi
+              - generic [ref=f6e111]:
+                - generic [ref=f6e112]: ⭐ 4.9 (612)
+                - generic [ref=f6e113]: 14 yrs experience
+                - generic [ref=f6e114]: English, Hindi, Punjabi
+            - generic [ref=f6e115]:
+              - generic [ref=f6e116]:
+                - generic [ref=f6e117]: Consultation
+                - generic [ref=f6e118]: ₹700
+              - link "View profile" [ref=f6e119] [cursor=pointer]:
+                - /url: /clinic/doctors/d-arjun-kapoor
+              - link "Book appointment with Dr. Arjun Kapoor" [ref=f6e120] [cursor=pointer]:
+                - /url: /clinic/book/d-arjun-kapoor
+                - text: Book →
+          - article [ref=f6e121]:
+            - img "Dr. Farhan Ahmed portrait" [ref=f6e122]
+            - generic [ref=f6e123]:
+              - heading "Dr. Farhan Ahmed" [level=3] [ref=f6e124]
+              - generic [ref=f6e125]: Psychiatry
+              - generic [ref=f6e126]: MBBS, MD (Psychiatry)
+              - generic [ref=f6e127]: 📍 MindSpace Wellness, Bengaluru
+              - generic [ref=f6e128]:
+                - generic [ref=f6e129]: ⭐ 4.9 (423)
+                - generic [ref=f6e130]: 10 yrs experience
+                - generic [ref=f6e131]: English, Urdu, Hindi
+            - generic [ref=f6e132]:
+              - generic [ref=f6e133]:
+                - generic [ref=f6e134]: Consultation
+                - generic [ref=f6e135]: ₹1100
+              - link "View profile" [ref=f6e136] [cursor=pointer]:
+                - /url: /clinic/doctors/d-farhan-ahmed
+              - link "Book appointment with Dr. Farhan Ahmed" [ref=f6e137] [cursor=pointer]:
+                - /url: /clinic/book/d-farhan-ahmed
+                - text: Book →
+          - article [ref=f6e138]:
+            - img "Dr. Anita Rao portrait" [ref=f6e139]
+            - generic [ref=f6e140]:
+              - heading "Dr. Anita Rao" [level=3] [ref=f6e141]
+              - generic [ref=f6e142]: General Physician
+              - generic [ref=f6e143]: MBBS, MD (Internal Medicine)
+              - generic [ref=f6e144]: 📍 Wellness Family Clinic, Bengaluru
+              - generic [ref=f6e145]:
+                - generic [ref=f6e146]: ⭐ 4.8 (342)
+                - generic [ref=f6e147]: 12 yrs experience
+                - generic [ref=f6e148]: English, Hindi, Tamil
+            - generic [ref=f6e149]:
+              - generic [ref=f6e150]:
+                - generic [ref=f6e151]: Consultation
+                - generic [ref=f6e152]: ₹600
+              - link "View profile" [ref=f6e153] [cursor=pointer]:
+                - /url: /clinic/doctors/d-anita-rao
+              - link "Book appointment with Dr. Anita Rao" [ref=f6e154] [cursor=pointer]:
+                - /url: /clinic/book/d-anita-rao
+                - text: Book →
+          - article [ref=f6e155]:
+            - img "Dr. Meera Iyer portrait" [ref=f6e156]
+            - generic [ref=f6e157]:
+              - heading "Dr. Meera Iyer" [level=3] [ref=f6e158]
+              - generic [ref=f6e159]: Neurology
+              - generic [ref=f6e160]: MBBS, MD, DM (Neurology)
+              - generic [ref=f6e161]: 📍 NeuroPlus, Chennai
+              - generic [ref=f6e162]:
+                - generic [ref=f6e163]: ⭐ 4.8 (287)
+                - generic [ref=f6e164]: 16 yrs experience
+                - generic [ref=f6e165]: English, Tamil, Hindi
+            - generic [ref=f6e166]:
+              - generic [ref=f6e167]:
+                - generic [ref=f6e168]: Consultation
+                - generic [ref=f6e169]: ₹1500
+              - link "View profile" [ref=f6e170] [cursor=pointer]:
+                - /url: /clinic/doctors/d-meera-iyer
+              - link "Book appointment with Dr. Meera Iyer" [ref=f6e171] [cursor=pointer]:
+                - /url: /clinic/book/d-meera-iyer
+                - text: Book →
+          - article [ref=f6e172]:
+            - img "Dr. Sanjana Reddy portrait" [ref=f6e173]
+            - generic [ref=f6e174]:
+              - heading "Dr. Sanjana Reddy" [level=3] [ref=f6e175]
+              - generic [ref=f6e176]: Dentistry
+              - generic [ref=f6e177]: BDS, MDS (Prosthodontics)
+              - generic [ref=f6e178]: 📍 BrightSmile Dental, Hyderabad
+              - generic [ref=f6e179]:
+                - generic [ref=f6e180]: ⭐ 4.8 (356)
+                - generic [ref=f6e181]: 8 yrs experience
+                - generic [ref=f6e182]: English, Telugu, Hindi
+            - generic [ref=f6e183]:
+              - generic [ref=f6e184]:
+                - generic [ref=f6e185]: Consultation
+                - generic [ref=f6e186]: ₹500
+              - link "View profile" [ref=f6e187] [cursor=pointer]:
+                - /url: /clinic/doctors/d-sanjana-reddy
+              - link "Book appointment with Dr. Sanjana Reddy" [ref=f6e188] [cursor=pointer]:
+                - /url: /clinic/book/d-sanjana-reddy
+                - text: Book →
+          - article [ref=f6e189]:
+            - img "Dr. Neha Bansal portrait" [ref=f6e190]
+            - generic [ref=f6e191]:
+              - heading "Dr. Neha Bansal" [level=3] [ref=f6e192]
+              - generic [ref=f6e193]: Dermatology
+              - generic [ref=f6e194]: MBBS, MD (Dermatology, Venereology, Leprosy)
+              - generic [ref=f6e195]: 📍 Dermique Skin & Hair, Gurugram
+              - generic [ref=f6e196]:
+                - generic [ref=f6e197]: ⭐ 4.8 (502)
+                - generic [ref=f6e198]: 12 yrs experience
+                - generic [ref=f6e199]: English, Hindi
+            - generic [ref=f6e200]:
+              - generic [ref=f6e201]:
+                - generic [ref=f6e202]: Consultation
+                - generic [ref=f6e203]: ₹950
+              - link "View profile" [ref=f6e204] [cursor=pointer]:
+                - /url: /clinic/doctors/d-neha-bansal
+              - link "Book appointment with Dr. Neha Bansal" [ref=f6e205] [cursor=pointer]:
+                - /url: /clinic/book/d-neha-bansal
+                - text: Book →
+          - article [ref=f6e206]:
+            - img "Dr. Priya Menon portrait" [ref=f6e207]
+            - generic [ref=f6e208]:
+              - heading "Dr. Priya Menon" [level=3] [ref=f6e209]
+              - generic [ref=f6e210]: Dermatology
+              - generic [ref=f6e211]: MBBS, MD (Dermatology)
+              - generic [ref=f6e212]: 📍 SkinSense Clinic, Kochi
+              - generic [ref=f6e213]:
+                - generic [ref=f6e214]: ⭐ 4.7 (411)
+                - generic [ref=f6e215]: 9 yrs experience
+                - generic [ref=f6e216]: English, Malayalam, Hindi
+            - generic [ref=f6e217]:
+              - generic [ref=f6e218]:
+                - generic [ref=f6e219]: Consultation
+                - generic [ref=f6e220]: ₹800
+              - link "View profile" [ref=f6e221] [cursor=pointer]:
+                - /url: /clinic/doctors/d-priya-menon
+              - link "Book appointment with Dr. Priya Menon" [ref=f6e222] [cursor=pointer]:
+                - /url: /clinic/book/d-priya-menon
+                - text: Book →
+          - article [ref=f6e223]:
+            - img "Dr. Rahul Pillai portrait" [ref=f6e224]
+            - generic [ref=f6e225]:
+              - heading "Dr. Rahul Pillai" [level=3] [ref=f6e226]
+              - generic [ref=f6e227]: Orthopedics
+              - generic [ref=f6e228]: MBBS, MS (Orthopedics)
+              - generic [ref=f6e229]: 📍 BoneAndJoint Center, Pune
+              - generic [ref=f6e230]:
+                - generic [ref=f6e231]: ⭐ 4.6 (198)
+                - generic [ref=f6e232]: 11 yrs experience
+                - generic [ref=f6e233]: English, Malayalam, Hindi
+            - generic [ref=f6e234]:
+              - generic [ref=f6e235]:
+                - generic [ref=f6e236]: Consultation
+                - generic [ref=f6e237]: ₹900
+              - link "View profile" [ref=f6e238] [cursor=pointer]:
+                - /url: /clinic/doctors/d-rahul-pillai
+              - link "Book appointment with Dr. Rahul Pillai" [ref=f6e239] [cursor=pointer]:
+                - /url: /clinic/book/d-rahul-pillai
+                - text: Book →
+          - article [ref=f6e240]:
+            - img "Dr. Leela George portrait" [ref=f6e241]
+            - generic [ref=f6e242]:
+              - heading "Dr. Leela George" [level=3] [ref=f6e243]
+              - generic [ref=f6e244]: General Physician
+              - generic [ref=f6e245]: MBBS, DNB (Family Medicine)
+              - generic [ref=f6e246]: 📍 CareFirst Clinic, Thiruvananthapuram
+              - generic [ref=f6e247]:
+                - generic [ref=f6e248]: ⭐ 4.6 (174)
+                - generic [ref=f6e249]: 7 yrs experience
+                - generic [ref=f6e250]: English, Malayalam
+            - generic [ref=f6e251]:
+              - generic [ref=f6e252]:
+                - generic [ref=f6e253]: Consultation
+                - generic [ref=f6e254]: ₹450
+              - link "View profile" [ref=f6e255] [cursor=pointer]:
+                - /url: /clinic/doctors/d-leela-george
+              - link "Book appointment with Dr. Leela George" [ref=f6e256] [cursor=pointer]:
+                - /url: /clinic/book/d-leela-george
+                - text: Book →
+  - contentinfo [ref=f6e257]:
+    - generic [ref=f6e258]:
+      - generic [ref=f6e259]:
+        - strong [ref=f6e260]:
+          - generic [aria-hidden] [ref=f6e261]: 🧪
+          - generic [ref=f6e262]:
+            - generic [ref=f6e263]: Test Automation
+            - generic [ref=f6e264]: Playground
+        - link "Powered by QATools" [ref=f6e265] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=f6e266]: Powered by
+          - strong [ref=f6e267]: QATools
+          - generic [aria-hidden] [ref=f6e268]: ↗
+        - paragraph [ref=f6e269]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=f6e270]:
+          - link "Playwright ↗" [ref=f6e271] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=f6e272]:
+        - generic [ref=f6e273]:
+          - heading "Practice" [level=4] [ref=f6e274]
+          - link "QA Shop" [ref=f6e275] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=f6e276] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=f6e277] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=f6e278] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=f6e279] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=f6e280] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=f6e281]:
+          - heading "Learn" [level=4] [ref=f6e282]
+          - link "Learn Playwright" [ref=f6e283] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=f6e284] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=f6e285] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=f6e286] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=f6e287] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=f6e288]:
+          - heading "Site" [level=4] [ref=f6e289]
+          - link "About" [ref=f6e290] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=f6e291] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=f6e292]:
+      - generic [ref=f6e293]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=f6e294]:
+        - button "Restart tour" [ref=f6e295] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=f6e296] [cursor=pointer]
+  - button "Open feedback panel" [ref=f6e297] [cursor=pointer]
+  - dialog "👋 Welcome to the Test Automation Playground" [ref=f6e300]:
+    - generic [ref=f6e301]:
+      - heading "👋 Welcome to the Test Automation Playground" [level=3] [ref=f6e308]
+      - generic [ref=f6e309]:
+        - paragraph [ref=f6e310]:
+          - text: A safe, dummy storefront built so QA testers can practice writing robust UI locators and API mocks.
+          - strong [ref=f6e311]: Nothing here is real
+          - text: — no payments, no signups, no data leaves your browser.
+        - paragraph [ref=f6e312]: 5 short steps to show you around.
+      - generic [ref=f6e313]:
+        - button "Skip tour" [ref=f6e314] [cursor=pointer]
+        - button "Next ›" [ref=f6e316] [cursor=pointer]

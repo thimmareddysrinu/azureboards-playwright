@@ -1,0 +1,299 @@
+- generic [ref=f1e3]:
+  - region "Site updates" [ref=f1e4]:
+    - generic [ref=f1e6]:
+      - generic [ref=f1e7]:
+        - generic [aria-hidden] [ref=f1e8]: 🧭
+        - text: New
+      - generic [ref=f1e9]:
+        - strong [ref=f1e10]: Guided practice
+        - text: — build your first Playwright test live on the shop, one step at a time.
+      - button "Start →" [ref=f1e11] [cursor=pointer]
+    - group "Choose announcement" [ref=f1e12]:
+      - button "Show announcement 1 of 2" [ref=f1e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=f1e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=f1e15] [cursor=pointer]: ✕
+  - banner [ref=f1e16]:
+    - generic [ref=f1e17]:
+      - link "Test Automation Playground" [ref=f1e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f1e19]: 🧪
+        - generic [ref=f1e20]:
+          - generic [ref=f1e21]: Test Automation
+          - generic [ref=f1e22]: Playground
+      - navigation "Primary navigation" [ref=f1e23]:
+        - button "QA Shop" [ref=f1e25] [cursor=pointer]
+        - link "Widgets" [ref=f1e30] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=f1e34] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=f1e38] [cursor=pointer]
+        - link "Join Pro" [ref=f1e45] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2Fqashop%2Fproducts
+          - generic [aria-hidden] [ref=f1e46]: ⭐
+          - text: Join Pro
+  - main [ref=f1e47]:
+    - generic [ref=f1e48]:
+      - generic [ref=f1e49]:
+        - link "QA Shopstore" [ref=f1e50] [cursor=pointer]:
+          - /url: /qashop/products
+          - generic [aria-hidden] [ref=f1e51]: 🛒
+        - generic [ref=f1e53]:
+          - link "Wishlist with 0 items" [ref=f1e54] [cursor=pointer]:
+            - /url: /qashop/wishlist
+            - generic [aria-hidden] [ref=f1e55]: ♡
+            - generic [ref=f1e56]: Wishlist
+          - link "Cart with 0 items" [ref=f1e57] [cursor=pointer]:
+            - /url: /qashop/cart
+            - generic [aria-hidden] [ref=f1e58]: 🛒
+            - generic [ref=f1e59]: Cart
+          - link "Sign in" [ref=f1e61] [cursor=pointer]:
+            - /url: /qashop/login
+            - text: 👤Sign in
+      - navigation "Shop categories" [ref=f1e62]:
+        - link "All products" [ref=f1e63] [cursor=pointer]:
+          - /url: /qashop/products
+        - link "Electronics" [ref=f1e64] [cursor=pointer]:
+          - /url: /qashop/products?category=Electronics
+          - generic [aria-hidden] [ref=f1e65]: 📱
+          - text: Electronics
+        - link "Clothing" [ref=f1e66] [cursor=pointer]:
+          - /url: /qashop/products?category=Clothing
+          - generic [aria-hidden] [ref=f1e67]: 👕
+          - text: Clothing
+        - link "Books" [ref=f1e68] [cursor=pointer]:
+          - /url: /qashop/products?category=Books
+          - generic [aria-hidden] [ref=f1e69]: 📚
+          - text: Books
+        - link "Home" [ref=f1e70] [cursor=pointer]:
+          - /url: /qashop/products?category=Home
+          - generic [aria-hidden] [ref=f1e71]: 🏠
+          - text: Home
+        - link "Toys" [ref=f1e72] [cursor=pointer]:
+          - /url: /qashop/products?category=Toys
+          - generic [aria-hidden] [ref=f1e73]: 🧸
+          - text: Toys
+        - link "Sports" [ref=f1e74] [cursor=pointer]:
+          - /url: /qashop/products?category=Sports
+          - generic [aria-hidden] [ref=f1e75]: ⚽
+          - text: Sports
+    - generic [ref=f1e76]:
+      - heading "Products" [level=1] [ref=f1e77]
+      - generic [ref=f1e78]:
+        - generic [ref=f1e79]:
+          - generic [ref=f1e80]: Search
+          - searchbox "Search" [ref=f1e81]
+        - generic [ref=f1e82]:
+          - generic [ref=f1e83]: Category
+          - combobox "Category" [ref=f1e84]:
+            - option "All" [selected]
+            - option "Electronics"
+            - option "Clothing"
+            - option "Books"
+            - option "Home"
+            - option "Toys"
+            - option "Sports"
+        - generic [ref=f1e85]:
+          - generic [ref=f1e86]: "Max price: $200"
+          - 'slider "Max price: $200" [ref=f1e87]': "200"
+        - generic [ref=f1e88]:
+          - generic [ref=f1e89]: Sort by
+          - combobox "Sort by" [ref=f1e90]:
+            - option "Most popular" [selected]
+            - 'option "Price: low to high"'
+            - 'option "Price: high to low"'
+            - option "Highest rated"
+            - option "Name (A–Z)"
+        - generic [ref=f1e91]:
+          - checkbox "In stock only" [ref=f1e92]
+          - text: In stock only
+      - paragraph [ref=f1e93]: Showing 6 of 12 products
+      - generic [ref=f1e94]:
+        - article [ref=f1e95]:
+          - link "View Wireless Headphones" [ref=f1e96] [cursor=pointer]:
+            - /url: /qashop/products/1
+            - img "Wireless Headphones" [ref=f1e97]
+          - button "Add Wireless Headphones to wishlist" [ref=f1e98] [cursor=pointer]: ♡
+          - generic [ref=f1e99]:
+            - heading [level=3] [ref=f1e100]:
+              - link "Wireless Headphones" [ref=f1e101] [cursor=pointer]:
+                - /url: /qashop/products/1
+            - generic [ref=f1e102]: Electronics
+            - 'img "Rating: 4.5 out of 5" [ref=f1e104]':
+              - text: ★★★★☆
+              - generic [ref=f1e105]: (4.5)
+            - generic [ref=f1e106]: $79.99
+            - generic [ref=f1e107]:
+              - button "Add Wireless Headphones to cart" [ref=f1e108] [cursor=pointer]: Add to cart
+              - link "View details for Wireless Headphones" [ref=f1e109] [cursor=pointer]:
+                - /url: /qashop/products/1
+                - text: Details
+        - article [ref=f1e110]:
+          - link "View Smart Watch" [ref=f1e111] [cursor=pointer]:
+            - /url: /qashop/products/2
+            - img "Smart Watch" [ref=f1e112]
+          - button "Add Smart Watch to wishlist" [ref=f1e113] [cursor=pointer]: ♡
+          - generic [ref=f1e114]:
+            - heading [level=3] [ref=f1e115]:
+              - link "Smart Watch" [ref=f1e116] [cursor=pointer]:
+                - /url: /qashop/products/2
+            - generic [ref=f1e117]: Electronics
+            - 'img "Rating: 4.2 out of 5" [ref=f1e119]':
+              - text: ★★★★☆
+              - generic [ref=f1e120]: (4.2)
+            - generic [ref=f1e121]: $149.00
+            - generic [ref=f1e122]:
+              - button "Add Smart Watch to cart" [ref=f1e123] [cursor=pointer]: Add to cart
+              - link "View details for Smart Watch" [ref=f1e124] [cursor=pointer]:
+                - /url: /qashop/products/2
+                - text: Details
+        - article [ref=f1e125]:
+          - link "View Cotton T-Shirt" [ref=f1e126] [cursor=pointer]:
+            - /url: /qashop/products/3
+            - img "Cotton T-Shirt" [ref=f1e127]
+          - button "Add Cotton T-Shirt to wishlist" [ref=f1e128] [cursor=pointer]: ♡
+          - generic [ref=f1e129]:
+            - heading [level=3] [ref=f1e130]:
+              - link "Cotton T-Shirt" [ref=f1e131] [cursor=pointer]:
+                - /url: /qashop/products/3
+            - generic [ref=f1e132]: Clothing
+            - 'img "Rating: 4 out of 5" [ref=f1e134]':
+              - text: ★★★★☆
+              - generic [ref=f1e135]: (4.0)
+            - generic [ref=f1e136]: $19.99
+            - generic [ref=f1e137]:
+              - button "Add Cotton T-Shirt to cart" [ref=f1e138] [cursor=pointer]: Add to cart
+              - link "View details for Cotton T-Shirt" [ref=f1e139] [cursor=pointer]:
+                - /url: /qashop/products/3
+                - text: Details
+        - article [ref=f1e140]:
+          - link "View Running Shoes" [ref=f1e141] [cursor=pointer]:
+            - /url: /qashop/products/4
+            - img "Running Shoes" [ref=f1e142]
+          - button "Add Running Shoes to wishlist" [ref=f1e143] [cursor=pointer]: ♡
+          - generic [ref=f1e144]:
+            - heading [level=3] [ref=f1e145]:
+              - link "Running Shoes" [ref=f1e146] [cursor=pointer]:
+                - /url: /qashop/products/4
+            - generic [ref=f1e147]:
+              - generic [ref=f1e148]: Sports
+              - generic [ref=f1e149]: Out of stock
+            - 'img "Rating: 4.6 out of 5" [ref=f1e150]':
+              - text: ★★★★☆
+              - generic [ref=f1e151]: (4.6)
+            - generic [ref=f1e152]: $89.50
+            - generic [ref=f1e153]:
+              - button "Add Running Shoes to cart" [disabled] [ref=f1e154]: Add to cart
+              - link "View details for Running Shoes" [ref=f1e155] [cursor=pointer]:
+                - /url: /qashop/products/4
+                - text: Details
+        - article [ref=f1e156]:
+          - link "View Coffee Maker" [ref=f1e157] [cursor=pointer]:
+            - /url: /qashop/products/5
+            - img "Coffee Maker" [ref=f1e158]
+          - button "Add Coffee Maker to wishlist" [ref=f1e159] [cursor=pointer]: ♡
+          - generic [ref=f1e160]:
+            - heading [level=3] [ref=f1e161]:
+              - link "Coffee Maker" [ref=f1e162] [cursor=pointer]:
+                - /url: /qashop/products/5
+            - generic [ref=f1e163]: Home
+            - 'img "Rating: 4.3 out of 5" [ref=f1e165]':
+              - text: ★★★★☆
+              - generic [ref=f1e166]: (4.3)
+            - generic [ref=f1e167]: $59.00
+            - generic [ref=f1e168]:
+              - button "Add Coffee Maker to cart" [ref=f1e169] [cursor=pointer]: Add to cart
+              - link "View details for Coffee Maker" [ref=f1e170] [cursor=pointer]:
+                - /url: /qashop/products/5
+                - text: Details
+        - article [ref=f1e171]:
+          - link "View Hardcover Novel" [ref=f1e172] [cursor=pointer]:
+            - /url: /qashop/products/6
+            - img "Hardcover Novel" [ref=f1e173]
+          - button "Add Hardcover Novel to wishlist" [ref=f1e174] [cursor=pointer]: ♡
+          - generic [ref=f1e175]:
+            - heading [level=3] [ref=f1e176]:
+              - link "Hardcover Novel" [ref=f1e177] [cursor=pointer]:
+                - /url: /qashop/products/6
+            - generic [ref=f1e178]: Books
+            - 'img "Rating: 4.8 out of 5" [ref=f1e180]':
+              - text: ★★★★☆
+              - generic [ref=f1e181]: (4.8)
+            - generic [ref=f1e182]: $14.99
+            - generic [ref=f1e183]:
+              - button "Add Hardcover Novel to cart" [ref=f1e184] [cursor=pointer]: Add to cart
+              - link "View details for Hardcover Novel" [ref=f1e185] [cursor=pointer]:
+                - /url: /qashop/products/6
+                - text: Details
+      - navigation "Pagination" [ref=f1e186]:
+        - button "‹ Prev" [disabled] [ref=f1e187]
+        - button "1" [ref=f1e188] [cursor=pointer]
+        - button "2" [ref=f1e189] [cursor=pointer]
+        - button "Next ›" [ref=f1e190] [cursor=pointer]
+  - contentinfo [ref=f1e191]:
+    - generic [ref=f1e192]:
+      - generic [ref=f1e193]:
+        - strong [ref=f1e194]:
+          - generic [aria-hidden] [ref=f1e195]: 🧪
+          - generic [ref=f1e196]:
+            - generic [ref=f1e197]: Test Automation
+            - generic [ref=f1e198]: Playground
+        - link "Powered by QATools" [ref=f1e199] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=f1e200]: Powered by
+          - strong [ref=f1e201]: QATools
+          - generic [aria-hidden] [ref=f1e202]: ↗
+        - paragraph [ref=f1e203]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=f1e204]:
+          - link "Playwright ↗" [ref=f1e205] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=f1e206]:
+        - generic [ref=f1e207]:
+          - heading "Practice" [level=4] [ref=f1e208]
+          - link "QA Shop" [ref=f1e209] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=f1e210] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=f1e211] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=f1e212] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=f1e213] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=f1e214] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=f1e215]:
+          - heading "Learn" [level=4] [ref=f1e216]
+          - link "Learn Playwright" [ref=f1e217] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=f1e218] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=f1e219] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=f1e220] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=f1e221] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=f1e222]:
+          - heading "Site" [level=4] [ref=f1e223]
+          - link "About" [ref=f1e224] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=f1e225] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=f1e226]:
+      - generic [ref=f1e227]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=f1e228]:
+        - button "Restart tour" [ref=f1e229] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=f1e230] [cursor=pointer]
+  - button "Open feedback panel" [ref=f1e231] [cursor=pointer]
+  - dialog "👋 Welcome to the Test Automation Playground" [ref=f1e234]:
+    - generic [ref=f1e235]:
+      - heading "👋 Welcome to the Test Automation Playground" [level=3] [ref=f1e242]
+      - generic [ref=f1e243]:
+        - paragraph [ref=f1e244]:
+          - text: A safe, dummy storefront built so QA testers can practice writing robust UI locators and API mocks.
+          - strong [ref=f1e245]: Nothing here is real
+          - text: — no payments, no signups, no data leaves your browser.
+        - paragraph [ref=f1e246]: 5 short steps to show you around.
+      - generic [ref=f1e247]:
+        - button "Skip tour" [ref=f1e248] [cursor=pointer]
+        - button "Next ›" [ref=f1e250] [cursor=pointer]

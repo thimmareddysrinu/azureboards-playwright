@@ -1,0 +1,129 @@
+- generic [ref=f8e3]:
+  - region "Site updates" [ref=f8e4]:
+    - generic [ref=f8e6]:
+      - generic [ref=f8e7]:
+        - generic [aria-hidden] [ref=f8e8]: 🧭
+        - text: New
+      - generic [ref=f8e9]:
+        - strong [ref=f8e10]: Guided practice
+        - text: — build your first Playwright test live on the shop, one step at a time.
+      - button "Start →" [ref=f8e11] [cursor=pointer]
+    - group "Choose announcement" [ref=f8e12]:
+      - button "Show announcement 1 of 2" [ref=f8e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=f8e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=f8e15] [cursor=pointer]: ✕
+  - banner [ref=f8e16]:
+    - generic [ref=f8e17]:
+      - link "Test Automation Playground" [ref=f8e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f8e19]: 🧪
+        - generic [ref=f8e20]:
+          - generic [ref=f8e21]: Test Automation
+          - generic [ref=f8e22]: Playground
+      - navigation "Primary navigation" [ref=f8e23]:
+        - button "Clinic" [ref=f8e25] [cursor=pointer]
+        - link "Widgets" [ref=f8e30] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=f8e34] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=f8e38] [cursor=pointer]
+        - link "Join Pro" [ref=f8e45] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2Fclinic%2Fappointments
+          - generic [aria-hidden] [ref=f8e46]: ⭐
+          - text: Join Pro
+  - main [ref=f8e47]:
+    - generic [ref=f8e48]:
+      - generic [ref=f8e49]:
+        - link "MediBookclinic" [ref=f8e50] [cursor=pointer]:
+          - /url: /clinic
+          - generic [aria-hidden] [ref=f8e51]: 🩺
+        - navigation "Clinic navigation" [ref=f8e53]:
+          - link "Home" [ref=f8e54] [cursor=pointer]:
+            - /url: /clinic
+          - link "Find a doctor" [ref=f8e55] [cursor=pointer]:
+            - /url: /clinic/doctors
+          - link "My appointments" [ref=f8e56] [cursor=pointer]:
+            - /url: /clinic/appointments
+      - generic [ref=f8e57]:
+        - navigation "Breadcrumb" [ref=f8e58]:
+          - link "Home" [ref=f8e59] [cursor=pointer]:
+            - /url: /clinic
+          - generic [aria-hidden] [ref=f8e60]: ›
+          - generic [ref=f8e61]: My appointments
+        - generic [ref=f8e62]:
+          - heading "My appointments" [level=1] [ref=f8e63]
+          - paragraph [ref=f8e64]: 0 upcoming · 0 cancelled · 0 total
+        - generic [ref=f8e65]:
+          - generic [aria-hidden] [ref=f8e66]: 📅
+          - heading "No appointments yet" [level=3] [ref=f8e67]
+          - paragraph [ref=f8e68]: When you book a doctor, you'll see your visits here.
+          - link "Find a doctor →" [ref=f8e69] [cursor=pointer]:
+            - /url: /clinic/doctors
+  - contentinfo [ref=f8e70]:
+    - generic [ref=f8e71]:
+      - generic [ref=f8e72]:
+        - strong [ref=f8e73]:
+          - generic [aria-hidden] [ref=f8e74]: 🧪
+          - generic [ref=f8e75]:
+            - generic [ref=f8e76]: Test Automation
+            - generic [ref=f8e77]: Playground
+        - link "Powered by QATools" [ref=f8e78] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=f8e79]: Powered by
+          - strong [ref=f8e80]: QATools
+          - generic [aria-hidden] [ref=f8e81]: ↗
+        - paragraph [ref=f8e82]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=f8e83]:
+          - link "Playwright ↗" [ref=f8e84] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=f8e85]:
+        - generic [ref=f8e86]:
+          - heading "Practice" [level=4] [ref=f8e87]
+          - link "QA Shop" [ref=f8e88] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=f8e89] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=f8e90] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=f8e91] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=f8e92] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=f8e93] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=f8e94]:
+          - heading "Learn" [level=4] [ref=f8e95]
+          - link "Learn Playwright" [ref=f8e96] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=f8e97] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=f8e98] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=f8e99] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=f8e100] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=f8e101]:
+          - heading "Site" [level=4] [ref=f8e102]
+          - link "About" [ref=f8e103] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=f8e104] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=f8e105]:
+      - generic [ref=f8e106]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=f8e107]:
+        - button "Restart tour" [ref=f8e108] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=f8e109] [cursor=pointer]
+  - button "Open feedback panel" [ref=f8e110] [cursor=pointer]
+  - dialog "👋 Welcome to the Test Automation Playground" [ref=f8e113]:
+    - generic [ref=f8e114]:
+      - heading "👋 Welcome to the Test Automation Playground" [level=3] [ref=f8e121]
+      - generic [ref=f8e122]:
+        - paragraph [ref=f8e123]:
+          - text: A safe, dummy storefront built so QA testers can practice writing robust UI locators and API mocks.
+          - strong [ref=f8e124]: Nothing here is real
+          - text: — no payments, no signups, no data leaves your browser.
+        - paragraph [ref=f8e125]: 5 short steps to show you around.
+      - generic [ref=f8e126]:
+        - button "Skip tour" [ref=f8e127] [cursor=pointer]
+        - button "Next ›" [ref=f8e129] [cursor=pointer]
