@@ -4,12 +4,7 @@ pipeline {
     environment {
         CI = 'true'
        
-         BASE_URL = credentials('app-base-url')
-        APP_CREDS = credentials('app-login-creds')
         
-        // Match these names to your Playwright process.env.* variables
-        APP_EMAIL = "${APP_CREDS_USR}"
-        APP_PASSWORD = "${APP_CREDS_PSW}"
     
     }
 
@@ -28,7 +23,18 @@ pipeline {
         
 
         stage('Playwright Tests') {
-            steps { bat 'npx playwright test' }
+          steps {
+                withCredentials([
+                    string(credentialsId: 'app-base-url', variable: 'BASE_URL'),
+                    usernamePassword(
+                        credentialsId: 'app-login-creds',
+                        usernameVariable: 'APP_EMAIL',
+                        passwordVariable: 'APP_PASSWORD'
+                    )
+                ]) {
+                    bat 'npx playwright test'
+                }
+            }
         }
     }
 
