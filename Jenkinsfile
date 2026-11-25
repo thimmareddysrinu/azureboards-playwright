@@ -3,6 +3,9 @@ pipeline {
 
     environment {
         CI = 'true'
+       
+        BASE_URL = 'https://your-application-url.com'
+    
     }
 
     stages {
