@@ -1,0 +1,381 @@
+- generic [ref=f4e3]:
+  - region "Site updates" [ref=f4e4]:
+    - generic [ref=f4e6]:
+      - generic [ref=f4e7]:
+        - generic [aria-hidden] [ref=f4e8]: 🧭
+        - text: New
+      - generic [ref=f4e9]:
+        - strong [ref=f4e10]: Guided practice
+        - text: — build your first Playwright test live on the shop, one step at a time.
+      - button "Start →" [ref=f4e11] [cursor=pointer]
+    - group "Choose announcement" [ref=f4e12]:
+      - button "Show announcement 1 of 2" [ref=f4e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=f4e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=f4e15] [cursor=pointer]: ✕
+  - banner [ref=f4e16]:
+    - generic [ref=f4e17]:
+      - link "Test Automation Playground" [ref=f4e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f4e19]: 🧪
+        - generic [ref=f4e20]:
+          - generic [ref=f4e21]: Test Automation
+          - generic [ref=f4e22]: Playground
+      - navigation "Primary navigation" [ref=f4e23]:
+        - button "Practice apps" [ref=f4e25] [cursor=pointer]
+        - link "Widgets" [ref=f4e34] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=f4e38] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=f4e42] [cursor=pointer]
+        - link "Join Pro" [ref=f4e49] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2Fapi-playground
+          - generic [aria-hidden] [ref=f4e50]: ⭐
+          - text: Join Pro
+  - main [ref=f4e51]:
+    - generic [ref=f4e52]:
+      - heading "API Playground" [level=1] [ref=f4e53]
+      - generic [ref=f4e54]:
+        - paragraph [ref=f4e55]:
+          - text: Every button below fires a
+          - strong [ref=f4e56]: real HTTP request
+          - text: to a free public API. Open DevTools
+          - strong [ref=f4e57]: Network
+          - text: "to inspect them, or intercept them in your tests:"
+        - list [ref=f4e58]:
+          - listitem [ref=f4e59]:
+            - strong [ref=f4e60]: Playwright
+            - text: ":"
+            - code [ref=f4e61]: await page.waitForResponse(r => r.url().includes('/products'))
+          - listitem [ref=f4e62]:
+            - strong [ref=f4e63]: Cypress
+            - text: ":"
+            - code [ref=f4e64]: cy.intercept('GET', '**/products*').as('list'); cy.wait('@list')
+          - listitem [ref=f4e65]:
+            - strong [ref=f4e66]: Selenium
+            - text: ": use a proxy (BrowserMob, mitmproxy) or check page state via DOM testids"
+        - paragraph [ref=f4e67]:
+          - text: Each scenario card has stable
+          - code [ref=f4e68]: data-testid
+          - text: s on the run button, status, response, and timing — assert against any of them.
+      - heading "1. Read" [level=2] [ref=f4e69]
+      - generic [ref=f4e70]:
+        - generic [ref=f4e71]:
+          - generic [ref=f4e72]:
+            - heading "GET — list (success)" [level=3] [ref=f4e73]
+            - paragraph [ref=f4e74]: Fetch the first 5 products from dummyjson. Use this to practice waiting on a list response and asserting on the items array length.
+          - generic [ref=f4e75]:
+            - button "Run request — GET — list (success)" [ref=f4e76] [cursor=pointer]: Run request
+            - button "Reset" [ref=f4e386] [cursor=pointer]
+        - generic [ref=f4e77]:
+          - generic [ref=f4e78]: GET
+          - code [ref=f4e79]: https://dummyjson.com/products?limit=5
+        - group [ref=f4e80]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e81] [cursor=pointer]
+        - generic [ref=f4e82]:
+          - generic [ref=f4e83]: "200"
+          - generic [ref=f4e387]: 298 ms
+        - group [ref=f4e388]:
+          - generic "Response" [ref=f4e389] [cursor=pointer]
+          - code [ref=f4e391]: "{ \"products\": [ { \"id\": 1, \"title\": \"Essence Mascara Lash Princess\", \"description\": \"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.\", \"category\": \"beauty\", \"price\": 9.99, \"discountPercentage\": 10.48, \"rating\": 2.56, \"stock\": 99, \"tags\": [ \"beauty\", \"mascara\" ], \"brand\": \"Essence\", \"sku\": \"BEA-ESS-ESS-001\", \"weight\": 4, \"dimensions\": { \"width\": 15.14, \"height\": 13.08, \"depth\": 22.99 }, \"warrantyInformation\": \"1 week warranty\", \"shippingInformation\": \"Ships in 3-5 business days\", \"availabilityStatus\": \"In Stock\", \"reviews\": [ { \"rating\": 3, \"comment\": \"Would not recommend!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Eleanor Collins\", \"reviewerEmail\": \"eleanor.collins@x.dummyjson.com\" }, { \"rating\": 4, \"comment\": \"Very satisfied!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Lucas Gordon\", \"reviewerEmail\": \"lucas.gordon@x.dummyjson.com\" }, { \"rating\": 5, \"comment\": \"Highly impressed!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Eleanor Collins\", \"reviewerEmail\": \"eleanor.collins@x.dummyjson.com\" } ], \"returnPolicy\": \"No return policy\", \"minimumOrderQuantity\": 48, \"meta\": { \"createdAt\": \"2025-10-09T14:47:01.588Z\", \"updatedAt\": \"2026-05-23T11:27:41.868Z\", \"barcode\": \"5784719087687\", \"qrCode\": \"https://cdn.dummyjson.com/public/qr-code.png\" }, \"images\": [ \"https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp\" ], \"thumbnail\": \"https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp\" }, { \"id\": 2, \"title\": \"Eyeshadow Palette with Mirror\", \"description\": \"The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.\", \"category\": \"beauty\", \"price\": 19.99, \"discountPercentage\": 18.19, \"rating\": 2.86, \"stock\": 34, \"tags\": [ \"beauty\", \"eyeshadow\" ], \"brand\": \"Glamour Beauty\", \"sku\": \"BEA-GLA-EYE-002\", \"weight\": 9, \"dimensions\": { \"width\": 9.26, \"height\": 22.47, \"depth\": 27.67 }, \"warrantyInformation\": \"1 year warranty\", \"shippingInformation\": \"Ships in 2 weeks\", \"availabilityStatus\": \"In Stock\", \"reviews\": [ { \"rating\": 5, \"comment\": \"Great product!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Savannah Gomez\", \"reviewerEmail\": \"savannah.gomez@x.dummyjson.com\" }, { \"rating\": 4, \"comment\": \"Awesome product!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Christian Perez\", \"reviewerEmail\": \"christian.perez@x.dummyjson.com\" }, { \"rating\": 1, \"comment\": \"Poor quality!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Nicholas Bailey\", \"reviewerEmail\": \"nicholas.bailey@x.dummyjson.com\" } ], \"returnPolicy\": \"7 days return policy\", \"minimumOrderQuantity\": 20, \"meta\": { \"createdAt\": \"2024-12-03T11:29:45.706Z\", \"updatedAt\": \"2025-08-24T16:52:47.806Z\", \"barcode\": \"9170275171413\", \"qrCode\": \"https://cdn.dummyjson.com/public/qr-code.png\" }, \"images\": [ \"https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp\" ], \"thumbnail\": \"https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp\" }, { \"id\": 3, \"title\": \"Powder Canister\", \"description\": \"The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.\", \"category\": \"beauty\", \"price\": 14.99, \"discountPercentage\": 9.84, \"rating\": 4.64, \"stock\": 89, \"tags\": [ \"beauty\", \"face powder\" ], \"brand\": \"Velvet Touch\", \"sku\": \"BEA-VEL-POW-003\", \"weight\": 8, \"dimensions\": { \"width\": 29.27, \"height\": 27.93, \"depth\": 20.59 }, \"warrantyInformation\": \"3 months warranty\", \"shippingInformation\": \"Ships in 1-2 business days\", \"availabilityStatus\": \"In Stock\", \"reviews\": [ { \"rating\": 4, \"comment\": \"Would buy again!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Alexander Jones\", \"reviewerEmail\": \"alexander.jones@x.dummyjson.com\" }, { \"rating\": 5, \"comment\": \"Highly impressed!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Elijah Cruz\", \"reviewerEmail\": \"elijah.cruz@x.dummyjson.com\" }, { \"rating\": 1, \"comment\": \"Very dissatisfied!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Avery Perez\", \"reviewerEmail\": \"avery.perez@x.dummyjson.com\" } ], \"returnPolicy\": \"No return policy\", \"minimumOrderQuantity\": 22, \"meta\": { \"createdAt\": \"2025-01-08T18:30:12.844Z\", \"updatedAt\": \"2025-11-26T14:49:26.980Z\", \"barcode\": \"8418883906837\", \"qrCode\": \"https://cdn.dummyjson.com/public/qr-code.png\" }, \"images\": [ \"https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp\" ], \"thumbnail\": \"https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp\" }, { \"id\": 4, \"title\": \"Red Lipstick\", \"description\": \"The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.\", \"category\": \"beauty\", \"price\": 12.99, \"discountPercentage\": 12.16, \"rating\": 4.36, \"stock\": 91, \"tags\": [ \"beauty\", \"lipstick\" ], \"brand\": \"Chic Cosmetics\", \"sku\": \"BEA-CHI-LIP-004\", \"weight\": 1, \"dimensions\": { \"width\": 18.11, \"height\": 28.38, \"depth\": 22.17 }, \"warrantyInformation\": \"3 year warranty\", \"shippingInformation\": \"Ships in 1 week\", \"availabilityStatus\": \"In Stock\", \"reviews\": [ { \"rating\": 4, \"comment\": \"Great product!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Liam Garcia\", \"reviewerEmail\": \"liam.garcia@x.dummyjson.com\" }, { \"rating\": 5, \"comment\": \"Great product!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Ruby Andrews\", \"reviewerEmail\": \"ruby.andrews@x.dummyjson.com\" }, { \"rating\": 5, \"comment\": \"Would buy again!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Clara Berry\", \"reviewerEmail\": \"clara.berry@x.dummyjson.com\" } ], \"returnPolicy\": \"7 days return policy\", \"minimumOrderQuantity\": 40, \"meta\": { \"createdAt\": \"2025-11-22T23:28:00.911Z\", \"updatedAt\": \"2026-01-26T01:31:40.721Z\", \"barcode\": \"9467746727219\", \"qrCode\": \"https://cdn.dummyjson.com/public/qr-code.png\" }, \"images\": [ \"https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp\" ], \"thumbnail\": \"https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp\" }, { \"id\": 5, \"title\": \"Red Nail Polish\", \"description\": \"The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.\", \"category\": \"beauty\", \"price\": 8.99, \"discountPercentage\": 11.44, \"rating\": 4.32, \"stock\": 79, \"tags\": [ \"beauty\", \"nail polish\" ], \"brand\": \"Nail Couture\", \"sku\": \"BEA-NAI-NAI-005\", \"weight\": 8, \"dimensions\": { \"width\": 21.63, \"height\": 16.48, \"depth\": 29.84 }, \"warrantyInformation\": \"1 month warranty\", \"shippingInformation\": \"Ships overnight\", \"availabilityStatus\": \"In Stock\", \"reviews\": [ { \"rating\": 2, \"comment\": \"Poor quality!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Benjamin Wilson\", \"reviewerEmail\": \"benjamin.wilson@x.dummyjson.com\" }, { \"rating\": 5, \"comment\": \"Great product!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Liam Smith\", \"reviewerEmail\": \"liam.smith@x.dummyjson.com\" }, { \"rating\": 1, \"comment\": \"Very unhappy with my purchase!\", \"date\": \"2025-04-30T09:41:02.053Z\", \"reviewerName\": \"Clara Berry\", \"reviewerEmail\": \"clara.berry@x.dummyjson.com\" } ], \"returnPolicy\": \"No return policy\", \"minimumOrderQuantity\": 22, \"meta\": { \"createdAt\": \"2025-10-03T07:39:53.470Z\", \"updatedAt\": \"2026-04-24T00:21:44.635Z\", \"barcode\": \"4063010628104\", \"qrCode\": \"https://cdn.dummyjson.com/public/qr-code.png\" }, \"images\": [ \"https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp\" ], \"thumbnail\": \"https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp\" } ], \"total\": 194, \"skip\": 0, \"limit\": 5 }"
+      - generic [ref=f4e84]:
+        - generic [ref=f4e85]:
+          - generic [ref=f4e86]:
+            - heading "GET — single resource" [level=3] [ref=f4e87]
+            - paragraph [ref=f4e88]: Fetch one product by ID. Smaller payload — good for quick assertion practice.
+          - button "Run request — GET — single resource" [ref=f4e90] [cursor=pointer]: Run request
+        - generic [ref=f4e91]:
+          - generic [ref=f4e92]: GET
+          - code [ref=f4e93]: https://dummyjson.com/products/1
+        - group [ref=f4e94]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e95] [cursor=pointer]
+        - generic [ref=f4e96]: Idle
+      - generic [ref=f4e98]:
+        - generic [ref=f4e99]:
+          - generic [ref=f4e100]:
+            - heading "GET — slow (~3s delay)" [level=3] [ref=f4e101]
+            - paragraph [ref=f4e102]: dummyjson supports a delay parameter. Use this to practice timeouts, loading-state assertions, and page.waitForResponse with custom timeouts.
+          - button "Run request — GET — slow (~3s delay)" [ref=f4e104] [cursor=pointer]: Run request
+        - generic [ref=f4e105]:
+          - generic [ref=f4e106]: GET
+          - code [ref=f4e107]: https://dummyjson.com/products?limit=3&delay=3000
+        - group [ref=f4e108]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e109] [cursor=pointer]
+        - generic [ref=f4e110]: Idle
+      - generic [ref=f4e112]:
+        - generic [ref=f4e113]:
+          - generic [ref=f4e114]:
+            - heading "GET — 404 Not Found" [level=3] [ref=f4e115]
+            - paragraph [ref=f4e116]: A product ID that doesn't exist. Practice asserting on error states and 4xx response codes.
+          - button "Run request — GET — 404 Not Found" [ref=f4e118] [cursor=pointer]: Run request
+        - generic [ref=f4e119]:
+          - generic [ref=f4e120]: GET
+          - code [ref=f4e121]: https://dummyjson.com/products/9999
+          - generic "Expected failure" [ref=f4e122]: expects error
+        - group [ref=f4e123]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e124] [cursor=pointer]
+        - generic [ref=f4e125]: Idle
+      - generic [ref=f4e127]:
+        - generic [ref=f4e128]:
+          - generic [ref=f4e129]:
+            - heading "GET — 500 Internal Server Error" [level=3] [ref=f4e130]
+            - paragraph [ref=f4e131]: dummyjson's /http/500 endpoint always returns a 500. Useful for testing your retry/error UI behavior.
+          - button "Run request — GET — 500 Internal Server Error" [ref=f4e133] [cursor=pointer]: Run request
+        - generic [ref=f4e134]:
+          - generic [ref=f4e135]: GET
+          - code [ref=f4e136]: https://dummyjson.com/http/500
+          - generic "Expected failure" [ref=f4e137]: expects error
+        - group [ref=f4e138]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e139] [cursor=pointer]
+        - generic [ref=f4e140]: Idle
+      - heading "2. Pagination" [level=2] [ref=f4e142]
+      - generic [ref=f4e143]:
+        - generic [ref=f4e144]:
+          - generic [ref=f4e145]:
+            - strong [ref=f4e146]: GET — paginated
+            - paragraph [ref=f4e147]:
+              - text: Drives
+              - code [ref=f4e148]: "?limit=10&skip=N"
+              - text: . Click Next/Prev to fire fresh requests with different query strings — practice intercepting URLs by glob.
+          - generic [ref=f4e149]:
+            - button "‹ Prev" [disabled] [ref=f4e150]
+            - generic [ref=f4e151]: Page 1
+            - button "Next ›" [ref=f4e152] [cursor=pointer]
+        - generic [ref=f4e153]:
+          - generic [ref=f4e154]:
+            - generic [ref=f4e155]:
+              - heading "(re-runs as you click Next/Prev)" [level=3] [ref=f4e156]
+              - paragraph [ref=f4e157]: Each page change fires a new GET with a different ?skip value.
+            - button "Run request — (re-runs as you click Next/Prev)" [ref=f4e159] [cursor=pointer]: Run request
+          - generic [ref=f4e160]:
+            - generic [ref=f4e161]: GET
+            - code [ref=f4e162]: https://dummyjson.com/products?limit=10&skip=0
+          - group [ref=f4e163]:
+            - generic "Equivalent calls (cURL · fetch)" [ref=f4e164] [cursor=pointer]
+          - generic [ref=f4e165]: Idle
+      - heading "3. Write (POST/PUT/PATCH/DELETE)" [level=2] [ref=f4e167]
+      - generic [ref=f4e168]:
+        - generic [ref=f4e169]:
+          - generic [ref=f4e170]:
+            - heading "POST — create" [level=3] [ref=f4e171]
+            - paragraph [ref=f4e172]: "Send a JSON body to create a new post. jsonplaceholder fakes success: it returns 201 with the body you sent plus a generated id."
+          - button "Run request — POST — create" [ref=f4e174] [cursor=pointer]: Run request
+        - generic [ref=f4e175]:
+          - generic [ref=f4e176]: POST
+          - code [ref=f4e177]: https://jsonplaceholder.typicode.com/posts
+        - group [ref=f4e178]:
+          - generic "Request body" [ref=f4e179] [cursor=pointer]
+        - group [ref=f4e180]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e181] [cursor=pointer]
+        - generic [ref=f4e182]: Idle
+      - generic [ref=f4e184]:
+        - generic [ref=f4e185]:
+          - generic [ref=f4e186]:
+            - heading "PUT — replace" [level=3] [ref=f4e187]
+            - paragraph [ref=f4e188]: Replace an entire resource. Sends every field. Server returns the updated representation.
+          - button "Run request — PUT — replace" [ref=f4e190] [cursor=pointer]: Run request
+        - generic [ref=f4e191]:
+          - generic [ref=f4e192]: PUT
+          - code [ref=f4e193]: https://jsonplaceholder.typicode.com/posts/1
+        - group [ref=f4e194]:
+          - generic "Request body" [ref=f4e195] [cursor=pointer]
+        - group [ref=f4e196]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e197] [cursor=pointer]
+        - generic [ref=f4e198]: Idle
+      - generic [ref=f4e200]:
+        - generic [ref=f4e201]:
+          - generic [ref=f4e202]:
+            - heading "PATCH — partial update" [level=3] [ref=f4e203]
+            - paragraph [ref=f4e204]: Update only specific fields. Smaller payload than PUT.
+          - button "Run request — PATCH — partial update" [ref=f4e206] [cursor=pointer]: Run request
+        - generic [ref=f4e207]:
+          - generic [ref=f4e208]: PATCH
+          - code [ref=f4e209]: https://jsonplaceholder.typicode.com/posts/1
+        - group [ref=f4e210]:
+          - generic "Request body" [ref=f4e211] [cursor=pointer]
+        - group [ref=f4e212]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e213] [cursor=pointer]
+        - generic [ref=f4e214]: Idle
+      - generic [ref=f4e216]:
+        - generic [ref=f4e217]:
+          - generic [ref=f4e218]:
+            - heading "DELETE" [level=3] [ref=f4e219]
+            - paragraph [ref=f4e220]: Remove a resource. jsonplaceholder fakes success and returns an empty body.
+          - button "Run request — DELETE" [ref=f4e222] [cursor=pointer]: Run request
+        - generic [ref=f4e223]:
+          - generic [ref=f4e224]: DELETE
+          - code [ref=f4e225]: https://jsonplaceholder.typicode.com/posts/1
+        - group [ref=f4e226]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e227] [cursor=pointer]
+        - generic [ref=f4e228]: Idle
+      - heading "4. Headers & auth" [level=2] [ref=f4e230]
+      - generic [ref=f4e231]:
+        - generic [ref=f4e232]:
+          - generic [ref=f4e233]:
+            - heading "GET with Authorization header" [level=3] [ref=f4e234]
+            - paragraph [ref=f4e235]: Sends a Bearer token in the Authorization header. Inspect the Request Headers in DevTools and assert that your test sends the right value.
+          - button "Run request — GET with Authorization header" [ref=f4e237] [cursor=pointer]: Run request
+        - generic [ref=f4e238]:
+          - generic [ref=f4e239]: GET
+          - code [ref=f4e240]: https://dummyjson.com/products/1
+        - group [ref=f4e241]:
+          - generic "Request headers" [ref=f4e242] [cursor=pointer]
+        - group [ref=f4e243]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e244] [cursor=pointer]
+        - generic [ref=f4e245]: Idle
+      - generic [ref=f4e247]:
+        - generic [ref=f4e248]:
+          - generic [ref=f4e249]:
+            - heading "GET with custom headers" [level=3] [ref=f4e250]
+            - paragraph [ref=f4e251]: Two custom headers (X-Client-Id, Accept-Language). Practice asserting on outgoing request headers.
+          - button "Run request — GET with custom headers" [ref=f4e253] [cursor=pointer]: Run request
+        - generic [ref=f4e254]:
+          - generic [ref=f4e255]: GET
+          - code [ref=f4e256]: https://dummyjson.com/products/1
+        - group [ref=f4e257]:
+          - generic "Request headers" [ref=f4e258] [cursor=pointer]
+        - group [ref=f4e259]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=f4e260] [cursor=pointer]
+        - generic [ref=f4e261]: Idle
+      - heading "5. Sequential dependent requests" [level=2] [ref=f4e263]
+      - generic [ref=f4e264]:
+        - 'heading "Sequential: GET user → GET user''s posts" [level=3] [ref=f4e265]'
+        - paragraph [ref=f4e266]: First fetch loads the user. The user's id is then used in the second URL. Practice intercepting both, asserting the second request's URL contains the id from the first.
+        - button "Run both" [ref=f4e267] [cursor=pointer]
+        - generic [ref=f4e268]:
+          - generic [ref=f4e269]: "1. User: –"
+          - generic [ref=f4e270]: "2. Posts: –"
+      - heading "🎭 Mock Me — practice API mocking" [level=2] [ref=f4e271]
+      - generic [ref=f4e272]:
+        - paragraph [ref=f4e273]: Each card below fetches a real API and renders the response. Intercept the call in your test framework to control what users see — perfect for verifying error states, empty states, and edge cases without depending on a real backend.
+        - tablist [ref=f4e274]:
+          - tab "Playwright" [selected] [ref=f4e275] [cursor=pointer]
+          - tab "Cypress" [ref=f4e276] [cursor=pointer]
+          - tab "Selenium" [ref=f4e277] [cursor=pointer]
+        - code [ref=f4e279]: "// Intercept the call before navigating await page.route('**/users/1', route => route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ id: 1, firstName: 'Mocked', lastName: 'User', email: 'mock@test.io' }) }) ) await page.goto('/api-playground') await expect(page.getByTestId('mock-user-name')).toHaveText('Mocked User')"
+      - generic [ref=f4e280]:
+        - generic [ref=f4e281]:
+          - generic [ref=f4e282]:
+            - heading "User profile card" [level=3] [ref=f4e283]
+            - paragraph [ref=f4e284]:
+              - text: Renders the response from
+              - code [ref=f4e285]: GET dummyjson.com/users/1
+              - text: . Mock this URL to inject any user — verify the avatar, name, email, and role all bind correctly.
+          - button "Load user profile" [ref=f4e286] [cursor=pointer]: Load
+        - paragraph [ref=f4e287]: Click Load to fire the request.
+      - generic [ref=f4e288]:
+        - generic [ref=f4e289]:
+          - generic [ref=f4e290]:
+            - heading "Product feed" [level=3] [ref=f4e291]
+            - paragraph [ref=f4e292]:
+              - text: Renders 4 products from
+              - code [ref=f4e293]: GET dummyjson.com/products?limit=4
+              - text: . Mock with an empty
+              - code [ref=f4e294]: products
+              - text: array to test the "no results" state — try it!
+          - button "Load product feed" [ref=f4e295] [cursor=pointer]: Load
+        - paragraph [ref=f4e296]: Click Load to fetch products.
+      - generic [ref=f4e297]:
+        - heading "Login form" [level=3] [ref=f4e298]
+        - paragraph [ref=f4e299]:
+          - text: POSTs to
+          - code [ref=f4e300]: dummyjson.com/auth/login
+          - text: . Default values use a real test account (
+          - code [ref=f4e301]: emilys / emilyspass
+          - text: ) so it succeeds. Mock the endpoint to test arbitrary token responses or simulated 401 errors — without changing the form code.
+        - generic [ref=f4e302]:
+          - generic [ref=f4e303]:
+            - generic [ref=f4e304]: Username
+            - textbox "Username" [ref=f4e305]: emilys
+          - generic [ref=f4e306]:
+            - generic [ref=f4e307]: Password
+            - textbox "Password" [ref=f4e308]: emilyspass
+          - button "Sign in" [ref=f4e309] [cursor=pointer]
+      - generic [ref=f4e310]:
+        - heading "Debounced search" [level=3] [ref=f4e311]
+        - paragraph [ref=f4e312]:
+          - text: Type to fire
+          - code [ref=f4e313]: GET /products/search?q=…
+          - text: after a 300ms debounce. Mock the endpoint to control what shows up regardless of query — and practice asserting that your test waited for the request, not just for the input value.
+        - searchbox "Search products…" [ref=f4e314]: phone
+        - list [ref=f4e360]:
+          - listitem [ref=f4e361]:
+            - img "Apple AirPods Max Silver" [ref=f4e362]
+            - generic [ref=f4e363]:
+              - strong [ref=f4e364]: Apple AirPods Max Silver
+              - generic [ref=f4e365]: $549.99
+          - listitem [ref=f4e366]:
+            - img "Apple iPhone Charger" [ref=f4e367]
+            - generic [ref=f4e368]:
+              - strong [ref=f4e369]: Apple iPhone Charger
+              - generic [ref=f4e370]: $19.99
+          - listitem [ref=f4e371]:
+            - img "Apple MagSafe Battery Pack" [ref=f4e372]
+            - generic [ref=f4e373]:
+              - strong [ref=f4e374]: Apple MagSafe Battery Pack
+              - generic [ref=f4e375]: $99.99
+          - listitem [ref=f4e376]:
+            - img "Beats Flex Wireless Earphones" [ref=f4e377]
+            - generic [ref=f4e378]:
+              - strong [ref=f4e379]: Beats Flex Wireless Earphones
+              - generic [ref=f4e380]: $49.99
+          - listitem [ref=f4e381]:
+            - img "iPhone 12 Silicone Case with MagSafe Plum" [ref=f4e382]
+            - generic [ref=f4e383]:
+              - strong [ref=f4e384]: iPhone 12 Silicone Case with MagSafe Plum
+              - generic [ref=f4e385]: $29.99
+  - contentinfo [ref=f4e317]:
+    - generic [ref=f4e318]:
+      - generic [ref=f4e319]:
+        - strong [ref=f4e320]:
+          - generic [aria-hidden] [ref=f4e321]: 🧪
+          - generic [ref=f4e322]:
+            - generic [ref=f4e323]: Test Automation
+            - generic [ref=f4e324]: Playground
+        - link "Powered by QATools" [ref=f4e325] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=f4e326]: Powered by
+          - strong [ref=f4e327]: QATools
+          - generic [aria-hidden] [ref=f4e328]: ↗
+        - paragraph [ref=f4e329]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=f4e330]:
+          - link "Playwright ↗" [ref=f4e331] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=f4e332]:
+        - generic [ref=f4e333]:
+          - heading "Practice" [level=4] [ref=f4e334]
+          - link "QA Shop" [ref=f4e335] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=f4e336] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=f4e337] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=f4e338] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=f4e339] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=f4e340] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=f4e341]:
+          - heading "Learn" [level=4] [ref=f4e342]
+          - link "Learn Playwright" [ref=f4e343] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=f4e344] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=f4e345] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=f4e346] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=f4e347] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=f4e348]:
+          - heading "Site" [level=4] [ref=f4e349]
+          - link "About" [ref=f4e350] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=f4e351] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=f4e352]:
+      - generic [ref=f4e353]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=f4e354]:
+        - button "Restart tour" [ref=f4e355] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=f4e356] [cursor=pointer]
+  - button "Open feedback panel" [ref=f4e357] [cursor=pointer]

@@ -1,0 +1,237 @@
+- generic [ref=f2e3]:
+  - region "Site updates" [ref=f2e4]:
+    - generic [ref=f2e6]:
+      - generic [ref=f2e7]:
+        - generic [aria-hidden] [ref=f2e8]: 🧭
+        - text: New
+      - generic [ref=f2e9]:
+        - strong [ref=f2e10]: Guided practice
+        - text: — build your first Playwright test live on the shop, one step at a time.
+      - button "Start →" [ref=f2e11] [cursor=pointer]
+    - group "Choose announcement" [ref=f2e12]:
+      - button "Show announcement 1 of 2" [ref=f2e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=f2e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=f2e15] [cursor=pointer]: ✕
+  - banner [ref=f2e16]:
+    - generic [ref=f2e17]:
+      - link "Test Automation Playground" [ref=f2e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f2e19]: 🧪
+        - generic [ref=f2e20]:
+          - generic [ref=f2e21]: Test Automation
+          - generic [ref=f2e22]: Playground
+      - navigation "Primary navigation" [ref=f2e23]:
+        - button "QA Shop" [ref=f2e25] [cursor=pointer]
+        - link "Widgets" [ref=f2e30] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=f2e34] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=f2e38] [cursor=pointer]
+        - link "Join Pro" [ref=f2e45] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2Fqashop%2Fproducts%2F1
+          - generic [aria-hidden] [ref=f2e46]: ⭐
+          - text: Join Pro
+  - main [ref=f2e47]:
+    - generic [ref=f2e48]:
+      - generic [ref=f2e49]:
+        - link "QA Shopstore" [ref=f2e50] [cursor=pointer]:
+          - /url: /qashop/products
+          - generic [aria-hidden] [ref=f2e51]: 🛒
+        - generic [ref=f2e53]:
+          - link "Wishlist with 0 items" [ref=f2e54] [cursor=pointer]:
+            - /url: /qashop/wishlist
+            - generic [aria-hidden] [ref=f2e55]: ♡
+            - generic [ref=f2e56]: Wishlist
+          - link "Cart with 0 items" [ref=f2e57] [cursor=pointer]:
+            - /url: /qashop/cart
+            - generic [aria-hidden] [ref=f2e58]: 🛒
+            - generic [ref=f2e59]: Cart
+          - link "Sign in" [ref=f2e61] [cursor=pointer]:
+            - /url: /qashop/login
+            - text: 👤Sign in
+      - navigation "Shop categories" [ref=f2e62]:
+        - link "All products" [ref=f2e63] [cursor=pointer]:
+          - /url: /qashop/products
+        - link "Electronics" [ref=f2e64] [cursor=pointer]:
+          - /url: /qashop/products?category=Electronics
+          - generic [aria-hidden] [ref=f2e65]: 📱
+          - text: Electronics
+        - link "Clothing" [ref=f2e66] [cursor=pointer]:
+          - /url: /qashop/products?category=Clothing
+          - generic [aria-hidden] [ref=f2e67]: 👕
+          - text: Clothing
+        - link "Books" [ref=f2e68] [cursor=pointer]:
+          - /url: /qashop/products?category=Books
+          - generic [aria-hidden] [ref=f2e69]: 📚
+          - text: Books
+        - link "Home" [ref=f2e70] [cursor=pointer]:
+          - /url: /qashop/products?category=Home
+          - generic [aria-hidden] [ref=f2e71]: 🏠
+          - text: Home
+        - link "Toys" [ref=f2e72] [cursor=pointer]:
+          - /url: /qashop/products?category=Toys
+          - generic [aria-hidden] [ref=f2e73]: 🧸
+          - text: Toys
+        - link "Sports" [ref=f2e74] [cursor=pointer]:
+          - /url: /qashop/products?category=Sports
+          - generic [aria-hidden] [ref=f2e75]: ⚽
+          - text: Sports
+    - generic [ref=f2e76]:
+      - navigation "Breadcrumb" [ref=f2e77]:
+        - link "Home (breadcrumb)" [ref=f2e78] [cursor=pointer]:
+          - /url: /
+          - text: Home
+        - text: ›
+        - link "All products (breadcrumb)" [ref=f2e79] [cursor=pointer]:
+          - /url: /qashop/products
+          - text: Products
+        - text: ›
+        - link "Electronics (breadcrumb)" [ref=f2e80] [cursor=pointer]:
+          - /url: /qashop/products?category=Electronics
+          - text: Electronics
+        - text: ›Wireless Headphones
+      - generic [ref=f2e81]:
+        - img "Wireless Headphones" [ref=f2e83]
+        - generic [ref=f2e84]:
+          - heading "Wireless Headphones" [level=1] [ref=f2e85]
+          - generic [ref=f2e86]:
+            - generic [ref=f2e87]: Electronics
+            - generic [ref=f2e88]: AudioMax
+            - generic [ref=f2e89]: In stock
+          - 'img "Rating: 4.5 out of 5" [ref=f2e90]':
+            - text: ★★★★☆
+            - generic [ref=f2e91]: (4.5)
+          - generic [ref=f2e92]: $79.99
+          - paragraph [ref=f2e93]: Comfortable wireless over-ear headphones with 30 hours of battery life and active noise cancellation.
+          - generic [ref=f2e94]:
+            - generic [ref=f2e95]: Size
+            - combobox "Size" [ref=f2e96]:
+              - option "XS"
+              - option "S"
+              - option "M" [selected]
+              - option "L"
+              - option "XL"
+          - generic [ref=f2e97]:
+            - generic [ref=f2e98]: Color
+            - generic [ref=f2e99]:
+              - generic [ref=f2e100]:
+                - radio "Black" [checked] [ref=f2e101]
+                - text: Black
+              - generic [ref=f2e102]:
+                - radio "White" [ref=f2e103]
+                - text: White
+              - generic [ref=f2e104]:
+                - radio "Blue" [ref=f2e105]
+                - text: Blue
+              - generic [ref=f2e106]:
+                - radio "Red" [ref=f2e107]
+                - text: Red
+              - generic [ref=f2e108]:
+                - radio "Green" [ref=f2e109]
+                - text: Green
+          - generic [ref=f2e110]:
+            - generic [ref=f2e111]: Quantity
+            - generic [ref=f2e112]:
+              - button "Decrease quantity" [ref=f2e113] [cursor=pointer]: −
+              - spinbutton [ref=f2e114]: "1"
+              - button "Increase quantity" [ref=f2e115] [cursor=pointer]: +
+          - generic [ref=f2e116]:
+            - button "Add to cart" [ref=f2e117] [cursor=pointer]
+            - button "Share" [ref=f2e118] [cursor=pointer]
+            - button "Add to wishlist" [ref=f2e120] [cursor=pointer]: ♡ Wishlist
+      - generic [ref=f2e121]:
+        - tablist [ref=f2e122]:
+          - tab "Description" [selected] [ref=f2e123] [cursor=pointer]
+          - tab "Specs" [ref=f2e124] [cursor=pointer]
+          - tab "Reviews" [ref=f2e125] [cursor=pointer]
+        - tabpanel [ref=f2e126]:
+          - paragraph [ref=f2e127]: Comfortable wireless over-ear headphones with 30 hours of battery life and active noise cancellation.
+      - generic [ref=f2e128]:
+        - heading "You may also like" [level=2] [ref=f2e129]
+        - generic [ref=f2e130]:
+          - article [ref=f2e131]:
+            - link [ref=f2e132] [cursor=pointer]:
+              - /url: /qashop/products/2
+              - img "Smart Watch" [ref=f2e133]
+            - generic [ref=f2e134]:
+              - heading [level=3] [ref=f2e135]:
+                - link "Smart Watch" [ref=f2e136] [cursor=pointer]:
+                  - /url: /qashop/products/2
+              - generic [ref=f2e137]: $149.00
+          - article [ref=f2e138]:
+            - link [ref=f2e139] [cursor=pointer]:
+              - /url: /qashop/products/10
+              - img "Bluetooth Speaker" [ref=f2e140]
+            - generic [ref=f2e141]:
+              - heading [level=3] [ref=f2e142]:
+                - link "Bluetooth Speaker" [ref=f2e143] [cursor=pointer]:
+                  - /url: /qashop/products/10
+              - generic [ref=f2e144]: $45.00
+  - contentinfo [ref=f2e145]:
+    - generic [ref=f2e146]:
+      - generic [ref=f2e147]:
+        - strong [ref=f2e148]:
+          - generic [aria-hidden] [ref=f2e149]: 🧪
+          - generic [ref=f2e150]:
+            - generic [ref=f2e151]: Test Automation
+            - generic [ref=f2e152]: Playground
+        - link "Powered by QATools" [ref=f2e153] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=f2e154]: Powered by
+          - strong [ref=f2e155]: QATools
+          - generic [aria-hidden] [ref=f2e156]: ↗
+        - paragraph [ref=f2e157]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=f2e158]:
+          - link "Playwright ↗" [ref=f2e159] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=f2e160]:
+        - generic [ref=f2e161]:
+          - heading "Practice" [level=4] [ref=f2e162]
+          - link "QA Shop" [ref=f2e163] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=f2e164] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=f2e165] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=f2e166] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=f2e167] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=f2e168] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=f2e169]:
+          - heading "Learn" [level=4] [ref=f2e170]
+          - link "Learn Playwright" [ref=f2e171] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=f2e172] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=f2e173] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=f2e174] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=f2e175] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=f2e176]:
+          - heading "Site" [level=4] [ref=f2e177]
+          - link "About" [ref=f2e178] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=f2e179] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=f2e180]:
+      - generic [ref=f2e181]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=f2e182]:
+        - button "Restart tour" [ref=f2e183] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=f2e184] [cursor=pointer]
+  - button "Open feedback panel" [ref=f2e185] [cursor=pointer]
+  - dialog "👋 Welcome to the Test Automation Playground" [ref=f2e188]:
+    - generic [ref=f2e189]:
+      - heading "👋 Welcome to the Test Automation Playground" [level=3] [ref=f2e196]
+      - generic [ref=f2e197]:
+        - paragraph [ref=f2e198]:
+          - text: A safe, dummy storefront built so QA testers can practice writing robust UI locators and API mocks.
+          - strong [ref=f2e199]: Nothing here is real
+          - text: — no payments, no signups, no data leaves your browser.
+        - paragraph [ref=f2e200]: 5 short steps to show you around.
+      - generic [ref=f2e201]:
+        - button "Skip tour" [ref=f2e202] [cursor=pointer]
+        - button "Next ›" [ref=f2e204] [cursor=pointer]

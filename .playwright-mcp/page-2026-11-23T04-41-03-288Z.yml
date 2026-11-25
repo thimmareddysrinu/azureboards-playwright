@@ -1,0 +1,1062 @@
+- generic [ref=f9e3]:
+  - region "Site updates" [ref=f9e4]:
+    - generic [ref=f9e6]:
+      - generic [ref=f9e7]:
+        - generic [aria-hidden] [ref=f9e8]: 🧭
+        - text: New
+      - generic [ref=f9e9]:
+        - strong [ref=f9e10]: Guided practice
+        - text: — build your first Playwright test live on the shop, one step at a time.
+      - button "Start →" [ref=f9e11] [cursor=pointer]
+    - group "Choose announcement" [ref=f9e12]:
+      - button "Show announcement 1 of 2" [ref=f9e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=f9e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=f9e15] [cursor=pointer]: ✕
+  - banner [ref=f9e16]:
+    - generic [ref=f9e17]:
+      - link "Test Automation Playground" [ref=f9e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f9e19]: 🧪
+        - generic [ref=f9e20]:
+          - generic [ref=f9e21]: Test Automation
+          - generic [ref=f9e22]: Playground
+      - navigation "Primary navigation" [ref=f9e23]:
+        - button "Practice apps" [ref=f9e25] [cursor=pointer]
+        - link "Widgets" [ref=f9e34] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=f9e38] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=f9e42] [cursor=pointer]
+        - link "Join Pro" [ref=f9e49] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2Fwidgets
+          - generic [aria-hidden] [ref=f9e50]: ⭐
+          - text: Join Pro
+  - main [ref=f9e51]:
+    - generic [ref=f9e52]:
+      - generic [ref=f9e53]:
+        - generic [ref=f9e54]:
+          - generic [ref=f9e55]: 🧩 Playground
+          - heading "Widgets Playground" [level=1] [ref=f9e56]
+          - paragraph [ref=f9e57]:
+            - text: Every common (and tricky) web element on one page — namespaced with stable
+            - code [ref=f9e58]: data-testid
+            - text: ", accessible"
+            - code [ref=f9e59]: role + name
+            - text: ", and ID so you can practice multiple selector strategies."
+          - paragraph [ref=f9e60]:
+            - text: "Tip: toggle"
+            - strong [ref=f9e61]: 🎓 Learn mode
+            - text: in the navbar to inspect any widget directly, or jump to
+            - link "Challenges" [ref=f9e62] [cursor=pointer]:
+              - /url: /challenges
+            - text: for verifiable tasks.
+        - generic [ref=f9e63]:
+          - generic [ref=f9e64]:
+            - generic [ref=f9e65]: "32"
+            - generic [ref=f9e66]: widgets
+          - generic [ref=f9e68]:
+            - generic [ref=f9e69]: "6"
+            - generic [ref=f9e70]: categories
+      - generic [ref=f9e71]:
+        - complementary "Widgets table of contents" [ref=f9e72]:
+          - generic [ref=f9e73]:
+            - generic [aria-hidden]: 🔍
+            - searchbox "Filter widgets by name or keyword" [ref=f9e74]
+          - generic [ref=f9e75]:
+            - generic [ref=f9e76]:
+              - text: Forms & input
+              - generic [ref=f9e78]: "8"
+            - list [ref=f9e79]:
+              - listitem [ref=f9e80]:
+                - link "1 Text inputs" [ref=f9e81] [cursor=pointer]:
+                  - /url: "#inputs"
+                  - generic [ref=f9e82]: "1"
+                  - generic [ref=f9e83]: Text inputs
+              - listitem [ref=f9e84]:
+                - link "2 Checkboxes & radios" [ref=f9e85] [cursor=pointer]:
+                  - /url: "#checkboxes"
+                  - generic [ref=f9e86]: "2"
+                  - generic [ref=f9e87]: Checkboxes & radios
+              - listitem [ref=f9e88]:
+                - link "3 Selects & multiselect" [ref=f9e89] [cursor=pointer]:
+                  - /url: "#selects"
+                  - generic [ref=f9e90]: "3"
+                  - generic [ref=f9e91]: Selects & multiselect
+              - listitem [ref=f9e92]:
+                - link "4 Date / time / range / color pickers" [ref=f9e93] [cursor=pointer]:
+                  - /url: "#pickers"
+                  - generic [ref=f9e94]: "4"
+                  - generic [ref=f9e95]: Date / time / range / color pickers
+              - listitem [ref=f9e96]:
+                - link "5 Buttons & links" [ref=f9e97] [cursor=pointer]:
+                  - /url: "#buttons"
+                  - generic [ref=f9e98]: "5"
+                  - generic [ref=f9e99]: Buttons & links
+              - listitem [ref=f9e100]:
+                - link "12 File upload" [ref=f9e101] [cursor=pointer]:
+                  - /url: "#upload"
+                  - generic [ref=f9e102]: "12"
+                  - generic [ref=f9e103]: File upload
+              - listitem [ref=f9e104]:
+                - link "19 Keyboard interactions" [ref=f9e105] [cursor=pointer]:
+                  - /url: "#keyboard"
+                  - generic [ref=f9e106]: "19"
+                  - generic [ref=f9e107]: Keyboard interactions
+              - listitem [ref=f9e108]:
+                - link "30 aria-description (Playwright 1.60 getByRole option)" [ref=f9e109] [cursor=pointer]:
+                  - /url: "#aria-description"
+                  - generic [ref=f9e110]: "30"
+                  - generic [ref=f9e111]: aria-description (Playwright 1.60 getByRole option)
+          - generic [ref=f9e112]:
+            - generic [ref=f9e113]:
+              - text: Overlays
+              - generic [ref=f9e115]: "4"
+            - list [ref=f9e116]:
+              - listitem [ref=f9e117]:
+                - link "6 Alerts, confirms & toasts" [ref=f9e118] [cursor=pointer]:
+                  - /url: "#alerts"
+                  - generic [ref=f9e119]: "6"
+                  - generic [ref=f9e120]: Alerts, confirms & toasts
+              - listitem [ref=f9e121]:
+                - link "7 Modal dialog" [ref=f9e122] [cursor=pointer]:
+                  - /url: "#modals"
+                  - generic [ref=f9e123]: "7"
+                  - generic [ref=f9e124]: Modal dialog
+              - listitem [ref=f9e125]:
+                - link "17 Links opening in new tab" [ref=f9e126] [cursor=pointer]:
+                  - /url: "#newtab"
+                  - generic [ref=f9e127]: "17"
+                  - generic [ref=f9e128]: Links opening in new tab
+              - listitem [ref=f9e129]:
+                - link "18 Right-click context menu" [ref=f9e130] [cursor=pointer]:
+                  - /url: "#contextmenu"
+                  - generic [ref=f9e131]: "18"
+                  - generic [ref=f9e132]: Right-click context menu
+          - generic [ref=f9e133]:
+            - generic [ref=f9e134]:
+              - text: Display
+              - generic [ref=f9e136]: "6"
+            - list [ref=f9e137]:
+              - listitem [ref=f9e138]:
+                - link "8 Tabs" [ref=f9e139] [cursor=pointer]:
+                  - /url: "#tabs"
+                  - generic [ref=f9e140]: "8"
+                  - generic [ref=f9e141]: Tabs
+              - listitem [ref=f9e142]:
+                - link "9 Accordion" [ref=f9e143] [cursor=pointer]:
+                  - /url: "#accordion"
+                  - generic [ref=f9e144]: "9"
+                  - generic [ref=f9e145]: Accordion
+              - listitem [ref=f9e146]:
+                - link "10 Tooltip & hover" [ref=f9e147] [cursor=pointer]:
+                  - /url: "#tooltip"
+                  - generic [ref=f9e148]: "10"
+                  - generic [ref=f9e149]: Tooltip & hover
+              - listitem [ref=f9e150]:
+                - link "11 Sortable / filterable / paginated table" [ref=f9e151] [cursor=pointer]:
+                  - /url: "#table"
+                  - generic [ref=f9e152]: "11"
+                  - generic [ref=f9e153]: Sortable / filterable / paginated table
+              - listitem [ref=f9e154]:
+                - link "14 Image carousel" [ref=f9e155] [cursor=pointer]:
+                  - /url: "#carousel"
+                  - generic [ref=f9e156]: "14"
+                  - generic [ref=f9e157]: Image carousel
+              - listitem [ref=f9e158]:
+                - link "31 Pseudo-element styles (Playwright 1.60 toHaveCSS pseudo)" [ref=f9e159] [cursor=pointer]:
+                  - /url: "#pseudo-css"
+                  - generic [ref=f9e160]: "31"
+                  - generic [ref=f9e161]: Pseudo-element styles (Playwright 1.60 toHaveCSS pseudo)
+          - generic [ref=f9e162]:
+            - generic [ref=f9e163]:
+              - text: Tricky DOM
+              - generic [ref=f9e165]: "5"
+            - list [ref=f9e166]:
+              - listitem [ref=f9e167]:
+                - link "13 Drag & drop" [ref=f9e168] [cursor=pointer]:
+                  - /url: "#dnd"
+                  - generic [ref=f9e169]: "13"
+                  - generic [ref=f9e170]: Drag & drop
+              - listitem [ref=f9e171]:
+                - link "16 iframe" [ref=f9e172] [cursor=pointer]:
+                  - /url: "#iframe"
+                  - generic [ref=f9e173]: "16"
+                  - generic [ref=f9e174]: iframe
+              - listitem [ref=f9e175]:
+                - link "20 Scrollable region" [ref=f9e176] [cursor=pointer]:
+                  - /url: "#scroll"
+                  - generic [ref=f9e177]: "20"
+                  - generic [ref=f9e178]: Scrollable region
+              - listitem [ref=f9e179]:
+                - link "21 Shadow DOM (closed to regular querySelector)" [ref=f9e180] [cursor=pointer]:
+                  - /url: "#shadow-dom"
+                  - generic [ref=f9e181]: "21"
+                  - generic [ref=f9e182]: Shadow DOM (closed to regular querySelector)
+              - listitem [ref=f9e183]:
+                - link "29 File drop zone (Playwright 1.60 locator.drop())" [ref=f9e184] [cursor=pointer]:
+                  - /url: "#file-drop"
+                  - generic [ref=f9e185]: "29"
+                  - generic [ref=f9e186]: File drop zone (Playwright 1.60 locator.drop())
+          - generic [ref=f9e187]:
+            - generic [ref=f9e188]:
+              - text: Async & data
+              - generic [ref=f9e190]: "8"
+            - list [ref=f9e191]:
+              - listitem [ref=f9e192]:
+                - link "15 Progress, spinner & dynamic loading" [ref=f9e193] [cursor=pointer]:
+                  - /url: "#progress"
+                  - generic [ref=f9e194]: "15"
+                  - generic [ref=f9e195]: Progress, spinner & dynamic loading
+              - listitem [ref=f9e196]:
+                - link "22 Infinite scroll" [ref=f9e197] [cursor=pointer]:
+                  - /url: "#infinite-scroll"
+                  - generic [ref=f9e198]: "22"
+                  - generic [ref=f9e199]: Infinite scroll
+              - listitem [ref=f9e200]:
+                - link "23 Lazy-loaded content (click → wait → reveal)" [ref=f9e201] [cursor=pointer]:
+                  - /url: "#lazy-reveal"
+                  - generic [ref=f9e202]: "23"
+                  - generic [ref=f9e203]: Lazy-loaded content (click → wait → reveal)
+              - listitem [ref=f9e204]:
+                - link "24 Server error simulation with retry" [ref=f9e205] [cursor=pointer]:
+                  - /url: "#server-error"
+                  - generic [ref=f9e206]: "24"
+                  - generic [ref=f9e207]: Server error simulation with retry
+              - listitem [ref=f9e208]:
+                - link "25 Optimistic update with revert on failure" [ref=f9e209] [cursor=pointer]:
+                  - /url: "#optimistic"
+                  - generic [ref=f9e210]: "25"
+                  - generic [ref=f9e211]: Optimistic update with revert on failure
+              - listitem [ref=f9e212]:
+                - link "26 File download" [ref=f9e213] [cursor=pointer]:
+                  - /url: "#download"
+                  - generic [ref=f9e214]: "26"
+                  - generic [ref=f9e215]: File download
+              - listitem [ref=f9e216]:
+                - link "27 Copy to clipboard" [ref=f9e217] [cursor=pointer]:
+                  - /url: "#clipboard"
+                  - generic [ref=f9e218]: "27"
+                  - generic [ref=f9e219]: Copy to clipboard
+              - listitem [ref=f9e220]:
+                - link "28 Button enabled after delay (async wait)" [ref=f9e221] [cursor=pointer]:
+                  - /url: "#delayed-enable"
+                  - generic [ref=f9e222]: "28"
+                  - generic [ref=f9e223]: Button enabled after delay (async wait)
+          - generic [ref=f9e224]:
+            - generic [ref=f9e225]:
+              - text: Reference
+              - generic [ref=f9e227]: "1"
+            - list [ref=f9e228]:
+              - listitem [ref=f9e229]:
+                - link "32 ❌ Anti-patterns (and what to use instead)" [ref=f9e230] [cursor=pointer]:
+                  - /url: "#anti-patterns"
+                  - generic [ref=f9e231]: "32"
+                  - generic [ref=f9e232]: ❌ Anti-patterns (and what to use instead)
+        - main [ref=f9e233]:
+          - generic [ref=f9e234]:
+            - generic [ref=f9e235]:
+              - generic [aria-hidden] [ref=f9e236]: "1"
+              - heading [level=2] [ref=f9e237]:
+                - link "Link to Text inputs" [ref=f9e238] [cursor=pointer]:
+                  - /url: "#inputs"
+                  - text: Text inputs#
+              - generic [ref=f9e239]: Forms & input
+            - generic [ref=f9e240]:
+              - generic [ref=f9e241]:
+                - generic [ref=f9e242]: Text
+                - textbox "Text" [ref=f9e243]:
+                  - /placeholder: Type here
+              - generic [ref=f9e244]:
+                - generic [ref=f9e245]: Email
+                - textbox "Email" [ref=f9e246]
+              - generic [ref=f9e247]:
+                - generic [ref=f9e248]: Password
+                - textbox "Password" [ref=f9e249]
+              - generic [ref=f9e250]:
+                - generic [ref=f9e251]: Number
+                - spinbutton "Number" [ref=f9e252]: "0"
+              - generic [ref=f9e253]:
+                - generic [ref=f9e254]: Telephone
+                - textbox "Telephone" [ref=f9e255]:
+                  - /placeholder: +1 555 0100
+              - generic [ref=f9e256]:
+                - generic [ref=f9e257]: URL
+                - textbox "URL" [ref=f9e258]:
+                  - /placeholder: https://example.com
+              - generic [ref=f9e259]:
+                - generic [ref=f9e260]: Search
+                - searchbox "Search" [ref=f9e261]
+              - generic [ref=f9e262]:
+                - generic [ref=f9e263]: Read-only
+                - textbox "Read-only" [ref=f9e264]: Read-only value
+              - generic [ref=f9e265]:
+                - generic [ref=f9e266]: Disabled
+                - textbox "Disabled" [disabled] [ref=f9e267]: Disabled value
+              - generic [ref=f9e268]:
+                - generic [ref=f9e269]: Textarea
+                - textbox "Textarea" [ref=f9e270]
+              - generic [ref=f9e271]: "{ \"text\": \"\", \"email\": \"\", \"password\": \"\", \"number\": 0, \"tel\": \"\", \"url\": \"\", \"search\": \"\", \"textarea\": \"\", \"readonly\": \"Read-only value\", \"disabled\": \"Disabled value\" }"
+          - generic [ref=f9e272]:
+            - generic [ref=f9e273]:
+              - generic [aria-hidden] [ref=f9e274]: "2"
+              - heading [level=2] [ref=f9e275]:
+                - link "Link to Checkboxes & radios" [ref=f9e276] [cursor=pointer]:
+                  - /url: "#checkboxes"
+                  - text: Checkboxes & radios#
+              - generic [ref=f9e277]: Forms & input
+            - generic [ref=f9e278]:
+              - generic [ref=f9e279]:
+                - generic [ref=f9e280]:
+                  - checkbox "Single checkbox — agree to terms" [ref=f9e281]
+                  - text: Single checkbox — agree to terms
+                - paragraph [ref=f9e282]: "Agreed: false"
+              - generic [ref=f9e283]:
+                - generic [ref=f9e284]: Hobbies (multiple)
+                - generic [ref=f9e285]:
+                  - checkbox "Select all" [checked=mixed] [ref=f9e286]
+                  - text: Select all
+                - generic [ref=f9e287]:
+                  - checkbox "Reading" [checked] [ref=f9e288]
+                  - text: Reading
+                - generic [ref=f9e289]:
+                  - checkbox "Hiking" [ref=f9e290]
+                  - text: Hiking
+                - generic [ref=f9e291]:
+                  - checkbox "Gaming" [ref=f9e292]
+                  - text: Gaming
+              - generic [ref=f9e293]:
+                - generic [ref=f9e294]: Size (radio)
+                - generic [ref=f9e295]:
+                  - generic [ref=f9e296]:
+                    - radio "XS" [ref=f9e297]
+                    - text: XS
+                  - generic [ref=f9e298]:
+                    - radio "S" [ref=f9e299]
+                    - text: S
+                  - generic [ref=f9e300]:
+                    - radio "M" [checked] [ref=f9e301]
+                    - text: M
+                  - generic [ref=f9e302]:
+                    - radio "L" [ref=f9e303]
+                    - text: L
+                  - generic [ref=f9e304]:
+                    - radio "XL" [ref=f9e305]
+                    - text: XL
+                - paragraph [ref=f9e306]: "Selected: M"
+          - generic [ref=f9e307]:
+            - generic [ref=f9e308]:
+              - generic [aria-hidden] [ref=f9e309]: "3"
+              - heading [level=2] [ref=f9e310]:
+                - link "Link to Selects & multiselect" [ref=f9e311] [cursor=pointer]:
+                  - /url: "#selects"
+                  - text: Selects & multiselect#
+              - generic [ref=f9e312]: Forms & input
+            - generic [ref=f9e313]:
+              - generic [ref=f9e314]:
+                - generic [ref=f9e315]: Single select
+                - combobox "Single select" [ref=f9e316]:
+                  - option "Choose one" [selected]
+                  - option "🍎 Apple"
+                  - option "🍌 Banana"
+                  - option "🍒 Cherry"
+                  - option "🥥 Durian (disabled)" [disabled]
+                - paragraph [ref=f9e317]: "Picked: (none)"
+              - generic [ref=f9e318]:
+                - generic [ref=f9e319]: Multi-select (hold Ctrl/⌘)
+                - listbox "Multi-select (hold Ctrl/⌘)" [ref=f9e320]:
+                  - option "Red" [ref=f9e321]
+                  - option "Green" [ref=f9e322]
+                  - option "Blue" [ref=f9e323]
+                  - option "Yellow" [ref=f9e324]
+                  - option "Purple" [ref=f9e325]
+                - paragraph [ref=f9e326]: "Picked: (none)"
+              - generic [ref=f9e327]:
+                - generic [ref=f9e328]: Datalist (autocomplete)
+                - combobox "Datalist (autocomplete)" [ref=f9e329]
+          - generic [ref=f9e330]:
+            - generic [ref=f9e331]:
+              - generic [aria-hidden] [ref=f9e332]: "4"
+              - heading [level=2] [ref=f9e333]:
+                - link "Link to Date / time / range / color pickers" [ref=f9e334] [cursor=pointer]:
+                  - /url: "#pickers"
+                  - text: Date / time / range / color pickers#
+              - generic [ref=f9e335]: Forms & input
+            - generic [ref=f9e336]:
+              - generic [ref=f9e337]:
+                - generic [ref=f9e338]: Date
+                - textbox "Date" [ref=f9e339]
+              - generic [ref=f9e340]:
+                - generic [ref=f9e341]: Time
+                - textbox "Time" [ref=f9e342]
+              - generic [ref=f9e343]:
+                - generic [ref=f9e344]: Datetime
+                - textbox "Datetime" [ref=f9e345]
+              - generic [ref=f9e346]:
+                - generic [ref=f9e347]: Month
+                - textbox "Month" [ref=f9e348]
+              - generic [ref=f9e349]:
+                - generic [ref=f9e350]: Week
+                - textbox "Week" [ref=f9e351]
+              - generic [ref=f9e352]:
+                - generic [ref=f9e353]: "Range: 50"
+                - 'slider "Range: 50" [ref=f9e354]': "50"
+              - generic [ref=f9e355]:
+                - generic [ref=f9e356]: Color
+                - textbox "Color" [ref=f9e357]: "#4f46e5"
+                - text: "#4f46e5"
+          - generic [ref=f9e358]:
+            - generic [ref=f9e359]:
+              - generic [aria-hidden] [ref=f9e360]: "5"
+              - heading [level=2] [ref=f9e361]:
+                - link "Link to Buttons & links" [ref=f9e362] [cursor=pointer]:
+                  - /url: "#buttons"
+                  - text: Buttons & links#
+              - generic [ref=f9e363]: Forms & input
+            - generic [ref=f9e364]:
+              - button "Primary (0)" [ref=f9e365] [cursor=pointer]
+              - button "Secondary" [ref=f9e366] [cursor=pointer]
+              - button "Success" [ref=f9e367] [cursor=pointer]
+              - button "Danger" [ref=f9e368] [cursor=pointer]
+              - button "Ghost" [ref=f9e369] [cursor=pointer]
+              - button "Disabled" [disabled] [ref=f9e370]
+              - button "Async action" [ref=f9e371] [cursor=pointer]
+              - link "Anchor link" [ref=f9e372] [cursor=pointer]:
+                - /url: "#inputs"
+          - generic [ref=f9e373]:
+            - generic [ref=f9e374]:
+              - generic [aria-hidden] [ref=f9e375]: "6"
+              - heading [level=2] [ref=f9e376]:
+                - link "Link to Alerts, confirms & toasts" [ref=f9e377] [cursor=pointer]:
+                  - /url: "#alerts"
+                  - text: Alerts, confirms & toasts#
+              - generic [ref=f9e378]: Overlays
+            - generic [ref=f9e379]:
+              - button "window.alert" [ref=f9e380] [cursor=pointer]
+              - button "window.confirm" [ref=f9e381] [cursor=pointer]
+              - button "window.prompt" [ref=f9e382] [cursor=pointer]
+              - button "Info toast" [ref=f9e384] [cursor=pointer]
+              - button "Success toast" [ref=f9e385] [cursor=pointer]
+              - button "Error toast" [ref=f9e386] [cursor=pointer]
+          - generic [ref=f9e387]:
+            - generic [ref=f9e388]:
+              - generic [aria-hidden] [ref=f9e389]: "7"
+              - heading [level=2] [ref=f9e390]:
+                - link "Link to Modal dialog" [ref=f9e391] [cursor=pointer]:
+                  - /url: "#modals"
+                  - text: Modal dialog#
+              - generic [ref=f9e392]: Overlays
+            - button "Open modal" [ref=f9e394] [cursor=pointer]
+          - generic [ref=f9e395]:
+            - generic [ref=f9e396]:
+              - generic [aria-hidden] [ref=f9e397]: "8"
+              - heading [level=2] [ref=f9e398]:
+                - link "Link to Tabs" [ref=f9e399] [cursor=pointer]:
+                  - /url: "#tabs"
+                  - text: Tabs#
+              - generic [ref=f9e400]: Display
+            - generic [ref=f9e401]:
+              - tablist [ref=f9e402]:
+                - tab "Tab one" [selected] [ref=f9e403] [cursor=pointer]
+                - tab "Tab two" [ref=f9e404] [cursor=pointer]
+                - tab "Tab three" [ref=f9e405] [cursor=pointer]
+              - tabpanel [ref=f9e406]:
+                - paragraph [ref=f9e407]: Panel one — minimal content.
+          - generic [ref=f9e408]:
+            - generic [ref=f9e409]:
+              - generic [aria-hidden] [ref=f9e410]: "9"
+              - heading [level=2] [ref=f9e411]:
+                - link "Link to Accordion" [ref=f9e412] [cursor=pointer]:
+                  - /url: "#accordion"
+                  - text: Accordion#
+              - generic [ref=f9e413]: Display
+            - generic [ref=f9e414]:
+              - generic [ref=f9e415]:
+                - button "What is this app?" [expanded] [ref=f9e416] [cursor=pointer]:
+                  - text: What is this app?
+                  - generic [aria-hidden] [ref=f9e417]: −
+                - generic [ref=f9e418]: A dummy shop for practicing test automation.
+              - button "Is the data real?" [ref=f9e420] [cursor=pointer]:
+                - text: Is the data real?
+                - generic [aria-hidden] [ref=f9e421]: +
+              - button "Can I use selectors?" [ref=f9e423] [cursor=pointer]:
+                - text: Can I use selectors?
+                - generic [aria-hidden] [ref=f9e424]: +
+          - generic [ref=f9e425]:
+            - generic [ref=f9e426]:
+              - generic [aria-hidden] [ref=f9e427]: "10"
+              - heading [level=2] [ref=f9e428]:
+                - link "Link to Tooltip & hover" [ref=f9e429] [cursor=pointer]:
+                  - /url: "#tooltip"
+                  - text: Tooltip & hover#
+              - generic [ref=f9e430]: Display
+            - generic [ref=f9e431]:
+              - button "Hover me" [ref=f9e433] [cursor=pointer]
+              - generic [ref=f9e434]: Hover anywhere in this dashed box…
+          - generic [ref=f9e435]:
+            - generic [ref=f9e436]:
+              - generic [aria-hidden] [ref=f9e437]: "11"
+              - heading [level=2] [ref=f9e438]:
+                - link "Link to Sortable / filterable / paginated table" [ref=f9e439] [cursor=pointer]:
+                  - /url: "#table"
+                  - text: Sortable / filterable / paginated table#
+              - generic [ref=f9e440]: Display
+            - generic [ref=f9e441]:
+              - generic [ref=f9e442]:
+                - textbox "Filter table..." [ref=f9e443]
+                - generic [ref=f9e444]: 8 rows
+              - table [ref=f9e446]:
+                - rowgroup [ref=f9e447]:
+                  - row [ref=f9e448]:
+                    - columnheader "Id ▲" [ref=f9e449] [cursor=pointer]
+                    - columnheader "Name" [ref=f9e450] [cursor=pointer]
+                    - columnheader "Age" [ref=f9e451] [cursor=pointer]
+                    - columnheader "Role" [ref=f9e452] [cursor=pointer]
+                    - columnheader "City" [ref=f9e453] [cursor=pointer]
+                - rowgroup [ref=f9e454]:
+                  - row [ref=f9e455]:
+                    - cell "1" [ref=f9e456]
+                    - cell "Alice Johnson" [ref=f9e457]
+                    - cell "28" [ref=f9e458]
+                    - cell "QA Engineer" [ref=f9e459]
+                    - cell "Boston" [ref=f9e460]
+                  - row [ref=f9e461]:
+                    - cell "2" [ref=f9e462]
+                    - cell "Bob Smith" [ref=f9e463]
+                    - cell "34" [ref=f9e464]
+                    - cell "Developer" [ref=f9e465]
+                    - cell "Seattle" [ref=f9e466]
+                  - row [ref=f9e467]:
+                    - cell "3" [ref=f9e468]
+                    - cell "Carol Lee" [ref=f9e469]
+                    - cell "41" [ref=f9e470]
+                    - cell "Manager" [ref=f9e471]
+                    - cell "Austin" [ref=f9e472]
+                  - row [ref=f9e473]:
+                    - cell "4" [ref=f9e474]
+                    - cell "David Kim" [ref=f9e475]
+                    - cell "25" [ref=f9e476]
+                    - cell "Designer" [ref=f9e477]
+                    - cell "New York" [ref=f9e478]
+              - navigation [ref=f9e479]:
+                - button "‹" [disabled] [ref=f9e480]
+                - button "1" [ref=f9e481] [cursor=pointer]
+                - button "2" [ref=f9e482] [cursor=pointer]
+                - button "›" [ref=f9e483] [cursor=pointer]
+          - generic [ref=f9e484]:
+            - generic [ref=f9e485]:
+              - generic [aria-hidden] [ref=f9e486]: "12"
+              - heading [level=2] [ref=f9e487]:
+                - link "Link to File upload" [ref=f9e488] [cursor=pointer]:
+                  - /url: "#upload"
+                  - text: File upload#
+              - generic [ref=f9e489]: Forms & input
+            - button "Choose File" [ref=f9e491]
+          - generic [ref=f9e492]:
+            - generic [ref=f9e493]:
+              - generic [aria-hidden] [ref=f9e494]: "13"
+              - heading [level=2] [ref=f9e495]:
+                - link "Link to Drag & drop" [ref=f9e496] [cursor=pointer]:
+                  - /url: "#dnd"
+                  - text: Drag & drop#
+              - generic [ref=f9e497]: Tricky DOM
+            - generic [ref=f9e498]:
+              - generic [ref=f9e499]:
+                - strong [ref=f9e500]: To do
+                - generic [ref=f9e501]: Write tests
+                - generic [ref=f9e502]: Review PR
+              - generic [ref=f9e503]:
+                - strong [ref=f9e504]: Done
+                - generic [ref=f9e505]: Set up project
+          - generic [ref=f9e506]:
+            - generic [ref=f9e507]:
+              - generic [aria-hidden] [ref=f9e508]: "14"
+              - heading [level=2] [ref=f9e509]:
+                - link "Link to Image carousel" [ref=f9e510] [cursor=pointer]:
+                  - /url: "#carousel"
+                  - text: Image carousel#
+              - generic [ref=f9e511]: Display
+            - generic [ref=f9e512]:
+              - generic [ref=f9e513]:
+                - img "Slide 1" [ref=f9e515]
+                - img "Slide 2" [ref=f9e517]
+                - img "Slide 3" [ref=f9e519]
+                - img "Slide 4" [ref=f9e521]
+              - button "Previous" [ref=f9e522] [cursor=pointer]: ‹
+              - button "Next" [ref=f9e523] [cursor=pointer]: ›
+              - generic [ref=f9e524]:
+                - button "Go to slide 1" [ref=f9e525] [cursor=pointer]
+                - button "Go to slide 2" [ref=f9e526] [cursor=pointer]
+                - button "Go to slide 3" [ref=f9e527] [cursor=pointer]
+                - button "Go to slide 4" [ref=f9e528] [cursor=pointer]
+          - generic [ref=f9e529]:
+            - generic [ref=f9e530]:
+              - generic [aria-hidden] [ref=f9e531]: "15"
+              - heading [level=2] [ref=f9e532]:
+                - link "Link to Progress, spinner & dynamic loading" [ref=f9e533] [cursor=pointer]:
+                  - /url: "#progress"
+                  - text: Progress, spinner & dynamic loading#
+              - generic [ref=f9e534]: Async & data
+            - generic [ref=f9e535]:
+              - generic "Loading progress" [ref=f9e536]
+              - paragraph [ref=f9e537]: 0%
+              - button "Start" [ref=f9e539] [cursor=pointer]
+          - generic [ref=f9e540]:
+            - generic [ref=f9e541]:
+              - generic [aria-hidden] [ref=f9e542]: "16"
+              - heading [level=2] [ref=f9e543]:
+                - link "Link to iframe" [ref=f9e544] [cursor=pointer]:
+                  - /url: "#iframe"
+                  - text: iframe#
+              - generic [ref=f9e545]: Tricky DOM
+            - generic [ref=f9e546]:
+              - paragraph [ref=f9e547]:
+                - text: A real form embedded in an iframe. Tests must switch into the frame (Playwright
+                - code [ref=f9e548]: frameLocator()
+                - text: ", Cypress"
+                - code [ref=f9e549]: cy.iframe()
+                - text: ) to fill and submit.
+              - iframe [ref=f9e550]:
+                - generic [ref=f10e1]:
+                  - heading "Mini sign-in (inside iframe)" [level=3] [ref=f10e2]
+                  - paragraph [ref=f10e3]: A real form embedded in an iframe. Fill it out and submit — your test must switch into the frame to interact.
+                  - generic [ref=f10e4]:
+                    - generic [ref=f10e5]: Email
+                    - textbox "Email" [ref=f10e6]:
+                      - /placeholder: you@example.com
+                    - button "Sign in" [ref=f10e7] [cursor=pointer]
+                  - paragraph
+                  - button "Or just click me (no form)" [ref=f10e8] [cursor=pointer]
+          - generic [ref=f9e551]:
+            - generic [ref=f9e552]:
+              - generic [aria-hidden] [ref=f9e553]: "17"
+              - heading [level=2] [ref=f9e554]:
+                - link "Link to Links opening in new tab" [ref=f9e555] [cursor=pointer]:
+                  - /url: "#newtab"
+                  - text: Links opening in new tab#
+              - generic [ref=f9e556]: Overlays
+            - generic [ref=f9e557]:
+              - paragraph [ref=f9e558]:
+                - text: Two ways to open new tabs. In Playwright, await
+                - code [ref=f9e559]: context.waitForEvent('page')
+                - text: before clicking — works for both
+                - code [ref=f9e560]: <a target="_blank">
+                - text: and
+                - code [ref=f9e561]: window.open()
+                - text: .
+              - generic [ref=f9e562]:
+                - link "🔗 Open Playwright docs (anchor target=_blank)" [ref=f9e563] [cursor=pointer]:
+                  - /url: https://playwright.dev
+                - link "🔗 Open example.com (anchor target=_blank)" [ref=f9e564] [cursor=pointer]:
+                  - /url: https://example.com
+                - button "🪟 window.open() popup" [ref=f9e565] [cursor=pointer]
+          - generic [ref=f9e566]:
+            - generic [ref=f9e567]:
+              - generic [aria-hidden] [ref=f9e568]: "18"
+              - heading [level=2] [ref=f9e569]:
+                - link "Link to Right-click context menu" [ref=f9e570] [cursor=pointer]:
+                  - /url: "#contextmenu"
+                  - text: Right-click context menu#
+              - generic [ref=f9e571]: Overlays
+            - generic [ref=f9e572]: Right-click anywhere in this box to open a custom menu.
+          - generic [ref=f9e574]:
+            - generic [ref=f9e575]:
+              - generic [aria-hidden] [ref=f9e576]: "19"
+              - heading [level=2] [ref=f9e577]:
+                - link "Link to Keyboard interactions" [ref=f9e578] [cursor=pointer]:
+                  - /url: "#keyboard"
+                  - text: Keyboard interactions#
+              - generic [ref=f9e579]: Forms & input
+            - generic [ref=f9e580]:
+              - paragraph [ref=f9e581]: Focus this input and press any key — including combinations like ⌘+S, Tab, Enter.
+              - textbox "Press keys here" [ref=f9e582]
+              - list
+          - generic [ref=f9e583]:
+            - generic [ref=f9e584]:
+              - generic [aria-hidden] [ref=f9e585]: "20"
+              - heading [level=2] [ref=f9e586]:
+                - link "Link to Scrollable region" [ref=f9e587] [cursor=pointer]:
+                  - /url: "#scroll"
+                  - text: Scrollable region#
+              - generic [ref=f9e588]: Tricky DOM
+            - generic [ref=f9e589]:
+              - paragraph [ref=f9e590]: A bounded scrollable region — useful for "scroll into view" automation.
+              - generic [ref=f9e591]:
+                - paragraph [ref=f9e592]: "Item #1 — scroll until you find me."
+                - paragraph [ref=f9e593]: "Item #2 — scroll until you find me."
+                - paragraph [ref=f9e594]: "Item #3 — scroll until you find me."
+                - paragraph [ref=f9e595]: "Item #4 — scroll until you find me."
+                - paragraph [ref=f9e596]: "Item #5 — scroll until you find me."
+                - paragraph [ref=f9e597]: "Item #6 — scroll until you find me."
+                - paragraph [ref=f9e598]: "Item #7 — scroll until you find me."
+                - paragraph [ref=f9e599]: "Item #8 — scroll until you find me."
+                - paragraph [ref=f9e600]: "Item #9 — scroll until you find me."
+                - paragraph [ref=f9e601]: "Item #10 — scroll until you find me."
+                - paragraph [ref=f9e602]: "Item #11 — scroll until you find me."
+                - paragraph [ref=f9e603]: "Item #12 — scroll until you find me."
+                - paragraph [ref=f9e604]: "Item #13 — scroll until you find me."
+                - paragraph [ref=f9e605]: "Item #14 — scroll until you find me."
+                - paragraph [ref=f9e606]: "Item #15 — scroll until you find me."
+                - paragraph [ref=f9e607]: "Item #16 — scroll until you find me."
+                - paragraph [ref=f9e608]: "Item #17 — scroll until you find me."
+                - paragraph [ref=f9e609]: "Item #18 — scroll until you find me."
+                - paragraph [ref=f9e610]: "Item #19 — scroll until you find me."
+                - paragraph [ref=f9e611]: "Item #20 — scroll until you find me."
+                - paragraph [ref=f9e612]: "Item #21 — scroll until you find me."
+                - paragraph [ref=f9e613]: "Item #22 — scroll until you find me."
+                - paragraph [ref=f9e614]: "Item #23 — scroll until you find me."
+                - paragraph [ref=f9e615]: "Item #24 — scroll until you find me."
+                - paragraph [ref=f9e616]: "Item #25 — scroll until you find me."
+                - paragraph [ref=f9e617]: "Item #26 — scroll until you find me."
+                - paragraph [ref=f9e618]: "Item #27 — scroll until you find me."
+                - paragraph [ref=f9e619]: "Item #28 — scroll until you find me."
+                - paragraph [ref=f9e620]: "Item #29 — scroll until you find me."
+                - paragraph [ref=f9e621]: "Item #30 — scroll until you find me."
+          - generic [ref=f9e622]:
+            - generic [ref=f9e623]:
+              - generic [aria-hidden] [ref=f9e624]: "21"
+              - heading [level=2] [ref=f9e625]:
+                - link "Link to Shadow DOM (closed to regular querySelector)" [ref=f9e626] [cursor=pointer]:
+                  - /url: "#shadow-dom"
+                  - text: Shadow DOM (closed to regular querySelector)#
+              - generic [ref=f9e627]: Tricky DOM
+            - generic [ref=f9e628]:
+              - paragraph [ref=f9e629]:
+                - text: The yellow box is rendered inside a shadow DOM. Use Playwright's deep selector or
+                - code [ref=f9e630]: page.locator('css=...').and(...)
+                - text: to reach it.
+              - generic [ref=f9e632]:
+                - strong [ref=f9e633]: I'm rendered inside a shadow root.
+                - paragraph [ref=f9e634]:
+                  - text: A regular
+                  - code [ref=f9e635]: document.querySelector('[data-testid="shadow-button"]')
+                  - text: won't find the button below — you need to pierce the shadow root.
+                - button "Click me (shadow)" [ref=f9e636] [cursor=pointer]
+                - paragraph [ref=f9e637]: "Clicks inside: 0"
+              - generic [ref=f9e638]:
+                - 'button "Outer button (regular DOM): 0" [ref=f9e639] [cursor=pointer]'
+                - generic [ref=f9e640]: "Mirror of shadow clicks: 0"
+          - generic [ref=f9e641]:
+            - generic [ref=f9e642]:
+              - generic [aria-hidden] [ref=f9e643]: "22"
+              - heading [level=2] [ref=f9e644]:
+                - link "Link to Infinite scroll" [ref=f9e645] [cursor=pointer]:
+                  - /url: "#infinite-scroll"
+                  - text: Infinite scroll#
+              - generic [ref=f9e646]: Async & data
+            - generic [ref=f9e647]:
+              - paragraph [ref=f9e648]: Scroll inside the box. New rows are fetched (with a 700ms delay) when the sentinel reaches the viewport. Stops at 60 rows.
+              - list [ref=f9e650]:
+                - listitem [ref=f9e651]: Row 1
+                - listitem [ref=f9e652]: Row 2
+                - listitem [ref=f9e653]: Row 3
+                - listitem [ref=f9e654]: Row 4
+                - listitem [ref=f9e655]: Row 5
+                - listitem [ref=f9e656]: Row 6
+                - listitem [ref=f9e657]: Row 7
+                - listitem [ref=f9e658]: Row 8
+                - listitem [ref=f9e659]: Row 9
+                - listitem [ref=f9e660]: Row 10
+              - paragraph [ref=f9e661]: "Loaded: 10 rows"
+          - generic [ref=f9e662]:
+            - generic [ref=f9e663]:
+              - generic [aria-hidden] [ref=f9e664]: "23"
+              - heading [level=2] [ref=f9e665]:
+                - link "Link to Lazy-loaded content (click → wait → reveal)" [ref=f9e666] [cursor=pointer]:
+                  - /url: "#lazy-reveal"
+                  - text: Lazy-loaded content (click → wait → reveal)#
+              - generic [ref=f9e667]: Async & data
+            - generic [ref=f9e668]:
+              - paragraph [ref=f9e669]:
+                - text: Click "Load content". The block appears after 1.5s with a fresh ID — practice explicit waits like
+                - code [ref=f9e670]: page.waitForSelector('[data-testid="lazy-content"]')
+                - text: .
+              - button "Load content" [ref=f9e671] [cursor=pointer]
+          - generic [ref=f9e672]:
+            - generic [ref=f9e673]:
+              - generic [aria-hidden] [ref=f9e674]: "24"
+              - heading [level=2] [ref=f9e675]:
+                - link "Link to Server error simulation with retry" [ref=f9e676] [cursor=pointer]:
+                  - /url: "#server-error"
+                  - text: Server error simulation with retry#
+              - generic [ref=f9e677]: Async & data
+            - generic [ref=f9e678]:
+              - paragraph [ref=f9e679]: Toggle "Force failure" to simulate a flaky server. Use this to practice retry logic, error-state assertions, and conditional waits.
+              - generic [ref=f9e680]:
+                - checkbox "Force failure on next submit" [checked] [ref=f9e681]
+                - text: Force failure on next submit
+              - generic [ref=f9e682]:
+                - button "Submit" [ref=f9e683] [cursor=pointer]
+                - generic [ref=f9e684]: "Attempts: 0"
+          - generic [ref=f9e685]:
+            - generic [ref=f9e686]:
+              - generic [aria-hidden] [ref=f9e687]: "25"
+              - heading [level=2] [ref=f9e688]:
+                - link "Link to Optimistic update with revert on failure" [ref=f9e689] [cursor=pointer]:
+                  - /url: "#optimistic"
+                  - text: Optimistic update with revert on failure#
+              - generic [ref=f9e690]: Async & data
+            - generic [ref=f9e691]:
+              - paragraph [ref=f9e692]: The like button updates instantly. Behind the scenes a fake "server" call runs — 30% of clicks fail and the UI reverts. Tests must handle both the optimistic and reverted states.
+              - generic [ref=f9e693]:
+                - button "♡ Like" [ref=f9e694] [cursor=pointer]
+                - generic [ref=f9e695]: 42 likes
+          - generic [ref=f9e696]:
+            - generic [ref=f9e697]:
+              - generic [aria-hidden] [ref=f9e698]: "26"
+              - heading [level=2] [ref=f9e699]:
+                - link "Link to File download" [ref=f9e700] [cursor=pointer]:
+                  - /url: "#download"
+                  - text: File download#
+              - generic [ref=f9e701]: Async & data
+            - generic [ref=f9e702]:
+              - paragraph [ref=f9e703]:
+                - text: Click to download a small CSV. In Playwright, wrap the click in
+                - code [ref=f9e704]: page.waitForEvent('download')
+                - text: and assert on
+                - code [ref=f9e705]: download.suggestedFilename()
+                - text: — Cypress users typically intercept the request or assert the file lands in
+                - code [ref=f9e706]: cypress/downloads
+                - text: .
+              - button "⬇ Download products.csv" [ref=f9e707] [cursor=pointer]
+          - generic [ref=f9e708]:
+            - generic [ref=f9e709]:
+              - generic [aria-hidden] [ref=f9e710]: "27"
+              - heading [level=2] [ref=f9e711]:
+                - link "Link to Copy to clipboard" [ref=f9e712] [cursor=pointer]:
+                  - /url: "#clipboard"
+                  - text: Copy to clipboard#
+              - generic [ref=f9e713]: Async & data
+            - generic [ref=f9e714]:
+              - paragraph [ref=f9e715]:
+                - text: Click to copy a known string. Tests can grant
+                - code [ref=f9e716]: clipboard-read
+                - text: permission and assert via
+                - code [ref=f9e717]: page.evaluate(() => navigator.clipboard.readText())
+                - text: .
+              - generic [ref=f9e718]:
+                - code [ref=f9e719]: PROMPTQA-CLIP-9F3A
+                - button "📋 Copy" [ref=f9e720] [cursor=pointer]
+          - generic [ref=f9e721]:
+            - generic [ref=f9e722]:
+              - generic [aria-hidden] [ref=f9e723]: "28"
+              - heading [level=2] [ref=f9e724]:
+                - link "Link to Button enabled after delay (async wait)" [ref=f9e725] [cursor=pointer]:
+                  - /url: "#delayed-enable"
+                  - text: Button enabled after delay (async wait)#
+              - generic [ref=f9e726]: Async & data
+            - generic [ref=f9e727]:
+              - paragraph [ref=f9e728]:
+                - text: After clicking
+                - emphasis [ref=f9e729]: Start
+                - text: ", the"
+                - emphasis [ref=f9e730]: Confirm
+                - text: button stays disabled for 3 seconds. Practice waiting for an element's
+                - code [ref=f9e731]: disabled
+                - text: attribute to clear before clicking — naive scripts will hit it too soon.
+              - generic [ref=f9e732]:
+                - button "Start" [ref=f9e733] [cursor=pointer]
+                - button "Confirm" [disabled] [ref=f9e734]
+          - generic [ref=f9e735]:
+            - generic [ref=f9e736]:
+              - generic [aria-hidden] [ref=f9e737]: "29"
+              - heading [level=2] [ref=f9e738]:
+                - link "Link to File drop zone (Playwright 1.60 locator.drop())" [ref=f9e739] [cursor=pointer]:
+                  - /url: "#file-drop"
+                  - text: File drop zone (Playwright 1.60 locator.drop())#
+              - generic [ref=f9e740]: Tricky DOM
+            - generic [ref=f9e741]:
+              - paragraph [ref=f9e742]:
+                - text: Drag any file onto the zone below — Playwright tests can simulate this with
+                - code [ref=f9e743]: "locator.drop({ files: […] })"
+                - text: (new in 1.60), no real OS-level drag required.
+              - generic [ref=f9e744]:
+                - generic [aria-hidden] [ref=f9e745]: 📁
+                - strong [ref=f9e746]: Drop files here
+                - generic [ref=f9e747]: or use locator.drop() from a Playwright test
+          - generic [ref=f9e748]:
+            - generic [ref=f9e749]:
+              - generic [aria-hidden] [ref=f9e750]: "30"
+              - heading [level=2] [ref=f9e751]:
+                - link "Link to aria-description (Playwright 1.60 getByRole option)" [ref=f9e752] [cursor=pointer]:
+                  - /url: "#aria-description"
+                  - text: aria-description (Playwright 1.60 getByRole option)#
+              - generic [ref=f9e753]: Forms & input
+            - generic [ref=f9e754]:
+              - paragraph [ref=f9e755]:
+                - code [ref=f9e756]: aria-description
+                - text: adds supplementary context beyond the accessible name — useful for action consequences, hints, or extra disambiguation. Playwright 1.60 lets you match on it via
+                - code [ref=f9e757]: "getByRole('button', { description: /…/ })"
+                - text: .
+              - generic [ref=f9e758]:
+                - button "Save draft" [ref=f9e759] [cursor=pointer]
+                - button "Delete" [ref=f9e760] [cursor=pointer]
+                - button "Publish" [ref=f9e761] [cursor=pointer]
+              - paragraph [ref=f9e762]:
+                - text: Each button has both an accessible name (its visible text) and an
+                - code [ref=f9e763]: aria-description
+                - text: for additional context. Hover with a screen reader to hear the description.
+          - generic [ref=f9e764]:
+            - generic [ref=f9e765]:
+              - generic [aria-hidden] [ref=f9e766]: "31"
+              - heading [level=2] [ref=f9e767]:
+                - link "Link to Pseudo-element styles (Playwright 1.60 toHaveCSS pseudo)" [ref=f9e768] [cursor=pointer]:
+                  - /url: "#pseudo-css"
+                  - text: Pseudo-element styles (Playwright 1.60 toHaveCSS pseudo)#
+              - generic [ref=f9e769]: Display
+            - generic [ref=f9e770]:
+              - paragraph [ref=f9e771]:
+                - text: The badge below uses a
+                - code [ref=f9e772]: ::before
+                - text: pseudo-element for its "✦ NEW" prefix. Playwright 1.60's
+                - code [ref=f9e773]: "expect(locator).toHaveCSS('content', '…', { pseudo: '::before' })"
+                - text: reads computed styles from pseudo-elements directly — useful for asserting on icon prefixes, badge counters, or any CSS-injected content.
+              - generic [ref=f9e774]: ✦ NEWFeatured product
+          - generic [ref=f9e775]:
+            - generic [ref=f9e776]:
+              - generic [aria-hidden] [ref=f9e777]: "32"
+              - heading [level=2] [ref=f9e778]:
+                - link "Link to ❌ Anti-patterns (and what to use instead)" [ref=f9e779] [cursor=pointer]:
+                  - /url: "#anti-patterns"
+                  - text: ❌ Anti-patterns (and what to use instead)#
+              - generic [ref=f9e780]: Reference
+            - generic [ref=f9e781]:
+              - paragraph [ref=f9e782]: Common locator mistakes and what to write instead. Open the Inspector (🎓 Learn mode → click any element) for a side-by-side ranking of strategies for any specific element.
+              - generic [ref=f9e783]:
+                - article [ref=f9e784]:
+                  - heading "Text-only match for repeated buttons" [level=3] [ref=f9e785]
+                  - generic [ref=f9e786]:
+                    - generic [ref=f9e787]: ❌ Don’t
+                    - generic [ref=f9e788]: page.getByText('Add to cart').click()
+                    - paragraph [ref=f9e789]: Matches every product card. The first one wins — and that’s probably not what you want.
+                  - generic [ref=f9e790]:
+                    - generic [ref=f9e791]: ✅ Do
+                    - generic [ref=f9e792]: "page.getByTestId('add-to-cart-3').click() // or, scoped by role + accessible name: page.getByRole('button', { name: 'Add Wireless Headphones to cart' }).click()"
+                    - paragraph [ref=f9e793]: Stable and unique even as products are added or reordered.
+                - article [ref=f9e794]:
+                  - heading "Position-based selectors" [level=3] [ref=f9e795]
+                  - generic [ref=f9e796]:
+                    - generic [ref=f9e797]: ❌ Don’t
+                    - generic [ref=f9e798]: page.locator('.product-grid > article:nth-child(3) button').click()
+                    - paragraph [ref=f9e799]: Breaks the moment items reorder, are filtered out, or a new card is inserted.
+                  - generic [ref=f9e800]:
+                    - generic [ref=f9e801]: ✅ Do
+                    - generic [ref=f9e802]: "page.getByTestId('product-card-3').getByRole('button', { name: /Add .* to cart/ }).click()"
+                    - paragraph [ref=f9e803]: "Driven by the data id — the third Electronics card today might be #5 tomorrow, but its product id is forever."
+                - article [ref=f9e804]:
+                  - heading "CSS class selectors" [level=3] [ref=f9e805]
+                  - generic [ref=f9e806]:
+                    - generic [ref=f9e807]: ❌ Don’t
+                    - generic [ref=f9e808]: page.locator('.btn').first().click() // which button is this?
+                    - paragraph [ref=f9e809]: CSS classes are styling. They are not unique and they will rename in any refactor.
+                  - generic [ref=f9e810]:
+                    - generic [ref=f9e811]: ✅ Do
+                    - generic [ref=f9e812]: page.getByTestId('place-order').click()
+                    - paragraph [ref=f9e813]: Survives any visual rewrite. Class changes never break the test.
+                - article [ref=f9e814]:
+                  - heading "Auto-generated framework IDs" [level=3] [ref=f9e815]
+                  - generic [ref=f9e816]:
+                    - generic [ref=f9e817]: ❌ Don’t
+                    - generic [ref=f9e818]: page.locator('#mui-23-input').fill('hi')
+                    - paragraph [ref=f9e819]: Numbers like "mui-23" are generated at runtime — they change on the next render or library upgrade.
+                  - generic [ref=f9e820]:
+                    - generic [ref=f9e821]: ✅ Do
+                    - generic [ref=f9e822]: page.getByLabel('Email').fill('hi')
+                    - paragraph [ref=f9e823]: Reads naturally and ties to the visible label, not an internal counter.
+                - article [ref=f9e824]:
+                  - heading "Hardcoded waits" [level=3] [ref=f9e825]
+                  - generic [ref=f9e826]:
+                    - generic [ref=f9e827]: ❌ Don’t
+                    - generic [ref=f9e828]: page.click('[data-testid="api-get-list-run"]') await page.waitForTimeout(3000) // 🤞 hope it loaded
+                    - paragraph [ref=f9e829]: Either too short (flake) or too long (slow). Always one of the two.
+                  - generic [ref=f9e830]:
+                    - generic [ref=f9e831]: ✅ Do
+                    - generic [ref=f9e832]: await Promise.all([ page.waitForResponse(r => r.url().includes('/products')), page.click('[data-testid="api-get-list-run"]'), ])
+                    - paragraph [ref=f9e833]: Wait for the actual signal — a network response, an element’s visibility, an attribute change.
+                - article [ref=f9e834]:
+                  - heading "Long absolute XPath" [level=3] [ref=f9e835]
+                  - generic [ref=f9e836]:
+                    - generic [ref=f9e837]: ❌ Don’t
+                    - generic [ref=f9e838]: //html/body/div[1]/main/div[3]/article[2]/div/button
+                    - paragraph [ref=f9e839]: Any markup change anywhere up the chain breaks every test that uses it.
+                  - generic [ref=f9e840]:
+                    - generic [ref=f9e841]: ✅ Do
+                    - generic [ref=f9e842]: //*[@data-testid='add-to-cart-3']
+                    - paragraph [ref=f9e843]: Anchored on a stable attribute. One predicate, no chain.
+                - article [ref=f9e844]:
+                  - heading "Style-based selectors" [level=3] [ref=f9e845]
+                  - generic [ref=f9e846]:
+                    - generic [ref=f9e847]: ❌ Don’t
+                    - generic [ref=f9e848]: page.locator('button.btn-danger:not([disabled])').click()
+                    - paragraph [ref=f9e849]: Targets a color/state that exists only in current CSS. A theme switch breaks it.
+                  - generic [ref=f9e850]:
+                    - generic [ref=f9e851]: ✅ Do
+                    - generic [ref=f9e852]: page.getByTestId('clear-cart-confirm').click()
+                    - paragraph [ref=f9e853]: Independent of styling. Works in dark mode, in print stylesheet, on Tuesdays.
+  - contentinfo [ref=f9e854]:
+    - generic [ref=f9e855]:
+      - generic [ref=f9e856]:
+        - strong [ref=f9e857]:
+          - generic [aria-hidden] [ref=f9e858]: 🧪
+          - generic [ref=f9e859]:
+            - generic [ref=f9e860]: Test Automation
+            - generic [ref=f9e861]: Playground
+        - link "Powered by QATools" [ref=f9e862] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=f9e863]: Powered by
+          - strong [ref=f9e864]: QATools
+          - generic [aria-hidden] [ref=f9e865]: ↗
+        - paragraph [ref=f9e866]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=f9e867]:
+          - link "Playwright ↗" [ref=f9e868] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=f9e869]:
+        - generic [ref=f9e870]:
+          - heading "Practice" [level=4] [ref=f9e871]
+          - link "QA Shop" [ref=f9e872] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=f9e873] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=f9e874] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=f9e875] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=f9e876] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=f9e877] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=f9e878]:
+          - heading "Learn" [level=4] [ref=f9e879]
+          - link "Learn Playwright" [ref=f9e880] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=f9e881] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=f9e882] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=f9e883] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=f9e884] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=f9e885]:
+          - heading "Site" [level=4] [ref=f9e886]
+          - link "About" [ref=f9e887] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=f9e888] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=f9e889]:
+      - generic [ref=f9e890]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=f9e891]:
+        - button "Restart tour" [ref=f9e892] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=f9e893] [cursor=pointer]
+  - button "Open feedback panel" [ref=f9e894] [cursor=pointer]
+  - dialog "👋 Welcome to the Test Automation Playground" [ref=f9e897]:
+    - generic [ref=f9e898]:
+      - heading "👋 Welcome to the Test Automation Playground" [level=3] [ref=f9e905]
+      - generic [ref=f9e906]:
+        - paragraph [ref=f9e907]:
+          - text: A safe, dummy storefront built so QA testers can practice writing robust UI locators and API mocks.
+          - strong [ref=f9e908]: Nothing here is real
+          - text: — no payments, no signups, no data leaves your browser.
+        - paragraph [ref=f9e909]: 5 short steps to show you around.
+      - generic [ref=f9e910]:
+        - button "Skip tour" [ref=f9e911] [cursor=pointer]
+        - button "Next ›" [ref=f9e913] [cursor=pointer]

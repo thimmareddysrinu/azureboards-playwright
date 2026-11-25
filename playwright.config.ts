@@ -33,7 +33,7 @@ export default defineConfig({
      baseURL: 'https://your-flighttickets-site.com',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    headless: !!process.env.CI,
+    headless: process.env.CI ?true:false,
   },
 
   /* Configure projects for major browsers */
@@ -81,4 +81,3 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
-

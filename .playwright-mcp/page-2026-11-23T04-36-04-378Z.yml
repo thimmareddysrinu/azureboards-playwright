@@ -1,0 +1,151 @@
+- generic [ref=f3e3]:
+  - region "Site updates" [ref=f3e4]:
+    - generic [ref=f3e6]:
+      - generic [ref=f3e7]:
+        - generic [aria-hidden] [ref=f3e8]: 🧭
+        - text: New
+      - generic [ref=f3e9]:
+        - strong [ref=f3e10]: Guided practice
+        - text: — build your first Playwright test live on the shop, one step at a time.
+      - button "Start →" [ref=f3e11] [cursor=pointer]
+    - group "Choose announcement" [ref=f3e12]:
+      - button "Show announcement 1 of 2" [ref=f3e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=f3e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=f3e15] [cursor=pointer]: ✕
+  - banner [ref=f3e16]:
+    - generic [ref=f3e17]:
+      - link "Test Automation Playground" [ref=f3e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=f3e19]: 🧪
+        - generic [ref=f3e20]:
+          - generic [ref=f3e21]: Test Automation
+          - generic [ref=f3e22]: Playground
+      - navigation "Primary navigation" [ref=f3e23]:
+        - button "QA Shop" [ref=f3e25] [cursor=pointer]
+        - link "Widgets" [ref=f3e30] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=f3e34] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=f3e38] [cursor=pointer]
+        - link "Join Pro" [ref=f3e45] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2Fqashop%2Fcart
+          - generic [aria-hidden] [ref=f3e46]: ⭐
+          - text: Join Pro
+  - main [ref=f3e47]:
+    - generic [ref=f3e48]:
+      - generic [ref=f3e49]:
+        - link "QA Shopstore" [ref=f3e50] [cursor=pointer]:
+          - /url: /qashop/products
+          - generic [aria-hidden] [ref=f3e51]: 🛒
+        - generic [ref=f3e53]:
+          - link "Wishlist with 0 items" [ref=f3e54] [cursor=pointer]:
+            - /url: /qashop/wishlist
+            - generic [aria-hidden] [ref=f3e55]: ♡
+            - generic [ref=f3e56]: Wishlist
+          - link "Cart with 0 items" [ref=f3e57] [cursor=pointer]:
+            - /url: /qashop/cart
+            - generic [aria-hidden] [ref=f3e58]: 🛒
+            - generic [ref=f3e59]: Cart
+          - link "Sign in" [ref=f3e61] [cursor=pointer]:
+            - /url: /qashop/login
+            - text: 👤Sign in
+      - navigation "Shop categories" [ref=f3e62]:
+        - link "All products" [ref=f3e63] [cursor=pointer]:
+          - /url: /qashop/products
+        - link "Electronics" [ref=f3e64] [cursor=pointer]:
+          - /url: /qashop/products?category=Electronics
+          - generic [aria-hidden] [ref=f3e65]: 📱
+          - text: Electronics
+        - link "Clothing" [ref=f3e66] [cursor=pointer]:
+          - /url: /qashop/products?category=Clothing
+          - generic [aria-hidden] [ref=f3e67]: 👕
+          - text: Clothing
+        - link "Books" [ref=f3e68] [cursor=pointer]:
+          - /url: /qashop/products?category=Books
+          - generic [aria-hidden] [ref=f3e69]: 📚
+          - text: Books
+        - link "Home" [ref=f3e70] [cursor=pointer]:
+          - /url: /qashop/products?category=Home
+          - generic [aria-hidden] [ref=f3e71]: 🏠
+          - text: Home
+        - link "Toys" [ref=f3e72] [cursor=pointer]:
+          - /url: /qashop/products?category=Toys
+          - generic [aria-hidden] [ref=f3e73]: 🧸
+          - text: Toys
+        - link "Sports" [ref=f3e74] [cursor=pointer]:
+          - /url: /qashop/products?category=Sports
+          - generic [aria-hidden] [ref=f3e75]: ⚽
+          - text: Sports
+    - generic [ref=f3e76]:
+      - heading "Your cart is empty" [level=2] [ref=f3e77]
+      - paragraph [ref=f3e78]: Browse the catalog to add items to your cart.
+      - link "Shop now" [ref=f3e79] [cursor=pointer]:
+        - /url: /qashop/products
+  - contentinfo [ref=f3e80]:
+    - generic [ref=f3e81]:
+      - generic [ref=f3e82]:
+        - strong [ref=f3e83]:
+          - generic [aria-hidden] [ref=f3e84]: 🧪
+          - generic [ref=f3e85]:
+            - generic [ref=f3e86]: Test Automation
+            - generic [ref=f3e87]: Playground
+        - link "Powered by QATools" [ref=f3e88] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=f3e89]: Powered by
+          - strong [ref=f3e90]: QATools
+          - generic [aria-hidden] [ref=f3e91]: ↗
+        - paragraph [ref=f3e92]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=f3e93]:
+          - link "Playwright ↗" [ref=f3e94] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=f3e95]:
+        - generic [ref=f3e96]:
+          - heading "Practice" [level=4] [ref=f3e97]
+          - link "QA Shop" [ref=f3e98] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=f3e99] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=f3e100] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=f3e101] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=f3e102] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=f3e103] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=f3e104]:
+          - heading "Learn" [level=4] [ref=f3e105]
+          - link "Learn Playwright" [ref=f3e106] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=f3e107] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=f3e108] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=f3e109] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=f3e110] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=f3e111]:
+          - heading "Site" [level=4] [ref=f3e112]
+          - link "About" [ref=f3e113] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=f3e114] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=f3e115]:
+      - generic [ref=f3e116]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=f3e117]:
+        - button "Restart tour" [ref=f3e118] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=f3e119] [cursor=pointer]
+  - button "Open feedback panel" [ref=f3e120] [cursor=pointer]
+  - dialog "👋 Welcome to the Test Automation Playground" [ref=f3e123]:
+    - generic [ref=f3e124]:
+      - heading "👋 Welcome to the Test Automation Playground" [level=3] [ref=f3e131]
+      - generic [ref=f3e132]:
+        - paragraph [ref=f3e133]:
+          - text: A safe, dummy storefront built so QA testers can practice writing robust UI locators and API mocks.
+          - strong [ref=f3e134]: Nothing here is real
+          - text: — no payments, no signups, no data leaves your browser.
+        - paragraph [ref=f3e135]: 5 short steps to show you around.
+      - generic [ref=f3e136]:
+        - button "Skip tour" [ref=f3e137] [cursor=pointer]
+        - button "Next ›" [ref=f3e139] [cursor=pointer]

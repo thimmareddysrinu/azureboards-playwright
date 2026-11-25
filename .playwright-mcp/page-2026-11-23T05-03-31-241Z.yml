@@ -1,0 +1,361 @@
+- generic [ref=e3]:
+  - region "Site updates" [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [aria-hidden] [ref=e8]: 🧭
+        - text: New
+      - generic [ref=e9]:
+        - strong [ref=e10]: Guided practice
+        - text: — build your first Playwright test live on the shop, one step at a time.
+      - button "Start →" [ref=e11] [cursor=pointer]
+    - group "Choose announcement" [ref=e12]:
+      - button "Show announcement 1 of 2" [ref=e13] [cursor=pointer]
+      - button "Show announcement 2 of 2" [ref=e14] [cursor=pointer]
+    - button "Dismiss update banner" [ref=e15] [cursor=pointer]: ✕
+  - banner [ref=e16]:
+    - generic [ref=e17]:
+      - link "Test Automation Playground" [ref=e18] [cursor=pointer]:
+        - /url: /
+        - generic [aria-hidden] [ref=e19]: 🧪
+        - generic [ref=e20]:
+          - generic [ref=e21]: Test Automation
+          - generic [ref=e22]: Playground
+      - navigation "Primary navigation" [ref=e23]:
+        - button "Practice apps" [ref=e25] [cursor=pointer]
+        - link "Widgets" [ref=e34] [cursor=pointer]:
+          - /url: /widgets
+        - link "API" [ref=e38] [cursor=pointer]:
+          - /url: /api-playground
+        - button "Learn" [ref=e42] [cursor=pointer]
+        - link "Join Pro" [ref=e49] [cursor=pointer]:
+          - /url: https://qatools.dev/pro?utm_source=playground&utm_medium=nav&back=%2Fapi-playground
+          - generic [aria-hidden] [ref=e50]: ⭐
+          - text: Join Pro
+  - main [ref=e51]:
+    - generic [ref=e52]:
+      - heading "API Playground" [level=1] [ref=e53]
+      - generic [ref=e54]:
+        - paragraph [ref=e55]:
+          - text: Every button below fires a
+          - strong [ref=e56]: real HTTP request
+          - text: to a free public API. Open DevTools
+          - strong [ref=e57]: Network
+          - text: "to inspect them, or intercept them in your tests:"
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - strong [ref=e60]: Playwright
+            - text: ":"
+            - code [ref=e61]: await page.waitForResponse(r => r.url().includes('/products'))
+          - listitem [ref=e62]:
+            - strong [ref=e63]: Cypress
+            - text: ":"
+            - code [ref=e64]: cy.intercept('GET', '**/products*').as('list'); cy.wait('@list')
+          - listitem [ref=e65]:
+            - strong [ref=e66]: Selenium
+            - text: ": use a proxy (BrowserMob, mitmproxy) or check page state via DOM testids"
+        - paragraph [ref=e67]:
+          - text: Each scenario card has stable
+          - code [ref=e68]: data-testid
+          - text: s on the run button, status, response, and timing — assert against any of them.
+      - heading "1. Read" [level=2] [ref=e69]
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - heading "GET — list (success)" [level=3] [ref=e73]
+            - paragraph [ref=e74]: Fetch the first 5 products from dummyjson. Use this to practice waiting on a list response and asserting on the items array length.
+          - button "Run request — GET — list (success)" [ref=e76] [cursor=pointer]: Run request
+        - generic [ref=e77]:
+          - generic [ref=e78]: GET
+          - code [ref=e79]: https://dummyjson.com/products?limit=5
+        - group [ref=e80]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e81] [cursor=pointer]
+        - generic [ref=e82]: Idle
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - heading "GET — single resource" [level=3] [ref=e87]
+            - paragraph [ref=e88]: Fetch one product by ID. Smaller payload — good for quick assertion practice.
+          - button "Run request — GET — single resource" [ref=e90] [cursor=pointer]: Run request
+        - generic [ref=e91]:
+          - generic [ref=e92]: GET
+          - code [ref=e93]: https://dummyjson.com/products/1
+        - group [ref=e94]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e95] [cursor=pointer]
+        - generic [ref=e96]: Idle
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - generic [ref=e100]:
+            - heading "GET — slow (~3s delay)" [level=3] [ref=e101]
+            - paragraph [ref=e102]: dummyjson supports a delay parameter. Use this to practice timeouts, loading-state assertions, and page.waitForResponse with custom timeouts.
+          - button "Run request — GET — slow (~3s delay)" [ref=e104] [cursor=pointer]: Run request
+        - generic [ref=e105]:
+          - generic [ref=e106]: GET
+          - code [ref=e107]: https://dummyjson.com/products?limit=3&delay=3000
+        - group [ref=e108]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e109] [cursor=pointer]
+        - generic [ref=e110]: Idle
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - heading "GET — 404 Not Found" [level=3] [ref=e115]
+            - paragraph [ref=e116]: A product ID that doesn't exist. Practice asserting on error states and 4xx response codes.
+          - button "Run request — GET — 404 Not Found" [ref=e118] [cursor=pointer]: Run request
+        - generic [ref=e119]:
+          - generic [ref=e120]: GET
+          - code [ref=e121]: https://dummyjson.com/products/9999
+          - generic "Expected failure" [ref=e122]: expects error
+        - group [ref=e123]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e124] [cursor=pointer]
+        - generic [ref=e125]: Idle
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - heading "GET — 500 Internal Server Error" [level=3] [ref=e130]
+            - paragraph [ref=e131]: dummyjson's /http/500 endpoint always returns a 500. Useful for testing your retry/error UI behavior.
+          - button "Run request — GET — 500 Internal Server Error" [ref=e133] [cursor=pointer]: Run request
+        - generic [ref=e134]:
+          - generic [ref=e135]: GET
+          - code [ref=e136]: https://dummyjson.com/http/500
+          - generic "Expected failure" [ref=e137]: expects error
+        - group [ref=e138]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e139] [cursor=pointer]
+        - generic [ref=e140]: Idle
+      - heading "2. Pagination" [level=2] [ref=e142]
+      - generic [ref=e143]:
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - strong [ref=e146]: GET — paginated
+            - paragraph [ref=e147]:
+              - text: Drives
+              - code [ref=e148]: "?limit=10&skip=N"
+              - text: . Click Next/Prev to fire fresh requests with different query strings — practice intercepting URLs by glob.
+          - generic [ref=e149]:
+            - button "‹ Prev" [disabled] [ref=e150]
+            - generic [ref=e151]: Page 1
+            - button "Next ›" [ref=e152] [cursor=pointer]
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - heading "(re-runs as you click Next/Prev)" [level=3] [ref=e156]
+              - paragraph [ref=e157]: Each page change fires a new GET with a different ?skip value.
+            - button "Run request — (re-runs as you click Next/Prev)" [ref=e159] [cursor=pointer]: Run request
+          - generic [ref=e160]:
+            - generic [ref=e161]: GET
+            - code [ref=e162]: https://dummyjson.com/products?limit=10&skip=0
+          - group [ref=e163]:
+            - generic "Equivalent calls (cURL · fetch)" [ref=e164] [cursor=pointer]
+          - generic [ref=e165]: Idle
+      - heading "3. Write (POST/PUT/PATCH/DELETE)" [level=2] [ref=e167]
+      - generic [ref=e168]:
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - heading "POST — create" [level=3] [ref=e171]
+            - paragraph [ref=e172]: "Send a JSON body to create a new post. jsonplaceholder fakes success: it returns 201 with the body you sent plus a generated id."
+          - button "Run request — POST — create" [ref=e174] [cursor=pointer]: Run request
+        - generic [ref=e175]:
+          - generic [ref=e176]: POST
+          - code [ref=e177]: https://jsonplaceholder.typicode.com/posts
+        - group [ref=e178]:
+          - generic "Request body" [ref=e179] [cursor=pointer]
+        - group [ref=e180]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e181] [cursor=pointer]
+        - generic [ref=e182]: Idle
+      - generic [ref=e184]:
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - heading "PUT — replace" [level=3] [ref=e187]
+            - paragraph [ref=e188]: Replace an entire resource. Sends every field. Server returns the updated representation.
+          - button "Run request — PUT — replace" [ref=e190] [cursor=pointer]: Run request
+        - generic [ref=e191]:
+          - generic [ref=e192]: PUT
+          - code [ref=e193]: https://jsonplaceholder.typicode.com/posts/1
+        - group [ref=e194]:
+          - generic "Request body" [ref=e195] [cursor=pointer]
+        - group [ref=e196]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e197] [cursor=pointer]
+        - generic [ref=e198]: Idle
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - generic [ref=e202]:
+            - heading "PATCH — partial update" [level=3] [ref=e203]
+            - paragraph [ref=e204]: Update only specific fields. Smaller payload than PUT.
+          - button "Run request — PATCH — partial update" [ref=e206] [cursor=pointer]: Run request
+        - generic [ref=e207]:
+          - generic [ref=e208]: PATCH
+          - code [ref=e209]: https://jsonplaceholder.typicode.com/posts/1
+        - group [ref=e210]:
+          - generic "Request body" [ref=e211] [cursor=pointer]
+        - group [ref=e212]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e213] [cursor=pointer]
+        - generic [ref=e214]: Idle
+      - generic [ref=e216]:
+        - generic [ref=e217]:
+          - generic [ref=e218]:
+            - heading "DELETE" [level=3] [ref=e219]
+            - paragraph [ref=e220]: Remove a resource. jsonplaceholder fakes success and returns an empty body.
+          - button "Run request — DELETE" [ref=e222] [cursor=pointer]: Run request
+        - generic [ref=e223]:
+          - generic [ref=e224]: DELETE
+          - code [ref=e225]: https://jsonplaceholder.typicode.com/posts/1
+        - group [ref=e226]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e227] [cursor=pointer]
+        - generic [ref=e228]: Idle
+      - heading "4. Headers & auth" [level=2] [ref=e230]
+      - generic [ref=e231]:
+        - generic [ref=e232]:
+          - generic [ref=e233]:
+            - heading "GET with Authorization header" [level=3] [ref=e234]
+            - paragraph [ref=e235]: Sends a Bearer token in the Authorization header. Inspect the Request Headers in DevTools and assert that your test sends the right value.
+          - button "Run request — GET with Authorization header" [ref=e237] [cursor=pointer]: Run request
+        - generic [ref=e238]:
+          - generic [ref=e239]: GET
+          - code [ref=e240]: https://dummyjson.com/products/1
+        - group [ref=e241]:
+          - generic "Request headers" [ref=e242] [cursor=pointer]
+        - group [ref=e243]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e244] [cursor=pointer]
+        - generic [ref=e245]: Idle
+      - generic [ref=e247]:
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - heading "GET with custom headers" [level=3] [ref=e250]
+            - paragraph [ref=e251]: Two custom headers (X-Client-Id, Accept-Language). Practice asserting on outgoing request headers.
+          - button "Run request — GET with custom headers" [ref=e253] [cursor=pointer]: Run request
+        - generic [ref=e254]:
+          - generic [ref=e255]: GET
+          - code [ref=e256]: https://dummyjson.com/products/1
+        - group [ref=e257]:
+          - generic "Request headers" [ref=e258] [cursor=pointer]
+        - group [ref=e259]:
+          - generic "Equivalent calls (cURL · fetch)" [ref=e260] [cursor=pointer]
+        - generic [ref=e261]: Idle
+      - heading "5. Sequential dependent requests" [level=2] [ref=e263]
+      - generic [ref=e264]:
+        - 'heading "Sequential: GET user → GET user''s posts" [level=3] [ref=e265]'
+        - paragraph [ref=e266]: First fetch loads the user. The user's id is then used in the second URL. Practice intercepting both, asserting the second request's URL contains the id from the first.
+        - button "Run both" [ref=e267] [cursor=pointer]
+        - generic [ref=e268]:
+          - generic [ref=e269]: "1. User: –"
+          - generic [ref=e270]: "2. Posts: –"
+      - heading "🎭 Mock Me — practice API mocking" [level=2] [ref=e271]
+      - generic [ref=e272]:
+        - paragraph [ref=e273]: Each card below fetches a real API and renders the response. Intercept the call in your test framework to control what users see — perfect for verifying error states, empty states, and edge cases without depending on a real backend.
+        - tablist [ref=e274]:
+          - tab "Playwright" [selected] [ref=e275] [cursor=pointer]
+          - tab "Cypress" [ref=e276] [cursor=pointer]
+          - tab "Selenium" [ref=e277] [cursor=pointer]
+        - code [ref=e279]: "// Intercept the call before navigating await page.route('**/users/1', route => route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ id: 1, firstName: 'Mocked', lastName: 'User', email: 'mock@test.io' }) }) ) await page.goto('/api-playground') await expect(page.getByTestId('mock-user-name')).toHaveText('Mocked User')"
+      - generic [ref=e280]:
+        - generic [ref=e281]:
+          - generic [ref=e282]:
+            - heading "User profile card" [level=3] [ref=e283]
+            - paragraph [ref=e284]:
+              - text: Renders the response from
+              - code [ref=e285]: GET dummyjson.com/users/1
+              - text: . Mock this URL to inject any user — verify the avatar, name, email, and role all bind correctly.
+          - button "Load user profile" [ref=e286] [cursor=pointer]: Load
+        - paragraph [ref=e287]: Click Load to fire the request.
+      - generic [ref=e288]:
+        - generic [ref=e289]:
+          - generic [ref=e290]:
+            - heading "Product feed" [level=3] [ref=e291]
+            - paragraph [ref=e292]:
+              - text: Renders 4 products from
+              - code [ref=e293]: GET dummyjson.com/products?limit=4
+              - text: . Mock with an empty
+              - code [ref=e294]: products
+              - text: array to test the "no results" state — try it!
+          - button "Load product feed" [ref=e295] [cursor=pointer]: Load
+        - paragraph [ref=e296]: Click Load to fetch products.
+      - generic [ref=e297]:
+        - heading "Login form" [level=3] [ref=e298]
+        - paragraph [ref=e299]:
+          - text: POSTs to
+          - code [ref=e300]: dummyjson.com/auth/login
+          - text: . Default values use a real test account (
+          - code [ref=e301]: emilys / emilyspass
+          - text: ) so it succeeds. Mock the endpoint to test arbitrary token responses or simulated 401 errors — without changing the form code.
+        - generic [ref=e302]:
+          - generic [ref=e303]:
+            - generic [ref=e304]: Username
+            - textbox "Username" [ref=e305]: emilys
+          - generic [ref=e306]:
+            - generic [ref=e307]: Password
+            - textbox "Password" [ref=e308]: emilyspass
+          - button "Sign in" [ref=e309] [cursor=pointer]
+      - generic [ref=e310]:
+        - heading "Debounced search" [level=3] [ref=e311]
+        - paragraph [ref=e312]:
+          - text: Type to fire
+          - code [ref=e313]: GET /products/search?q=…
+          - text: after a 300ms debounce. Mock the endpoint to control what shows up regardless of query — and practice asserting that your test waited for the request, not just for the input value.
+        - searchbox "Search products…" [ref=e314]: phone
+        - paragraph [ref=e315]: Searching…
+  - contentinfo [ref=e317]:
+    - generic [ref=e318]:
+      - generic [ref=e319]:
+        - strong [ref=e320]:
+          - generic [aria-hidden] [ref=e321]: 🧪
+          - generic [ref=e322]:
+            - generic [ref=e323]: Test Automation
+            - generic [ref=e324]: Playground
+        - link "Powered by QATools" [ref=e325] [cursor=pointer]:
+          - /url: https://qatools.dev
+          - generic [ref=e326]: Powered by
+          - strong [ref=e327]: QATools
+          - generic [aria-hidden] [ref=e328]: ↗
+        - paragraph [ref=e329]: "Safe dummy apps — a shop, a clinic and a bank — for test-automation practice. All data is dummy: no real transactions, no captured PII."
+        - generic "External links" [ref=e330]:
+          - link "Playwright ↗" [ref=e331] [cursor=pointer]:
+            - /url: https://playwright.dev
+      - navigation "Footer navigation" [ref=e332]:
+        - generic [ref=e333]:
+          - heading "Practice" [level=4] [ref=e334]
+          - link "QA Shop" [ref=e335] [cursor=pointer]:
+            - /url: /qashop/products
+          - link "Clinic" [ref=e336] [cursor=pointer]:
+            - /url: /clinic
+          - link "Bank (preview)" [ref=e337] [cursor=pointer]:
+            - /url: /bank
+          - link "Widgets" [ref=e338] [cursor=pointer]:
+            - /url: /widgets
+          - link "API Playground" [ref=e339] [cursor=pointer]:
+            - /url: /api-playground
+          - link "Locator Game" [ref=e340] [cursor=pointer]:
+            - /url: /game
+        - generic [ref=e341]:
+          - heading "Learn" [level=4] [ref=e342]
+          - link "Learn Playwright" [ref=e343] [cursor=pointer]:
+            - /url: /learn/playwright
+          - link "Patterns" [ref=e344] [cursor=pointer]:
+            - /url: /patterns
+          - link "Challenges" [ref=e345] [cursor=pointer]:
+            - /url: /challenges
+          - link "Test cases" [ref=e346] [cursor=pointer]:
+            - /url: /test-cases
+          - link "Quiz" [ref=e347] [cursor=pointer]:
+            - /url: /quiz
+        - generic [ref=e348]:
+          - heading "Site" [level=4] [ref=e349]
+          - link "About" [ref=e350] [cursor=pointer]:
+            - /url: /about
+          - link "Terms & Privacy" [ref=e351] [cursor=pointer]:
+            - /url: /terms
+    - generic [ref=e352]:
+      - generic [ref=e353]: © 2026 Test Automation Playground · No real data captured
+      - generic [ref=e354]:
+        - button "Restart tour" [ref=e355] [cursor=pointer]
+        - button "⟳ Reset demo data" [ref=e356] [cursor=pointer]
+  - button "Open feedback panel" [ref=e357] [cursor=pointer]
+  - dialog "👋 Welcome to the Test Automation Playground" [ref=e360]:
+    - generic [ref=e361]:
+      - heading "👋 Welcome to the Test Automation Playground" [level=3] [ref=e368]
+      - generic [ref=e369]:
+        - paragraph [ref=e370]:
+          - text: A safe, dummy storefront built so QA testers can practice writing robust UI locators and API mocks.
+          - strong [ref=e371]: Nothing here is real
+          - text: — no payments, no signups, no data leaves your browser.
+        - paragraph [ref=e372]: 5 short steps to show you around.
+      - generic [ref=e373]:
+        - button "Skip tour" [ref=e374] [cursor=pointer]
+        - button "Next ›" [ref=e376] [cursor=pointer]
