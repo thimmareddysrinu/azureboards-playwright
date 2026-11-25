@@ -4,7 +4,12 @@ pipeline {
     environment {
         CI = 'true'
        
-        BASE_URL = 'https://your-application-url.com'
+         BASE_URL = credentials('app-base-url')
+        APP_CREDS = credentials('app-login-creds')
+        
+        // Match these names to your Playwright process.env.* variables
+        APP_EMAIL = "${APP_CREDS_USR}"
+        APP_PASSWORD = "${APP_CREDS_PSW}"
     
     }
 
